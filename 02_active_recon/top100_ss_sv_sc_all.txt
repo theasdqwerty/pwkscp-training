@@ -1,0 +1,3045 @@
+# Nmap 7.95 scan initiated Mon May 11 11:54:21 2026 as: nmap -sS -sV -sC --top-ports 100 -iL ips_only.txt -oN top100_ss_sv_sc_all.txt
+Nmap scan report for satrev2114.baraghost.com (167.114.21.14)
+Host is up (0.0077s latency).
+Not shown: 99 filtered tcp ports (no-response)
+PORT   STATE SERVICE VERSION
+53/tcp open  domain?
+
+Nmap scan report for ip11.ip-167-114-21.net (167.114.21.11)
+Host is up (0.0037s latency).
+All 100 scanned ports on ip11.ip-167-114-21.net (167.114.21.11) are in ignored states.
+Not shown: 100 filtered tcp ports (no-response)
+
+Nmap scan report for ip9.ip-167-114-21.net (167.114.21.9)
+Host is up (0.0033s latency).
+All 100 scanned ports on ip9.ip-167-114-21.net (167.114.21.9) are in ignored states.
+Not shown: 100 filtered tcp ports (no-response)
+
+Nmap scan report for ip10.ip-167-114-21.net (167.114.21.10)
+Host is up (0.0046s latency).
+All 100 scanned ports on ip10.ip-167-114-21.net (167.114.21.10) are in ignored states.
+Not shown: 100 filtered tcp ports (no-response)
+
+Nmap scan report for satrev2113.baraghost.com (167.114.21.13)
+Host is up (0.0046s latency).
+Not shown: 99 filtered tcp ports (no-response)
+PORT   STATE SERVICE VERSION
+53/tcp open  domain?
+
+Nmap scan report for satrev2112.baraghost.com (167.114.21.12)
+Host is up (0.0048s latency).
+Not shown: 99 filtered tcp ports (no-response)
+PORT   STATE SERVICE VERSION
+53/tcp open  domain?
+
+Nmap scan report for satrev2115.baraghost.com (167.114.21.15)
+Host is up (0.025s latency).
+Not shown: 99 filtered tcp ports (no-response)
+PORT   STATE SERVICE VERSION
+53/tcp open  domain?
+
+Nmap scan report for ip34.ip-167-114-21.net (167.114.21.34)
+Host is up (0.14s latency).
+Not shown: 92 closed tcp ports (reset)
+PORT     STATE SERVICE     VERSION
+80/tcp   open  http        Golang net/http server
+| fingerprint-strings: 
+|   FourOhFourRequest: 
+|     HTTP/1.0 301 Moved Permanently
+|     Content-Type: text/html; charset=utf-8
+|     Location: https://www.bisecthosting.com/hosted-by
+|     Date: Mon, 11 May 2026 08:56:21 GMT
+|     Content-Length: 74
+|     href="https://www.bisecthosting.com/hosted-by">Moved Permanently</a>.
+|   GenericLines, Help, LPDString, RTSPRequest, SIPOptions, SSLSessionReq, Socks5: 
+|     HTTP/1.1 400 Bad Request
+|     Content-Type: text/plain; charset=utf-8
+|     Connection: close
+|     Request
+|   GetRequest: 
+|     HTTP/1.0 301 Moved Permanently
+|     Content-Type: text/html; charset=utf-8
+|     Location: https://www.bisecthosting.com/hosted-by
+|     Date: Mon, 11 May 2026 08:56:20 GMT
+|     Content-Length: 74
+|     href="https://www.bisecthosting.com/hosted-by">Moved Permanently</a>.
+|   HTTPOptions: 
+|     HTTP/1.0 301 Moved Permanently
+|     Location: https://www.bisecthosting.com/hosted-by
+|     Date: Mon, 11 May 2026 08:56:21 GMT
+|     Content-Length: 0
+|   OfficeScan: 
+|     HTTP/1.1 400 Bad Request: missing required Host header
+|     Content-Type: text/plain; charset=utf-8
+|     Connection: close
+|_    Request: missing required Host header
+|_http-title: Did not follow redirect to https://www.bisecthosting.com/hosted-by
+443/tcp  open  ssl/http    Golang net/http server
+| fingerprint-strings: 
+|   FourOhFourRequest: 
+|     HTTP/1.0 301 Moved Permanently
+|     Content-Type: text/html; charset=utf-8
+|     Location: https://www.bisecthosting.com/hosted-by
+|     Date: Mon, 11 May 2026 08:56:28 GMT
+|     Content-Length: 74
+|     href="https://www.bisecthosting.com/hosted-by">Moved Permanently</a>.
+|   GenericLines, Help, LPDString, RTSPRequest, SIPOptions, SSLSessionReq, Socks5: 
+|     HTTP/1.1 400 Bad Request
+|     Content-Type: text/plain; charset=utf-8
+|     Connection: close
+|     Request
+|   GetRequest: 
+|     HTTP/1.0 301 Moved Permanently
+|     Content-Type: text/html; charset=utf-8
+|     Location: https://www.bisecthosting.com/hosted-by
+|     Date: Mon, 11 May 2026 08:56:27 GMT
+|     Content-Length: 74
+|     href="https://www.bisecthosting.com/hosted-by">Moved Permanently</a>.
+|   HTTPOptions: 
+|     HTTP/1.0 301 Moved Permanently
+|     Location: https://www.bisecthosting.com/hosted-by
+|     Date: Mon, 11 May 2026 08:56:27 GMT
+|     Content-Length: 0
+|   OfficeScan: 
+|     HTTP/1.1 400 Bad Request: missing required Host header
+|     Content-Type: text/plain; charset=utf-8
+|     Connection: close
+|_    Request: missing required Host header
+|_http-title: Did not follow redirect to https://www.bisecthosting.com/hosted-by
+| ssl-cert: Subject: commonName=*.bisecthosting.com
+| Subject Alternative Name: DNS:*.bisecthosting.com, DNS:bisecthosting.com
+| Not valid before: 2025-09-30T00:00:00
+|_Not valid after:  2026-10-31T23:59:59
+1025/tcp open  NFS-or-IIS?
+3306/tcp open  mysql       MySQL 8.0.45-0ubuntu0.22.04.1
+|_ssl-date: TLS randomness does not represent time
+| mysql-info: 
+|   Protocol: 10
+|   Version: 8.0.45-0ubuntu0.22.04.1
+|   Thread ID: 208563
+|   Capabilities flags: 65535
+|   Some Capabilities: ODBCClient, Speaks41ProtocolNew, Support41Auth, Speaks41ProtocolOld, SupportsCompression, LongColumnFlag, SupportsLoadDataLocal, FoundRows, SupportsTransactions, LongPassword, IgnoreSpaceBeforeParenthesis, ConnectWithDatabase, DontAllowDatabaseTableColumn, SwitchToSSLAfterHandshake, IgnoreSigpipes, InteractiveClient, SupportsMultipleResults, SupportsAuthPlugins, SupportsMultipleStatments
+|   Status: Autocommit
+|   Salt: \x1En1sG4:?zbG=H\x0B~x\x06\x04\x158
+|_  Auth Plugin Name: caching_sha2_password
+| ssl-cert: Subject: commonName=MySQL_Server_8.0.35_Auto_Generated_Server_Certificate
+| Not valid before: 2024-01-20T22:21:41
+|_Not valid after:  2034-01-17T22:21:41
+5432/tcp open  postgresql  PostgreSQL DB 9.6.0 or later
+| ssl-cert: Subject: commonName=ns5007360.ip-51-222-241.net
+| Subject Alternative Name: DNS:ns5007360.ip-51-222-241.net
+| Not valid before: 2024-01-20T22:20:07
+|_Not valid after:  2034-01-17T22:20:07
+|_ssl-date: TLS randomness does not represent time
+8080/tcp open  ssl/http    Golang net/http server
+| ssl-cert: Subject: commonName=*.bisecthosting.com
+| Subject Alternative Name: DNS:*.bisecthosting.com, DNS:bisecthosting.com
+| Not valid before: 2025-09-30T00:00:00
+|_Not valid after:  2026-10-31T23:59:59
+|_http-title: Site doesn't have a title (application/json; charset=utf-8).
+| fingerprint-strings: 
+|   GenericLines, Help, RTSPRequest, SSLSessionReq: 
+|     HTTP/1.1 400 Bad Request
+|     Content-Type: text/plain; charset=utf-8
+|     Connection: close
+|     Request
+|   GetRequest: 
+|     HTTP/1.0 401 Unauthorized
+|     Access-Control-Allow-Credentials: true
+|     Access-Control-Allow-Headers: Accept, Accept-Encoding, Authorization, Cache-Control, Content-Type, Content-Length, Origin, X-Real-IP, X-CSRF-Token
+|     Access-Control-Allow-Methods: GET, POST, PATCH, PUT, DELETE, OPTIONS
+|     Access-Control-Allow-Origin: https://games.bisecthosting.com
+|     Access-Control-Max-Age: 7200
+|     Content-Type: application/json; charset=utf-8
+|     Www-Authenticate: Bearer
+|     X-Request-Id: 729837b0-02aa-4912-a5bd-e5a42fc7dd7e
+|     X-Trace-Id: 4ec353ff-ead6-4354-9867-40f887c611e3
+|     Date: Mon, 11 May 2026 08:56:44 GMT
+|     Content-Length: 77
+|     {"error":"The required authorization heads were not present in the request."}
+|   HTTPOptions: 
+|     HTTP/1.0 204 No Content
+|     Access-Control-Allow-Credentials: true
+|     Access-Control-Allow-Headers: Accept, Accept-Encoding, Authorization, Cache-Control, Content-Type, Content-Length, Origin, X-Real-IP, X-CSRF-Token
+|     Access-Control-Allow-Methods: GET, POST, PATCH, PUT, DELETE, OPTIONS
+|     Access-Control-Allow-Origin: https://games.bisecthosting.com
+|     Access-Control-Max-Age: 7200
+|     X-Request-Id: b797d560-ac43-4e28-98f9-1ff29abdedc7
+|     X-Trace-Id: bf9dc52b-5e1e-45b2-8d78-ff6ffc3846b9
+|_    Date: Mon, 11 May 2026 08:56:45 GMT
+| http-auth: 
+| HTTP/1.1 401 Unauthorized\x0D
+|_  Bearer
+8443/tcp open  ssl/http    Apache httpd 2.4.52
+| ssl-cert: Subject: commonName=*.bisecthosting.com
+| Subject Alternative Name: DNS:*.bisecthosting.com, DNS:bisecthosting.com
+| Not valid before: 2025-09-30T00:00:00
+|_Not valid after:  2026-10-31T23:59:59
+|_http-title: Index of /
+| http-ls: Volume /
+| SIZE  TIME              FILENAME
+| -     2024-01-20 17:20  html/
+| 2.1G  2025-07-27 20:45  server509711.zip
+|_
+|_http-server-header: Apache/2.4.52 (Ubuntu)
+|_ssl-date: TLS randomness does not represent time
+| tls-alpn: 
+|_  http/1.1
+8888/tcp open  http        Apache httpd 2.4.52
+|_http-server-header: Apache/2.4.52 (Ubuntu)
+| http-ls: Volume /
+| SIZE  TIME              FILENAME
+| -     2024-01-20 17:20  html/
+| 2.1G  2025-07-27 20:45  server509711.zip
+|_
+|_http-title: Index of /
+3 services unrecognized despite returning data. If you know the service/version, please submit the following fingerprints at https://nmap.org/cgi-bin/submit.cgi?new-service :
+==============NEXT SERVICE FINGERPRINT (SUBMIT INDIVIDUALLY)==============
+SF-Port80-TCP:V=7.95%I=7%D=5/11%Time=6A0199B5%P=x86_64-pc-linux-gnu%r(GetR
+SF:equest,100,"HTTP/1\.0\x20301\x20Moved\x20Permanently\r\nContent-Type:\x
+SF:20text/html;\x20charset=utf-8\r\nLocation:\x20https://www\.bisecthostin
+SF:g\.com/hosted-by\r\nDate:\x20Mon,\x2011\x20May\x202026\x2008:56:20\x20G
+SF:MT\r\nContent-Length:\x2074\r\n\r\n<a\x20href=\"https://www\.bisecthost
+SF:ing\.com/hosted-by\">Moved\x20Permanently</a>\.\n\n")%r(HTTPOptions,8D,
+SF:"HTTP/1\.0\x20301\x20Moved\x20Permanently\r\nLocation:\x20https://www\.
+SF:bisecthosting\.com/hosted-by\r\nDate:\x20Mon,\x2011\x20May\x202026\x200
+SF:8:56:21\x20GMT\r\nContent-Length:\x200\r\n\r\n")%r(RTSPRequest,67,"HTTP
+SF:/1\.1\x20400\x20Bad\x20Request\r\nContent-Type:\x20text/plain;\x20chars
+SF:et=utf-8\r\nConnection:\x20close\r\n\r\n400\x20Bad\x20Request")%r(FourO
+SF:hFourRequest,100,"HTTP/1\.0\x20301\x20Moved\x20Permanently\r\nContent-T
+SF:ype:\x20text/html;\x20charset=utf-8\r\nLocation:\x20https://www\.bisect
+SF:hosting\.com/hosted-by\r\nDate:\x20Mon,\x2011\x20May\x202026\x2008:56:2
+SF:1\x20GMT\r\nContent-Length:\x2074\r\n\r\n<a\x20href=\"https://www\.bise
+SF:cthosting\.com/hosted-by\">Moved\x20Permanently</a>\.\n\n")%r(GenericLi
+SF:nes,67,"HTTP/1\.1\x20400\x20Bad\x20Request\r\nContent-Type:\x20text/pla
+SF:in;\x20charset=utf-8\r\nConnection:\x20close\r\n\r\n400\x20Bad\x20Reque
+SF:st")%r(Help,67,"HTTP/1\.1\x20400\x20Bad\x20Request\r\nContent-Type:\x20
+SF:text/plain;\x20charset=utf-8\r\nConnection:\x20close\r\n\r\n400\x20Bad\
+SF:x20Request")%r(SSLSessionReq,67,"HTTP/1\.1\x20400\x20Bad\x20Request\r\n
+SF:Content-Type:\x20text/plain;\x20charset=utf-8\r\nConnection:\x20close\r
+SF:\n\r\n400\x20Bad\x20Request")%r(LPDString,67,"HTTP/1\.1\x20400\x20Bad\x
+SF:20Request\r\nContent-Type:\x20text/plain;\x20charset=utf-8\r\nConnectio
+SF:n:\x20close\r\n\r\n400\x20Bad\x20Request")%r(SIPOptions,67,"HTTP/1\.1\x
+SF:20400\x20Bad\x20Request\r\nContent-Type:\x20text/plain;\x20charset=utf-
+SF:8\r\nConnection:\x20close\r\n\r\n400\x20Bad\x20Request")%r(Socks5,67,"H
+SF:TTP/1\.1\x20400\x20Bad\x20Request\r\nContent-Type:\x20text/plain;\x20ch
+SF:arset=utf-8\r\nConnection:\x20close\r\n\r\n400\x20Bad\x20Request")%r(Of
+SF:ficeScan,A3,"HTTP/1\.1\x20400\x20Bad\x20Request:\x20missing\x20required
+SF:\x20Host\x20header\r\nContent-Type:\x20text/plain;\x20charset=utf-8\r\n
+SF:Connection:\x20close\r\n\r\n400\x20Bad\x20Request:\x20missing\x20requir
+SF:ed\x20Host\x20header");
+==============NEXT SERVICE FINGERPRINT (SUBMIT INDIVIDUALLY)==============
+SF-Port443-TCP:V=7.95%T=SSL%I=7%D=5/11%Time=6A0199BB%P=x86_64-pc-linux-gnu
+SF:%r(GetRequest,100,"HTTP/1\.0\x20301\x20Moved\x20Permanently\r\nContent-
+SF:Type:\x20text/html;\x20charset=utf-8\r\nLocation:\x20https://www\.bisec
+SF:thosting\.com/hosted-by\r\nDate:\x20Mon,\x2011\x20May\x202026\x2008:56:
+SF:27\x20GMT\r\nContent-Length:\x2074\r\n\r\n<a\x20href=\"https://www\.bis
+SF:ecthosting\.com/hosted-by\">Moved\x20Permanently</a>\.\n\n")%r(HTTPOpti
+SF:ons,8D,"HTTP/1\.0\x20301\x20Moved\x20Permanently\r\nLocation:\x20https:
+SF://www\.bisecthosting\.com/hosted-by\r\nDate:\x20Mon,\x2011\x20May\x2020
+SF:26\x2008:56:27\x20GMT\r\nContent-Length:\x200\r\n\r\n")%r(FourOhFourReq
+SF:uest,100,"HTTP/1\.0\x20301\x20Moved\x20Permanently\r\nContent-Type:\x20
+SF:text/html;\x20charset=utf-8\r\nLocation:\x20https://www\.bisecthosting\
+SF:.com/hosted-by\r\nDate:\x20Mon,\x2011\x20May\x202026\x2008:56:28\x20GMT
+SF:\r\nContent-Length:\x2074\r\n\r\n<a\x20href=\"https://www\.bisecthostin
+SF:g\.com/hosted-by\">Moved\x20Permanently</a>\.\n\n")%r(GenericLines,67,"
+SF:HTTP/1\.1\x20400\x20Bad\x20Request\r\nContent-Type:\x20text/plain;\x20c
+SF:harset=utf-8\r\nConnection:\x20close\r\n\r\n400\x20Bad\x20Request")%r(R
+SF:TSPRequest,67,"HTTP/1\.1\x20400\x20Bad\x20Request\r\nContent-Type:\x20t
+SF:ext/plain;\x20charset=utf-8\r\nConnection:\x20close\r\n\r\n400\x20Bad\x
+SF:20Request")%r(Help,67,"HTTP/1\.1\x20400\x20Bad\x20Request\r\nContent-Ty
+SF:pe:\x20text/plain;\x20charset=utf-8\r\nConnection:\x20close\r\n\r\n400\
+SF:x20Bad\x20Request")%r(SSLSessionReq,67,"HTTP/1\.1\x20400\x20Bad\x20Requ
+SF:est\r\nContent-Type:\x20text/plain;\x20charset=utf-8\r\nConnection:\x20
+SF:close\r\n\r\n400\x20Bad\x20Request")%r(LPDString,67,"HTTP/1\.1\x20400\x
+SF:20Bad\x20Request\r\nContent-Type:\x20text/plain;\x20charset=utf-8\r\nCo
+SF:nnection:\x20close\r\n\r\n400\x20Bad\x20Request")%r(SIPOptions,67,"HTTP
+SF:/1\.1\x20400\x20Bad\x20Request\r\nContent-Type:\x20text/plain;\x20chars
+SF:et=utf-8\r\nConnection:\x20close\r\n\r\n400\x20Bad\x20Request")%r(Socks
+SF:5,67,"HTTP/1\.1\x20400\x20Bad\x20Request\r\nContent-Type:\x20text/plain
+SF:;\x20charset=utf-8\r\nConnection:\x20close\r\n\r\n400\x20Bad\x20Request
+SF:")%r(OfficeScan,A3,"HTTP/1\.1\x20400\x20Bad\x20Request:\x20missing\x20r
+SF:equired\x20Host\x20header\r\nContent-Type:\x20text/plain;\x20charset=ut
+SF:f-8\r\nConnection:\x20close\r\n\r\n400\x20Bad\x20Request:\x20missing\x2
+SF:0required\x20Host\x20header");
+==============NEXT SERVICE FINGERPRINT (SUBMIT INDIVIDUALLY)==============
+SF-Port8080-TCP:V=7.95%T=SSL%I=7%D=5/11%Time=6A0199CC%P=x86_64-pc-linux-gn
+SF:u%r(GenericLines,67,"HTTP/1\.1\x20400\x20Bad\x20Request\r\nContent-Type
+SF::\x20text/plain;\x20charset=utf-8\r\nConnection:\x20close\r\n\r\n400\x2
+SF:0Bad\x20Request")%r(GetRequest,2B0,"HTTP/1\.0\x20401\x20Unauthorized\r\
+SF:nAccess-Control-Allow-Credentials:\x20true\r\nAccess-Control-Allow-Head
+SF:ers:\x20Accept,\x20Accept-Encoding,\x20Authorization,\x20Cache-Control,
+SF:\x20Content-Type,\x20Content-Length,\x20Origin,\x20X-Real-IP,\x20X-CSRF
+SF:-Token\r\nAccess-Control-Allow-Methods:\x20GET,\x20POST,\x20PATCH,\x20P
+SF:UT,\x20DELETE,\x20OPTIONS\r\nAccess-Control-Allow-Origin:\x20https://ga
+SF:mes\.bisecthosting\.com\r\nAccess-Control-Max-Age:\x207200\r\nContent-T
+SF:ype:\x20application/json;\x20charset=utf-8\r\nWww-Authenticate:\x20Bear
+SF:er\r\nX-Request-Id:\x20729837b0-02aa-4912-a5bd-e5a42fc7dd7e\r\nX-Trace-
+SF:Id:\x204ec353ff-ead6-4354-9867-40f887c611e3\r\nDate:\x20Mon,\x2011\x20M
+SF:ay\x202026\x2008:56:44\x20GMT\r\nContent-Length:\x2077\r\n\r\n{\"error\
+SF:":\"The\x20required\x20authorization\x20heads\x20were\x20not\x20present
+SF:\x20in\x20the\x20request\.\"}")%r(HTTPOptions,204,"HTTP/1\.0\x20204\x20
+SF:No\x20Content\r\nAccess-Control-Allow-Credentials:\x20true\r\nAccess-Co
+SF:ntrol-Allow-Headers:\x20Accept,\x20Accept-Encoding,\x20Authorization,\x
+SF:20Cache-Control,\x20Content-Type,\x20Content-Length,\x20Origin,\x20X-Re
+SF:al-IP,\x20X-CSRF-Token\r\nAccess-Control-Allow-Methods:\x20GET,\x20POST
+SF:,\x20PATCH,\x20PUT,\x20DELETE,\x20OPTIONS\r\nAccess-Control-Allow-Origi
+SF:n:\x20https://games\.bisecthosting\.com\r\nAccess-Control-Max-Age:\x207
+SF:200\r\nX-Request-Id:\x20b797d560-ac43-4e28-98f9-1ff29abdedc7\r\nX-Trace
+SF:-Id:\x20bf9dc52b-5e1e-45b2-8d78-ff6ffc3846b9\r\nDate:\x20Mon,\x2011\x20
+SF:May\x202026\x2008:56:45\x20GMT\r\n\r\n")%r(RTSPRequest,67,"HTTP/1\.1\x2
+SF:0400\x20Bad\x20Request\r\nContent-Type:\x20text/plain;\x20charset=utf-8
+SF:\r\nConnection:\x20close\r\n\r\n400\x20Bad\x20Request")%r(Help,67,"HTTP
+SF:/1\.1\x20400\x20Bad\x20Request\r\nContent-Type:\x20text/plain;\x20chars
+SF:et=utf-8\r\nConnection:\x20close\r\n\r\n400\x20Bad\x20Request")%r(SSLSe
+SF:ssionReq,67,"HTTP/1\.1\x20400\x20Bad\x20Request\r\nContent-Type:\x20tex
+SF:t/plain;\x20charset=utf-8\r\nConnection:\x20close\r\n\r\n400\x20Bad\x20
+SF:Request");
+Service Info: Host: ns5007360.ip-51-222-241.net
+
+Nmap scan report for ip33.ip-167-114-21.net (167.114.21.33)
+Host is up (0.14s latency).
+Not shown: 76 filtered tcp ports (no-response)
+PORT      STATE  SERVICE    VERSION
+21/tcp    closed ftp
+22/tcp    closed ssh
+25/tcp    open   smtp       Exim smtpd 4.99.2
+|_ssl-date: TLS randomness does not represent time
+| smtp-commands: odedi230440.mywhc.ca Hello ip33.ip-167-114-21.net [82.208.126.177], SIZE 78643200, LIMITS MAILMAX=1000 RCPTMAX=50000, 8BITMIME, PIPELINING, PIPECONNECT, STARTTLS, HELP
+|_ Commands supported: AUTH STARTTLS HELO EHLO MAIL RCPT DATA BDAT NOOP QUIT RSET HELP
+| ssl-cert: Subject: commonName=mail.odedi230440.mywhc.ca
+| Subject Alternative Name: DNS:mail.odedi230440.mywhc.ca, DNS:odedi230440.mywhc.ca, DNS:www.odedi230440.mywhc.ca
+| Not valid before: 2026-05-04T04:26:14
+|_Not valid after:  2026-08-02T04:26:13
+26/tcp    open   smtp       Exim smtpd 4.99.2
+| ssl-cert: Subject: commonName=mail.odedi230440.mywhc.ca
+| Subject Alternative Name: DNS:mail.odedi230440.mywhc.ca, DNS:odedi230440.mywhc.ca, DNS:www.odedi230440.mywhc.ca
+| Not valid before: 2026-05-04T04:26:14
+|_Not valid after:  2026-08-02T04:26:13
+| smtp-commands: odedi230440.mywhc.ca Hello ip33.ip-167-114-21.net [82.208.126.177], SIZE 78643200, LIMITS MAILMAX=1000 RCPTMAX=50000, 8BITMIME, PIPELINING, PIPECONNECT, STARTTLS, HELP
+|_ Commands supported: AUTH STARTTLS HELO EHLO MAIL RCPT DATA BDAT NOOP QUIT RSET HELP
+|_smtp-ntlm-info: ERROR: Script execution failed (use -d to debug)
+|_ssl-date: TLS randomness does not represent time
+53/tcp    open   domain     ISC BIND 9.16.23 (RedHat Linux)
+| dns-nsid: 
+|_  bind.version: 9.16.23-RH
+80/tcp    open   http       Apache httpd
+|_http-title: Did not follow redirect to https://ip33.ip-167-114-21.net/
+|_http-server-header: Apache
+110/tcp   open   pop3       Dovecot pop3d
+|_pop3-capabilities: STLS RESP-CODES USER CAPA TOP AUTH-RESP-CODE SASL(PLAIN LOGIN) UIDL PIPELINING
+| ssl-cert: Subject: commonName=mail.odedi230440.mywhc.ca
+| Subject Alternative Name: DNS:mail.odedi230440.mywhc.ca, DNS:odedi230440.mywhc.ca, DNS:www.odedi230440.mywhc.ca
+| Not valid before: 2026-05-04T04:26:14
+|_Not valid after:  2026-08-02T04:26:13
+|_ssl-date: TLS randomness does not represent time
+111/tcp   open   rpcbind    2-4 (RPC #100000)
+| rpcinfo: 
+|   program version    port/proto  service
+|   100000  2,3,4        111/tcp   rpcbind
+|   100000  2,3,4        111/udp   rpcbind
+|   100000  3,4          111/tcp6  rpcbind
+|_  100000  3,4          111/udp6  rpcbind
+143/tcp   open   imap       Dovecot imapd
+|_imap-capabilities: AUTH=PLAIN OK IMAP4rev1 ID AUTH=LOGINA0001 listed have Pre-login IDLE more post-login ENABLE LOGIN-REFERRALS SASL-IR capabilities LITERAL+ STARTTLS
+| ssl-cert: Subject: commonName=mail.odedi230440.mywhc.ca
+| Subject Alternative Name: DNS:mail.odedi230440.mywhc.ca, DNS:odedi230440.mywhc.ca, DNS:www.odedi230440.mywhc.ca
+| Not valid before: 2026-05-04T04:26:14
+|_Not valid after:  2026-08-02T04:26:13
+|_ssl-date: TLS randomness does not represent time
+443/tcp   open   ssl/http   Apache httpd (PHP 8.3.30)
+|_http-title: Site doesn't have a title (text/html; charset=UTF-8).
+|_http-server-header: Apache
+| ssl-cert: Subject: commonName=*.y2cp.com
+| Subject Alternative Name: DNS:*.y2cp.com, DNS:www.classic.y2cp.com, DNS:www.clients.y2cp.com, DNS:www.next.y2cp.com, DNS:www.virtuel.y2cp.com
+| Not valid before: 2026-03-12T20:20:03
+|_Not valid after:  2026-06-10T20:20:02
+| http-robots.txt: 1 disallowed entry 
+|_/
+465/tcp   open   ssl/smtp   Exim smtpd 4.99.2
+| smtp-commands: odedi230440.mywhc.ca Hello ip33.ip-167-114-21.net [82.208.126.177], SIZE 78643200, LIMITS MAILMAX=1000 RCPTMAX=50000, 8BITMIME, PIPELINING, PIPECONNECT, AUTH PLAIN LOGIN, HELP
+|_ Commands supported: AUTH HELO EHLO MAIL RCPT DATA BDAT NOOP QUIT RSET HELP
+|_ssl-date: TLS randomness does not represent time
+587/tcp   open   smtp       Exim smtpd 4.99.2
+|_smtp-ntlm-info: ERROR: Script execution failed (use -d to debug)
+| smtp-commands: odedi230440.mywhc.ca Hello ip33.ip-167-114-21.net [82.208.126.177], SIZE 78643200, LIMITS MAILMAX=1000 RCPTMAX=50000, 8BITMIME, PIPELINING, PIPECONNECT, STARTTLS, HELP
+|_ Commands supported: AUTH STARTTLS HELO EHLO MAIL RCPT DATA BDAT NOOP QUIT RSET HELP
+|_ssl-date: TLS randomness does not represent time
+993/tcp   open   ssl/imap   Dovecot imapd
+|_ssl-date: TLS randomness does not represent time
+| ssl-cert: Subject: commonName=mail.odedi230440.mywhc.ca
+| Subject Alternative Name: DNS:mail.odedi230440.mywhc.ca, DNS:odedi230440.mywhc.ca, DNS:www.odedi230440.mywhc.ca
+| Not valid before: 2026-05-04T04:26:14
+|_Not valid after:  2026-08-02T04:26:13
+|_imap-capabilities: AUTH=PLAIN OK IMAP4rev1 more Pre-login LITERAL+ IDLE have AUTH=LOGINA0001 post-login capabilities listed SASL-IR ID LOGIN-REFERRALS ENABLE
+995/tcp   open   ssl/pop3   Dovecot pop3d
+|_pop3-capabilities: SASL(PLAIN LOGIN) TOP RESP-CODES USER AUTH-RESP-CODE UIDL CAPA PIPELINING
+|_ssl-date: TLS randomness does not represent time
+| ssl-cert: Subject: commonName=mail.odedi230440.mywhc.ca
+| Subject Alternative Name: DNS:mail.odedi230440.mywhc.ca, DNS:odedi230440.mywhc.ca, DNS:www.odedi230440.mywhc.ca
+| Not valid before: 2026-05-04T04:26:14
+|_Not valid after:  2026-08-02T04:26:13
+2049/tcp  closed nfs
+3306/tcp  open   mysql      MariaDB 10.3.23 or earlier (unauthorized)
+5666/tcp  closed nrpe
+8080/tcp  closed http-proxy
+49152/tcp closed unknown
+49153/tcp closed unknown
+49154/tcp closed unknown
+49155/tcp closed unknown
+49156/tcp closed unknown
+49157/tcp closed unknown
+Service Info: Host: odedi230440.mywhc.ca; OS: Linux; CPE: cpe:/o:linux:linux_kernel
+
+Nmap scan report for ip35.ip-167-114-21.net (167.114.21.35)
+Host is up (0.14s latency).
+Not shown: 99 filtered tcp ports (no-response)
+PORT     STATE SERVICE       VERSION
+3389/tcp open  ms-wbt-server Microsoft Terminal Services
+| ssl-cert: Subject: commonName=WIN-P559QPNAS85
+| Not valid before: 2026-04-11T22:00:19
+|_Not valid after:  2026-10-11T22:00:19
+|_ssl-date: 2026-05-11T09:15:10+00:00; 0s from scanner time.
+| rdp-ntlm-info: 
+|   Target_Name: WIN-P559QPNAS85
+|   NetBIOS_Domain_Name: WIN-P559QPNAS85
+|   NetBIOS_Computer_Name: WIN-P559QPNAS85
+|   DNS_Domain_Name: WIN-P559QPNAS85
+|   DNS_Computer_Name: WIN-P559QPNAS85
+|   Product_Version: 10.0.17763
+|_  System_Time: 2026-05-11T09:02:52+00:00
+Service Info: OS: Windows; CPE: cpe:/o:microsoft:windows
+
+Nmap scan report for ip39.ip-167-114-21.net (167.114.21.39)
+Host is up (0.14s latency).
+Not shown: 98 closed tcp ports (reset)
+PORT     STATE SERVICE    VERSION
+22/tcp   open  ssh        OpenSSH 9.0p1 Ubuntu 1ubuntu8.7 (Ubuntu Linux; protocol 2.0)
+| ssh-hostkey: 
+|   256 cb:eb:32:42:6f:07:91:37:84:94:f0:74:f3:0d:5f:65 (ECDSA)
+|_  256 6b:c1:9b:7d:4c:ea:4d:61:b8:a2:49:f3:bc:90:4c:b5 (ED25519)
+9100/tcp open  jetdirect?
+Service Info: OS: Linux; CPE: cpe:/o:linux:linux_kernel
+
+Nmap scan report for ip38.ip-167-114-21.net (167.114.21.38)
+Host is up (0.14s latency).
+Not shown: 95 filtered tcp ports (no-response)
+PORT    STATE SERVICE        VERSION
+22/tcp  open  ssh            OpenSSH 10.0 (protocol 2.0)
+25/tcp  open  smtp           Postfix smtpd
+|_smtp-commands: localhost, PIPELINING, SIZE 10485760, VRFY, ETRN, AUTH PLAIN LOGIN, AUTH=PLAIN LOGIN, ENHANCEDSTATUSCODES, 8BITMIME, DSN
+80/tcp  open  http-proxy     HAProxy http proxy 2.0.0 or later
+|_http-title: Site doesn't have a title (text/html).
+|_http-server-header: Apache
+443/tcp open  ssl/http-proxy HAProxy http proxy 2.0.0 or later
+| ssl-cert: Subject: commonName=167.114.21.38
+| Subject Alternative Name: DNS:167.114.21.38
+| Not valid before: 2021-04-18T06:41:06
+|_Not valid after:  2022-04-18T06:41:06
+|_http-title: Site doesn't have a title (text/html).
+|_http-server-header: Apache
+|_ssl-date: TLS randomness does not represent time
+587/tcp open  smtp           Postfix smtpd
+|_smtp-commands: localhost, PIPELINING, SIZE 10485760, VRFY, ETRN, AUTH PLAIN LOGIN, AUTH=PLAIN LOGIN, ENHANCEDSTATUSCODES
+Service Info: Host:  localhost; Device: load balancer
+
+Nmap scan report for ip53.ip-167-114-21.net (167.114.21.53)
+Host is up (0.14s latency).
+Not shown: 96 filtered tcp ports (no-response)
+PORT    STATE SERVICE       VERSION
+80/tcp  open  http          Microsoft IIS httpd 10.0
+| http-methods: 
+|_  Potentially risky methods: TRACE
+|_http-title: 403 - Forbidden: Access is denied.
+|_http-server-header: Microsoft-IIS/10.0
+135/tcp open  msrpc         Microsoft Windows RPC
+443/tcp open  https?
+445/tcp open  microsoft-ds?
+Service Info: OS: Windows; CPE: cpe:/o:microsoft:windows
+
+Host script results:
+| smb2-time: 
+|   date: 2026-05-11T09:02:06
+|_  start_date: N/A
+| smb2-security-mode: 
+|   3:1:1: 
+|_    Message signing enabled but not required
+
+Nmap scan report for mail4069.hospedameusite.net (167.114.21.105)
+Host is up (0.14s latency).
+Not shown: 79 filtered tcp ports (no-response)
+PORT      STATE  SERVICE    VERSION
+21/tcp    open   ftp        Pure-FTPd
+22/tcp    open   ssh        OpenSSH 7.4 (protocol 2.0)
+25/tcp    open   smtp       Exim smtpd 4.99.2
+| smtp-commands: host4069.hospedameusite.net Hello mail4069.hospedameusite.net [82.208.126.177], SIZE 52428800, LIMITS MAILMAX=1000 RCPTMAX=50000, 8BITMIME, PIPELINING, PIPECONNECT, AUTH PLAIN LOGIN, STARTTLS, HELP
+|_ Commands supported: AUTH STARTTLS HELO EHLO MAIL RCPT DATA BDAT NOOP QUIT RSET HELP
+53/tcp    open   domain     ISC BIND 9.11.4-P2 (RedHat Enterprise Linux 7)
+80/tcp    open   http
+| fingerprint-strings: 
+|   FourOhFourRequest: 
+|     HTTP/1.0 404 Not Found
+|     Connection: close
+|     content-type: text/html
+|     date: Mon, 11 May 2026 08:56:34 GMT
+|     <!DOCTYPE html>
+|     <html>
+|     <head>
+|     <meta http-equiv="Content-type" content="text/html; charset=utf-8">
+|     <meta http-equiv="Cache-control" content="no-cache">
+|     <meta http-equiv="Pragma" content="no-cache">
+|     <meta http-equiv="Expires" content="0">
+|     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+|     <title>404 Not Found</title>
+|     <style type="text/css">
+|     body {
+|     font-family: Arial, Helvetica, sans-serif;
+|     font-size: 14px;
+|     line-height: 1.428571429;
+|     background-color: #ffffff;
+|     color: #2F3230;
+|     padding: 0;
+|     margin: 0;
+|     section, footer {
+|     display: block;
+|     padding: 0;
+|     margin: 0;
+|     .container {
+|   GetRequest: 
+|     HTTP/1.0 200 OK
+|     Connection: close
+|     content-type: text/html
+|     last-modified: Wed, 17 Jun 2020 20:01:33 GMT
+|     accept-ranges: bytes
+|     content-length: 163
+|     date: Mon, 11 May 2026 08:56:28 GMT
+|     <html><head><META HTTP-EQUIV="Cache-control" CONTENT="no-cache"><META HTTP-EQUIV="refresh" CONTENT="0;URL=/cgi-sys/defaultwebpage.cgi"></head><body></body></html>
+|   HTTPOptions: 
+|     HTTP/1.0 200 OK
+|     Connection: close
+|     allow: OPTIONS,HEAD,GET,POST
+|     content-length: 0
+|     date: Mon, 11 May 2026 08:56:28 GMT
+|   RTSPRequest: 
+|     HTTP/1.1 400 Bad Request
+|     Connection: close
+|     cache-control: private, no-cache, no-store, must-revalidate, max-age=0
+|     pragma: no-cache
+|     content-type: text/html
+|     content-length: 769
+|     date: Mon, 11 May 2026 08:56:29 GMT
+|     <!DOCTYPE html>
+|     <html style="height:100%">
+|     <head>
+|     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+|     <title> 400 Bad Request
+|     </title><style>@media (prefers-color-scheme:dark){body{background-color:#000!important}}</style></head>
+|     <body style="color: #444; margin:0;font: normal 14px/20px Arial, Helvetica, sans-serif; height:100%; background-color: #fff;">
+|     <div style="height:auto; min-height:100%; "> <div style="text-align: center; width:800px; margin-left: -400px; position:absolute; top: 30%; left:50%;">
+|     style="margin:0; font-size:150px; line-height:150px; font-weight:bold;">400</h1>
+|_    style="margin-top:20px;font-size
+110/tcp   open   pop3       Dovecot pop3d
+143/tcp   open   imap       Dovecot imapd
+| ssl-cert: Subject: commonName=host4069.hospedameusite.net
+| Subject Alternative Name: DNS:host4069.hospedameusite.net
+| Not valid before: 2026-04-09T12:04:51
+|_Not valid after:  2026-07-08T12:04:50
+|_imap-capabilities: AUTH=PLAIN OK IMAP4rev1 LITERAL+ AUTH=LOGINA0001 listed capabilities Pre-login IDLE more have post-login NAMESPACE LOGIN-REFERRALS SASL-IR ID ENABLE STARTTLS
+443/tcp   open   ssl/https
+|_http-title: Did not follow redirect to https://mail4069.hospedameusite.net/
+| fingerprint-strings: 
+|   FourOhFourRequest: 
+|     HTTP/1.0 404 Not Found
+|     Connection: close
+|     content-type: text/html
+|     date: Mon, 11 May 2026 08:56:36 GMT
+|     <!DOCTYPE html>
+|     <html>
+|     <head>
+|     <meta http-equiv="Content-type" content="text/html; charset=utf-8">
+|     <meta http-equiv="Cache-control" content="no-cache">
+|     <meta http-equiv="Pragma" content="no-cache">
+|     <meta http-equiv="Expires" content="0">
+|     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+|     <title>404 Not Found</title>
+|     <style type="text/css">
+|     body {
+|     font-family: Arial, Helvetica, sans-serif;
+|     font-size: 14px;
+|     line-height: 1.428571429;
+|     background-color: #ffffff;
+|     color: #2F3230;
+|     padding: 0;
+|     margin: 0;
+|     section, footer {
+|     display: block;
+|     padding: 0;
+|     margin: 0;
+|     .container {
+|   GetRequest: 
+|     HTTP/1.0 200 OK
+|     Connection: close
+|     content-type: text/html
+|     last-modified: Wed, 17 Jun 2020 20:01:33 GMT
+|     accept-ranges: bytes
+|     content-length: 163
+|     date: Mon, 11 May 2026 08:56:35 GMT
+|     <html><head><META HTTP-EQUIV="Cache-control" CONTENT="no-cache"><META HTTP-EQUIV="refresh" CONTENT="0;URL=/cgi-sys/defaultwebpage.cgi"></head><body></body></html>
+|   HTTPOptions: 
+|     HTTP/1.0 200 OK
+|     Connection: close
+|     allow: OPTIONS,HEAD,GET,POST
+|     content-length: 0
+|_    date: Mon, 11 May 2026 08:56:36 GMT
+465/tcp   open   ssl/smtp   Exim smtpd 4.99.2
+| smtp-commands: host4069.hospedameusite.net Hello mail4069.hospedameusite.net [82.208.126.177], SIZE 52428800, LIMITS MAILMAX=1000 RCPTMAX=50000, 8BITMIME, PIPELINING, PIPECONNECT, AUTH PLAIN LOGIN, HELP
+|_ Commands supported: AUTH HELO EHLO MAIL RCPT DATA BDAT NOOP QUIT RSET HELP
+587/tcp   open   smtp       Exim smtpd 4.99.2
+|_smtp-commands: Couldn't establish connection on port 587
+|_smtp-ntlm-info: ERROR: Script execution failed (use -d to debug)
+993/tcp   open   imaps?
+| ssl-cert: Subject: commonName=host4069.hospedameusite.net
+| Subject Alternative Name: DNS:host4069.hospedameusite.net
+| Not valid before: 2026-04-09T12:04:51
+|_Not valid after:  2026-07-08T12:04:50
+|_imap-capabilities: AUTH=PLAIN OK IMAP4rev1 LITERAL+ AUTH=LOGINA0001 listed have Pre-login IDLE more ID NAMESPACE LOGIN-REFERRALS SASL-IR ENABLE capabilities post-login
+995/tcp   open   pop3s?
+| ssl-cert: Subject: commonName=host4069.hospedameusite.net
+| Subject Alternative Name: DNS:host4069.hospedameusite.net
+| Not valid before: 2026-04-09T12:04:51
+|_Not valid after:  2026-07-08T12:04:50
+2121/tcp  open   ftp        Pure-FTPd
+| ssl-cert: Subject: commonName=host4069.hospedameusite.net
+| Subject Alternative Name: DNS:host4069.hospedameusite.net
+| Not valid before: 2026-04-09T12:04:51
+|_Not valid after:  2026-07-08T12:04:50
+3306/tcp  open   mysql      MySQL 5.7.44-cll-lve
+| ssl-cert: Subject: commonName=MySQL_Server_5.7.31_Auto_Generated_Server_Certificate
+| Not valid before: 2020-07-15T22:16:06
+|_Not valid after:  2030-07-13T22:16:06
+5666/tcp  open   tcpwrapped
+49152/tcp closed unknown
+49153/tcp closed unknown
+49154/tcp closed unknown
+49155/tcp closed unknown
+49156/tcp closed unknown
+49157/tcp closed unknown
+2 services unrecognized despite returning data. If you know the service/version, please submit the following fingerprints at https://nmap.org/cgi-bin/submit.cgi?new-service :
+==============NEXT SERVICE FINGERPRINT (SUBMIT INDIVIDUALLY)==============
+SF-Port80-TCP:V=7.95%I=7%D=5/11%Time=6A0199BC%P=x86_64-pc-linux-gnu%r(GetR
+SF:equest,160,"HTTP/1\.0\x20200\x20OK\r\nConnection:\x20close\r\ncontent-t
+SF:ype:\x20text/html\r\nlast-modified:\x20Wed,\x2017\x20Jun\x202020\x2020:
+SF:01:33\x20GMT\r\naccept-ranges:\x20bytes\r\ncontent-length:\x20163\r\nda
+SF:te:\x20Mon,\x2011\x20May\x202026\x2008:56:28\x20GMT\r\n\r\n<html><head>
+SF:<META\x20HTTP-EQUIV=\"Cache-control\"\x20CONTENT=\"no-cache\"><META\x20
+SF:HTTP-EQUIV=\"refresh\"\x20CONTENT=\"0;URL=/cgi-sys/defaultwebpage\.cgi\
+SF:"></head><body></body></html>\n")%r(HTTPOptions,7C,"HTTP/1\.0\x20200\x2
+SF:0OK\r\nConnection:\x20close\r\nallow:\x20OPTIONS,HEAD,GET,POST\r\nconte
+SF:nt-length:\x200\r\ndate:\x20Mon,\x2011\x20May\x202026\x2008:56:28\x20GM
+SF:T\r\n\r\n")%r(RTSPRequest,3DD,"HTTP/1\.1\x20400\x20Bad\x20Request\r\nCo
+SF:nnection:\x20close\r\ncache-control:\x20private,\x20no-cache,\x20no-sto
+SF:re,\x20must-revalidate,\x20max-age=0\r\npragma:\x20no-cache\r\ncontent-
+SF:type:\x20text/html\r\ncontent-length:\x20769\r\ndate:\x20Mon,\x2011\x20
+SF:May\x202026\x2008:56:29\x20GMT\r\n\r\n<!DOCTYPE\x20html>\n<html\x20styl
+SF:e=\"height:100%\">\n<head>\n<meta\x20name=\"viewport\"\x20content=\"wid
+SF:th=device-width,\x20initial-scale=1,\x20shrink-to-fit=no\"\x20/>\n<titl
+SF:e>\x20400\x20Bad\x20Request\r\n</title><style>@media\x20\(prefers-color
+SF:-scheme:dark\){body{background-color:#000!important}}</style></head>\n<
+SF:body\x20style=\"color:\x20#444;\x20margin:0;font:\x20normal\x2014px/20p
+SF:x\x20Arial,\x20Helvetica,\x20sans-serif;\x20height:100%;\x20background-
+SF:color:\x20#fff;\">\n<div\x20style=\"height:auto;\x20min-height:100%;\x2
+SF:0\">\x20\x20\x20\x20\x20<div\x20style=\"text-align:\x20center;\x20width
+SF::800px;\x20margin-left:\x20-400px;\x20position:absolute;\x20top:\x2030%
+SF:;\x20left:50%;\">\n\x20\x20\x20\x20\x20\x20\x20\x20<h1\x20style=\"margi
+SF:n:0;\x20font-size:150px;\x20line-height:150px;\x20font-weight:bold;\">4
+SF:00</h1>\n<h2\x20style=\"margin-top:20px;font-size")%r(FourOhFourRequest
+SF:,1650,"HTTP/1\.0\x20404\x20Not\x20Found\r\nConnection:\x20close\r\ncont
+SF:ent-type:\x20text/html\r\ndate:\x20Mon,\x2011\x20May\x202026\x2008:56:3
+SF:4\x20GMT\r\n\r\n\n\n\n<!DOCTYPE\x20html>\n<html>\n\x20\x20\x20\x20<head
+SF:>\n\x20\x20\x20\x20<meta\x20http-equiv=\"Content-type\"\x20content=\"te
+SF:xt/html;\x20charset=utf-8\">\n\x20\x20\x20\x20<meta\x20http-equiv=\"Cac
+SF:he-control\"\x20content=\"no-cache\">\n\x20\x20\x20\x20<meta\x20http-eq
+SF:uiv=\"Pragma\"\x20content=\"no-cache\">\n\x20\x20\x20\x20<meta\x20http-
+SF:equiv=\"Expires\"\x20content=\"0\">\n\x20\x20\x20\x20<meta\x20name=\"vi
+SF:ewport\"\x20content=\"width=device-width,\x20initial-scale=1\.0\">\n\x2
+SF:0\x20\x20\x20<title>404\x20Not\x20Found</title>\n\x20\x20\x20\x20<style
+SF:\x20type=\"text/css\">\n\x20\x20\x20\x20\x20\x20\x20\x20body\x20{\n\x20
+SF:\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20font-family:\x20Arial,\x20H
+SF:elvetica,\x20sans-serif;\n\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\
+SF:x20font-size:\x2014px;\n\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x2
+SF:0line-height:\x201\.428571429;\n\x20\x20\x20\x20\x20\x20\x20\x20\x20\x2
+SF:0\x20\x20background-color:\x20#ffffff;\n\x20\x20\x20\x20\x20\x20\x20\x2
+SF:0\x20\x20\x20\x20color:\x20#2F3230;\n\x20\x20\x20\x20\x20\x20\x20\x20\x
+SF:20\x20\x20\x20padding:\x200;\n\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\
+SF:x20\x20margin:\x200;\n\x20\x20\x20\x20\x20\x20\x20\x20}\n\x20\x20\x20\x
+SF:20\x20\x20\x20\x20section,\x20footer\x20{\n\x20\x20\x20\x20\x20\x20\x20
+SF:\x20\x20\x20\x20\x20display:\x20block;\n\x20\x20\x20\x20\x20\x20\x20\x2
+SF:0\x20\x20\x20\x20padding:\x200;\n\x20\x20\x20\x20\x20\x20\x20\x20\x20\x
+SF:20\x20\x20margin:\x200;\n\x20\x20\x20\x20\x20\x20\x20\x20}\n\x20\x20\x2
+SF:0\x20\x20\x20\x20\x20\.container\x20{\n\x20\x20\x20\x20");
+==============NEXT SERVICE FINGERPRINT (SUBMIT INDIVIDUALLY)==============
+SF-Port443-TCP:V=7.95%T=SSL%I=7%D=5/11%Time=6A0199C3%P=x86_64-pc-linux-gnu
+SF:%r(GetRequest,160,"HTTP/1\.0\x20200\x20OK\r\nConnection:\x20close\r\nco
+SF:ntent-type:\x20text/html\r\nlast-modified:\x20Wed,\x2017\x20Jun\x202020
+SF:\x2020:01:33\x20GMT\r\naccept-ranges:\x20bytes\r\ncontent-length:\x2016
+SF:3\r\ndate:\x20Mon,\x2011\x20May\x202026\x2008:56:35\x20GMT\r\n\r\n<html
+SF:><head><META\x20HTTP-EQUIV=\"Cache-control\"\x20CONTENT=\"no-cache\"><M
+SF:ETA\x20HTTP-EQUIV=\"refresh\"\x20CONTENT=\"0;URL=/cgi-sys/defaultwebpag
+SF:e\.cgi\"></head><body></body></html>\n")%r(HTTPOptions,7C,"HTTP/1\.0\x2
+SF:0200\x20OK\r\nConnection:\x20close\r\nallow:\x20OPTIONS,HEAD,GET,POST\r
+SF:\ncontent-length:\x200\r\ndate:\x20Mon,\x2011\x20May\x202026\x2008:56:3
+SF:6\x20GMT\r\n\r\n")%r(FourOhFourRequest,27B3,"HTTP/1\.0\x20404\x20Not\x2
+SF:0Found\r\nConnection:\x20close\r\ncontent-type:\x20text/html\r\ndate:\x
+SF:20Mon,\x2011\x20May\x202026\x2008:56:36\x20GMT\r\n\r\n\n\n\n<!DOCTYPE\x
+SF:20html>\n<html>\n\x20\x20\x20\x20<head>\n\x20\x20\x20\x20<meta\x20http-
+SF:equiv=\"Content-type\"\x20content=\"text/html;\x20charset=utf-8\">\n\x2
+SF:0\x20\x20\x20<meta\x20http-equiv=\"Cache-control\"\x20content=\"no-cach
+SF:e\">\n\x20\x20\x20\x20<meta\x20http-equiv=\"Pragma\"\x20content=\"no-ca
+SF:che\">\n\x20\x20\x20\x20<meta\x20http-equiv=\"Expires\"\x20content=\"0\
+SF:">\n\x20\x20\x20\x20<meta\x20name=\"viewport\"\x20content=\"width=devic
+SF:e-width,\x20initial-scale=1\.0\">\n\x20\x20\x20\x20<title>404\x20Not\x2
+SF:0Found</title>\n\x20\x20\x20\x20<style\x20type=\"text/css\">\n\x20\x20\
+SF:x20\x20\x20\x20\x20\x20body\x20{\n\x20\x20\x20\x20\x20\x20\x20\x20\x20\
+SF:x20\x20\x20font-family:\x20Arial,\x20Helvetica,\x20sans-serif;\n\x20\x2
+SF:0\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20font-size:\x2014px;\n\x20\x20\
+SF:x20\x20\x20\x20\x20\x20\x20\x20\x20\x20line-height:\x201\.428571429;\n\
+SF:x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20background-color:\x20#ff
+SF:ffff;\n\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20color:\x20#2F323
+SF:0;\n\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20padding:\x200;\n\x2
+SF:0\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20margin:\x200;\n\x20\x20\x2
+SF:0\x20\x20\x20\x20\x20}\n\x20\x20\x20\x20\x20\x20\x20\x20section,\x20foo
+SF:ter\x20{\n\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20display:\x20b
+SF:lock;\n\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20padding:\x200;\n
+SF:\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20margin:\x200;\n\x20\x20
+SF:\x20\x20\x20\x20\x20\x20}\n\x20\x20\x20\x20\x20\x20\x20\x20\.container\
+SF:x20{\n\x20\x20\x20\x20");
+Service Info: Host: host4069.hospedameusite.net; OS: Linux; CPE: cpe:/o:redhat:enterprise_linux:7
+
+Nmap scan report for odesafiofinal.hospedameusite.com.br (167.114.21.104)
+Host is up (0.14s latency).
+Not shown: 79 filtered tcp ports (no-response)
+PORT      STATE  SERVICE    VERSION
+21/tcp    open   ftp        Pure-FTPd
+22/tcp    open   ssh        OpenSSH 7.4 (protocol 2.0)
+25/tcp    open   smtp       Exim smtpd 4.99.2
+| smtp-commands: host4069.hospedameusite.net Hello odesafiofinal.hospedameusite.com.br [82.208.126.177], SIZE 52428800, LIMITS MAILMAX=1000 RCPTMAX=50000, 8BITMIME, PIPELINING, PIPECONNECT, AUTH PLAIN LOGIN, STARTTLS, HELP
+|_ Commands supported: AUTH STARTTLS HELO EHLO MAIL RCPT DATA BDAT NOOP QUIT RSET HELP
+53/tcp    open   domain     ISC BIND 9.11.4-P2 (RedHat Enterprise Linux 7)
+80/tcp    open   http
+| fingerprint-strings: 
+|   FourOhFourRequest: 
+|     HTTP/1.0 404 Not Found
+|     Connection: close
+|     content-type: text/html
+|     date: Mon, 11 May 2026 08:56:40 GMT
+|     <!DOCTYPE html>
+|     <html>
+|     <head>
+|     <meta http-equiv="Content-type" content="text/html; charset=utf-8">
+|     <meta http-equiv="Cache-control" content="no-cache">
+|     <meta http-equiv="Pragma" content="no-cache">
+|     <meta http-equiv="Expires" content="0">
+|     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+|     <title>404 Not Found</title>
+|     <style type="text/css">
+|     body {
+|     font-family: Arial, Helvetica, sans-serif;
+|     font-size: 14px;
+|     line-height: 1.428571429;
+|     background-color: #ffffff;
+|     color: #2F3230;
+|     padding: 0;
+|     margin: 0;
+|     section, footer {
+|     display: block;
+|     padding: 0;
+|     margin: 0;
+|     .container {
+|   GetRequest: 
+|     HTTP/1.0 200 OK
+|     Connection: close
+|     content-type: text/html
+|     last-modified: Wed, 17 Jun 2020 20:01:33 GMT
+|     accept-ranges: bytes
+|     content-length: 163
+|     date: Mon, 11 May 2026 08:56:34 GMT
+|     <html><head><META HTTP-EQUIV="Cache-control" CONTENT="no-cache"><META HTTP-EQUIV="refresh" CONTENT="0;URL=/cgi-sys/defaultwebpage.cgi"></head><body></body></html>
+|   HTTPOptions: 
+|     HTTP/1.0 200 OK
+|     Connection: close
+|     allow: OPTIONS,HEAD,GET,POST
+|     content-length: 0
+|     date: Mon, 11 May 2026 08:56:34 GMT
+|   RTSPRequest: 
+|     HTTP/1.1 400 Bad Request
+|     Connection: close
+|     cache-control: private, no-cache, no-store, must-revalidate, max-age=0
+|     pragma: no-cache
+|     content-type: text/html
+|     content-length: 769
+|     date: Mon, 11 May 2026 08:56:35 GMT
+|     <!DOCTYPE html>
+|     <html style="height:100%">
+|     <head>
+|     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+|     <title> 400 Bad Request
+|     </title><style>@media (prefers-color-scheme:dark){body{background-color:#000!important}}</style></head>
+|     <body style="color: #444; margin:0;font: normal 14px/20px Arial, Helvetica, sans-serif; height:100%; background-color: #fff;">
+|     <div style="height:auto; min-height:100%; "> <div style="text-align: center; width:800px; margin-left: -400px; position:absolute; top: 30%; left:50%;">
+|     style="margin:0; font-size:150px; line-height:150px; font-weight:bold;">400</h1>
+|_    style="margin-top:20px;font-size
+110/tcp   open   pop3       Dovecot pop3d
+| ssl-cert: Subject: commonName=host4069.hospedameusite.net
+| Subject Alternative Name: DNS:host4069.hospedameusite.net
+| Not valid before: 2026-04-09T12:04:51
+|_Not valid after:  2026-07-08T12:04:50
+|_pop3-capabilities: STLS RESP-CODES USER CAPA TOP AUTH-RESP-CODE SASL(PLAIN LOGIN) UIDL PIPELINING
+143/tcp   open   imap       Dovecot imapd
+|_imap-capabilities: AUTH=PLAIN OK IMAP4rev1 LITERAL+ AUTH=LOGINA0001 listed capabilities Pre-login IDLE more have post-login NAMESPACE LOGIN-REFERRALS SASL-IR ID ENABLE STARTTLS
+443/tcp   open   ssl/https
+| ssl-cert: Subject: commonName=host4069.hospedameusite.net
+| Subject Alternative Name: DNS:host4069.hospedameusite.net
+| Not valid before: 2026-04-09T12:04:51
+|_Not valid after:  2026-07-08T12:04:50
+| fingerprint-strings: 
+|   FourOhFourRequest: 
+|     HTTP/1.0 404 Not Found
+|     Connection: close
+|     content-type: text/html
+|     date: Mon, 11 May 2026 08:56:42 GMT
+|     <!DOCTYPE html>
+|     <html>
+|     <head>
+|     <meta http-equiv="Content-type" content="text/html; charset=utf-8">
+|     <meta http-equiv="Cache-control" content="no-cache">
+|     <meta http-equiv="Pragma" content="no-cache">
+|     <meta http-equiv="Expires" content="0">
+|     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+|     <title>404 Not Found</title>
+|     <style type="text/css">
+|     body {
+|     font-family: Arial, Helvetica, sans-serif;
+|     font-size: 14px;
+|     line-height: 1.428571429;
+|     background-color: #ffffff;
+|     color: #2F3230;
+|     padding: 0;
+|     margin: 0;
+|     section, footer {
+|     display: block;
+|     padding: 0;
+|     margin: 0;
+|     .container {
+|   GetRequest: 
+|     HTTP/1.0 200 OK
+|     Connection: close
+|     content-type: text/html
+|     last-modified: Wed, 17 Jun 2020 20:01:33 GMT
+|     accept-ranges: bytes
+|     content-length: 163
+|     date: Mon, 11 May 2026 08:56:41 GMT
+|     <html><head><META HTTP-EQUIV="Cache-control" CONTENT="no-cache"><META HTTP-EQUIV="refresh" CONTENT="0;URL=/cgi-sys/defaultwebpage.cgi"></head><body></body></html>
+|   HTTPOptions: 
+|     HTTP/1.0 200 OK
+|     Connection: close
+|     allow: OPTIONS,HEAD,GET,POST
+|     content-length: 0
+|_    date: Mon, 11 May 2026 08:56:42 GMT
+465/tcp   open   ssl/smtp   Exim smtpd 4.99.2
+| smtp-commands: host4069.hospedameusite.net Hello odesafiofinal.hospedameusite.com.br [82.208.126.177], SIZE 52428800, LIMITS MAILMAX=1000 RCPTMAX=50000, 8BITMIME, PIPELINING, PIPECONNECT, AUTH PLAIN LOGIN, HELP
+|_ Commands supported: AUTH HELO EHLO MAIL RCPT DATA BDAT NOOP QUIT RSET HELP
+587/tcp   open   smtp       Exim smtpd 4.99.2
+| smtp-commands: host4069.hospedameusite.net Hello odesafiofinal.hospedameusite.com.br [82.208.126.177], SIZE 52428800, LIMITS MAILMAX=1000 RCPTMAX=50000, 8BITMIME, PIPELINING, PIPECONNECT, AUTH PLAIN LOGIN, STARTTLS, HELP
+|_ Commands supported: AUTH STARTTLS HELO EHLO MAIL RCPT DATA BDAT NOOP QUIT RSET HELP
+993/tcp   open   imaps?
+| ssl-cert: Subject: commonName=host4069.hospedameusite.net
+| Subject Alternative Name: DNS:host4069.hospedameusite.net
+| Not valid before: 2026-04-09T12:04:51
+|_Not valid after:  2026-07-08T12:04:50
+995/tcp   open   pop3s?
+|_pop3-capabilities: SASL(PLAIN LOGIN) TOP RESP-CODES USER AUTH-RESP-CODE UIDL CAPA PIPELINING
+2121/tcp  open   ftp        Pure-FTPd
+3306/tcp  open   mysql      MySQL 5.7.44-cll-lve
+| mysql-info: 
+|   Protocol: 10
+|   Version: 5.7.44-cll-lve
+|   Thread ID: 3139712
+|   Capabilities flags: 65535
+|   Some Capabilities: ODBCClient, Speaks41ProtocolNew, Support41Auth, Speaks41ProtocolOld, SupportsCompression, LongColumnFlag, SupportsLoadDataLocal, FoundRows, SupportsTransactions, LongPassword, IgnoreSpaceBeforeParenthesis, ConnectWithDatabase, DontAllowDatabaseTableColumn, SwitchToSSLAfterHandshake, IgnoreSigpipes, InteractiveClient, SupportsMultipleResults, SupportsAuthPlugins, SupportsMultipleStatments
+|   Status: Autocommit
+|   Salt: \{,9\x02K'[2\^[ Bk'&b=\x04
+|_  Auth Plugin Name: mysql_native_password
+| ssl-cert: Subject: commonName=MySQL_Server_5.7.31_Auto_Generated_Server_Certificate
+| Not valid before: 2020-07-15T22:16:06
+|_Not valid after:  2030-07-13T22:16:06
+5666/tcp  open   tcpwrapped
+49152/tcp closed unknown
+49153/tcp closed unknown
+49154/tcp closed unknown
+49155/tcp closed unknown
+49156/tcp closed unknown
+49157/tcp closed unknown
+2 services unrecognized despite returning data. If you know the service/version, please submit the following fingerprints at https://nmap.org/cgi-bin/submit.cgi?new-service :
+==============NEXT SERVICE FINGERPRINT (SUBMIT INDIVIDUALLY)==============
+SF-Port80-TCP:V=7.95%I=7%D=5/11%Time=6A0199C2%P=x86_64-pc-linux-gnu%r(GetR
+SF:equest,160,"HTTP/1\.0\x20200\x20OK\r\nConnection:\x20close\r\ncontent-t
+SF:ype:\x20text/html\r\nlast-modified:\x20Wed,\x2017\x20Jun\x202020\x2020:
+SF:01:33\x20GMT\r\naccept-ranges:\x20bytes\r\ncontent-length:\x20163\r\nda
+SF:te:\x20Mon,\x2011\x20May\x202026\x2008:56:34\x20GMT\r\n\r\n<html><head>
+SF:<META\x20HTTP-EQUIV=\"Cache-control\"\x20CONTENT=\"no-cache\"><META\x20
+SF:HTTP-EQUIV=\"refresh\"\x20CONTENT=\"0;URL=/cgi-sys/defaultwebpage\.cgi\
+SF:"></head><body></body></html>\n")%r(HTTPOptions,7C,"HTTP/1\.0\x20200\x2
+SF:0OK\r\nConnection:\x20close\r\nallow:\x20OPTIONS,HEAD,GET,POST\r\nconte
+SF:nt-length:\x200\r\ndate:\x20Mon,\x2011\x20May\x202026\x2008:56:34\x20GM
+SF:T\r\n\r\n")%r(RTSPRequest,3DD,"HTTP/1\.1\x20400\x20Bad\x20Request\r\nCo
+SF:nnection:\x20close\r\ncache-control:\x20private,\x20no-cache,\x20no-sto
+SF:re,\x20must-revalidate,\x20max-age=0\r\npragma:\x20no-cache\r\ncontent-
+SF:type:\x20text/html\r\ncontent-length:\x20769\r\ndate:\x20Mon,\x2011\x20
+SF:May\x202026\x2008:56:35\x20GMT\r\n\r\n<!DOCTYPE\x20html>\n<html\x20styl
+SF:e=\"height:100%\">\n<head>\n<meta\x20name=\"viewport\"\x20content=\"wid
+SF:th=device-width,\x20initial-scale=1,\x20shrink-to-fit=no\"\x20/>\n<titl
+SF:e>\x20400\x20Bad\x20Request\r\n</title><style>@media\x20\(prefers-color
+SF:-scheme:dark\){body{background-color:#000!important}}</style></head>\n<
+SF:body\x20style=\"color:\x20#444;\x20margin:0;font:\x20normal\x2014px/20p
+SF:x\x20Arial,\x20Helvetica,\x20sans-serif;\x20height:100%;\x20background-
+SF:color:\x20#fff;\">\n<div\x20style=\"height:auto;\x20min-height:100%;\x2
+SF:0\">\x20\x20\x20\x20\x20<div\x20style=\"text-align:\x20center;\x20width
+SF::800px;\x20margin-left:\x20-400px;\x20position:absolute;\x20top:\x2030%
+SF:;\x20left:50%;\">\n\x20\x20\x20\x20\x20\x20\x20\x20<h1\x20style=\"margi
+SF:n:0;\x20font-size:150px;\x20line-height:150px;\x20font-weight:bold;\">4
+SF:00</h1>\n<h2\x20style=\"margin-top:20px;font-size")%r(FourOhFourRequest
+SF:,27B1,"HTTP/1\.0\x20404\x20Not\x20Found\r\nConnection:\x20close\r\ncont
+SF:ent-type:\x20text/html\r\ndate:\x20Mon,\x2011\x20May\x202026\x2008:56:4
+SF:0\x20GMT\r\n\r\n\n\n\n<!DOCTYPE\x20html>\n<html>\n\x20\x20\x20\x20<head
+SF:>\n\x20\x20\x20\x20<meta\x20http-equiv=\"Content-type\"\x20content=\"te
+SF:xt/html;\x20charset=utf-8\">\n\x20\x20\x20\x20<meta\x20http-equiv=\"Cac
+SF:he-control\"\x20content=\"no-cache\">\n\x20\x20\x20\x20<meta\x20http-eq
+SF:uiv=\"Pragma\"\x20content=\"no-cache\">\n\x20\x20\x20\x20<meta\x20http-
+SF:equiv=\"Expires\"\x20content=\"0\">\n\x20\x20\x20\x20<meta\x20name=\"vi
+SF:ewport\"\x20content=\"width=device-width,\x20initial-scale=1\.0\">\n\x2
+SF:0\x20\x20\x20<title>404\x20Not\x20Found</title>\n\x20\x20\x20\x20<style
+SF:\x20type=\"text/css\">\n\x20\x20\x20\x20\x20\x20\x20\x20body\x20{\n\x20
+SF:\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20font-family:\x20Arial,\x20H
+SF:elvetica,\x20sans-serif;\n\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\
+SF:x20font-size:\x2014px;\n\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x2
+SF:0line-height:\x201\.428571429;\n\x20\x20\x20\x20\x20\x20\x20\x20\x20\x2
+SF:0\x20\x20background-color:\x20#ffffff;\n\x20\x20\x20\x20\x20\x20\x20\x2
+SF:0\x20\x20\x20\x20color:\x20#2F3230;\n\x20\x20\x20\x20\x20\x20\x20\x20\x
+SF:20\x20\x20\x20padding:\x200;\n\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\
+SF:x20\x20margin:\x200;\n\x20\x20\x20\x20\x20\x20\x20\x20}\n\x20\x20\x20\x
+SF:20\x20\x20\x20\x20section,\x20footer\x20{\n\x20\x20\x20\x20\x20\x20\x20
+SF:\x20\x20\x20\x20\x20display:\x20block;\n\x20\x20\x20\x20\x20\x20\x20\x2
+SF:0\x20\x20\x20\x20padding:\x200;\n\x20\x20\x20\x20\x20\x20\x20\x20\x20\x
+SF:20\x20\x20margin:\x200;\n\x20\x20\x20\x20\x20\x20\x20\x20}\n\x20\x20\x2
+SF:0\x20\x20\x20\x20\x20\.container\x20{\n\x20\x20\x20\x20");
+==============NEXT SERVICE FINGERPRINT (SUBMIT INDIVIDUALLY)==============
+SF-Port443-TCP:V=7.95%T=SSL%I=7%D=5/11%Time=6A0199C9%P=x86_64-pc-linux-gnu
+SF:%r(GetRequest,160,"HTTP/1\.0\x20200\x20OK\r\nConnection:\x20close\r\nco
+SF:ntent-type:\x20text/html\r\nlast-modified:\x20Wed,\x2017\x20Jun\x202020
+SF:\x2020:01:33\x20GMT\r\naccept-ranges:\x20bytes\r\ncontent-length:\x2016
+SF:3\r\ndate:\x20Mon,\x2011\x20May\x202026\x2008:56:41\x20GMT\r\n\r\n<html
+SF:><head><META\x20HTTP-EQUIV=\"Cache-control\"\x20CONTENT=\"no-cache\"><M
+SF:ETA\x20HTTP-EQUIV=\"refresh\"\x20CONTENT=\"0;URL=/cgi-sys/defaultwebpag
+SF:e\.cgi\"></head><body></body></html>\n")%r(HTTPOptions,7C,"HTTP/1\.0\x2
+SF:0200\x20OK\r\nConnection:\x20close\r\nallow:\x20OPTIONS,HEAD,GET,POST\r
+SF:\ncontent-length:\x200\r\ndate:\x20Mon,\x2011\x20May\x202026\x2008:56:4
+SF:2\x20GMT\r\n\r\n")%r(FourOhFourRequest,27B3,"HTTP/1\.0\x20404\x20Not\x2
+SF:0Found\r\nConnection:\x20close\r\ncontent-type:\x20text/html\r\ndate:\x
+SF:20Mon,\x2011\x20May\x202026\x2008:56:42\x20GMT\r\n\r\n\n\n\n<!DOCTYPE\x
+SF:20html>\n<html>\n\x20\x20\x20\x20<head>\n\x20\x20\x20\x20<meta\x20http-
+SF:equiv=\"Content-type\"\x20content=\"text/html;\x20charset=utf-8\">\n\x2
+SF:0\x20\x20\x20<meta\x20http-equiv=\"Cache-control\"\x20content=\"no-cach
+SF:e\">\n\x20\x20\x20\x20<meta\x20http-equiv=\"Pragma\"\x20content=\"no-ca
+SF:che\">\n\x20\x20\x20\x20<meta\x20http-equiv=\"Expires\"\x20content=\"0\
+SF:">\n\x20\x20\x20\x20<meta\x20name=\"viewport\"\x20content=\"width=devic
+SF:e-width,\x20initial-scale=1\.0\">\n\x20\x20\x20\x20<title>404\x20Not\x2
+SF:0Found</title>\n\x20\x20\x20\x20<style\x20type=\"text/css\">\n\x20\x20\
+SF:x20\x20\x20\x20\x20\x20body\x20{\n\x20\x20\x20\x20\x20\x20\x20\x20\x20\
+SF:x20\x20\x20font-family:\x20Arial,\x20Helvetica,\x20sans-serif;\n\x20\x2
+SF:0\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20font-size:\x2014px;\n\x20\x20\
+SF:x20\x20\x20\x20\x20\x20\x20\x20\x20\x20line-height:\x201\.428571429;\n\
+SF:x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20background-color:\x20#ff
+SF:ffff;\n\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20color:\x20#2F323
+SF:0;\n\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20padding:\x200;\n\x2
+SF:0\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20margin:\x200;\n\x20\x20\x2
+SF:0\x20\x20\x20\x20\x20}\n\x20\x20\x20\x20\x20\x20\x20\x20section,\x20foo
+SF:ter\x20{\n\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20display:\x20b
+SF:lock;\n\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20padding:\x200;\n
+SF:\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20margin:\x200;\n\x20\x20
+SF:\x20\x20\x20\x20\x20\x20}\n\x20\x20\x20\x20\x20\x20\x20\x20\.container\
+SF:x20{\n\x20\x20\x20\x20");
+Service Info: Host: host4069.hospedameusite.net; OS: Linux; CPE: cpe:/o:redhat:enterprise_linux:7
+
+Nmap scan report for ortodontiabrasilia.hospedameusite.net (167.114.21.106)
+Host is up (0.14s latency).
+Not shown: 79 filtered tcp ports (no-response)
+PORT      STATE  SERVICE    VERSION
+21/tcp    open   ftp        Pure-FTPd
+22/tcp    open   ssh        OpenSSH 7.4 (protocol 2.0)
+25/tcp    open   smtp       Exim smtpd 4.99.2
+|_smtp-commands: Couldn't establish connection on port 25
+53/tcp    open   domain     ISC BIND 9.11.4-P2 (RedHat Enterprise Linux 7)
+80/tcp    open   http
+| fingerprint-strings: 
+|   GetRequest, HTTPOptions: 
+|     HTTP/1.0 301 Moved Permanently
+|     Connection: close
+|     content-type: text/html
+|     content-length: 795
+|     date: Mon, 11 May 2026 08:56:43 GMT
+|     location: https://
+|     <!DOCTYPE html>
+|     <html style="height:100%">
+|     <head>
+|     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+|     <title> 301 Moved Permanently
+|     </title><style>@media (prefers-color-scheme:dark){body{background-color:#000!important}}</style></head>
+|     <body style="color: #444; margin:0;font: normal 14px/20px Arial, Helvetica, sans-serif; height:100%; background-color: #fff;">
+|     <div style="height:auto; min-height:100%; "> <div style="text-align: center; width:800px; margin-left: -400px; position:absolute; top: 30%; left:50%;">
+|     style="margin:0; font-size:150px; line-height:150px; font-weight:bold;">301</h1>
+|     style="margin-top:20px;font-size: 30px;">Moved Permanently
+|     </h2>
+|_    <p>The document has been
+110/tcp   open   pop3       Dovecot pop3d
+| ssl-cert: Subject: commonName=host4069.hospedameusite.net
+| Subject Alternative Name: DNS:host4069.hospedameusite.net
+| Not valid before: 2026-04-09T12:04:51
+|_Not valid after:  2026-07-08T12:04:50
+143/tcp   open   imap       Dovecot imapd
+| ssl-cert: Subject: commonName=host4069.hospedameusite.net
+| Subject Alternative Name: DNS:host4069.hospedameusite.net
+| Not valid before: 2026-04-09T12:04:51
+|_Not valid after:  2026-07-08T12:04:50
+443/tcp   open   ssl/https
+| ssl-cert: Subject: commonName=ortodontiabrasilia.com
+| Subject Alternative Name: DNS:*.ortodontiabrasilia.com, DNS:ortodontiabrasilia.com
+| Not valid before: 2026-04-20T20:24:37
+|_Not valid after:  2026-07-19T20:24:36
+| fingerprint-strings: 
+|   FourOhFourRequest: 
+|     HTTP/1.0 404 Not Found
+|     Connection: close
+|     expires: Wed, 11 Jan 1984 05:00:00 GMT
+|     cache-control: no-cache, must-revalidate, max-age=0, no-store, private
+|     content-type: text/html; charset=UTF-8
+|     link: <https://ortodontiabrasilia.com/wp-json/>; rel="https://api.w.org/"
+|     date: Mon, 11 May 2026 08:56:57 GMT
+|     <!DOCTYPE html>
+|     <html lang="pt-BR">
+|     <head>
+|     <meta charset="UTF-8">
+|     <meta name="viewport" content="width=device-width, initial-scale=1">
+|     <link rel="profile" href="https://gmpg.org/xfn/11"> 
+|     <meta name='robots' content='noindex, follow' />
+|     <!-- This site is optimized with the Yoast SEO plugin v27.5 - https://yoast.com/product/yoast-seo-wordpress/ -->
+|     <title>Page not found - Ortodontia Brasilia</title>
+|     <meta property="og:locale" content="pt_BR" />
+|     <meta property="og:title" content="Page not found - Ortodontia Brasilia" />
+|     <meta property="og:site_name" content="Ortodontia Brasilia"
+|   GetRequest: 
+|     HTTP/1.0 301 Moved Permanently
+|     Connection: close
+|     content-type: text/html; charset=UTF-8
+|     x-redirect-by: WordPress
+|     location: https:///
+|     content-length: 0
+|     date: Mon, 11 May 2026 08:56:55 GMT
+|   HTTPOptions: 
+|     HTTP/1.0 200 OK
+|     Connection: close
+|     content-type: text/html; charset=UTF-8
+|     link: <https://ortodontiabrasilia.com/wp-json/>; rel="https://api.w.org/"
+|     link: <https://ortodontiabrasilia.com/wp-json/wp/v2/pages/9>; rel="alternate"; title="JSON"; type="application/json"
+|     link: <https://ortodontiabrasilia.com/>; rel=shortlink
+|     date: Mon, 11 May 2026 08:56:56 GMT
+|     <!DOCTYPE html>
+|     <html lang="pt-BR">
+|     <head>
+|     <meta charset="UTF-8">
+|     <meta name="viewport" content="width=device-width, initial-scale=1">
+|     <link rel="profile" href="https://gmpg.org/xfn/11"> 
+|     <meta name='robots' content='index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1' />
+|     <!-- This site is optimized with the Yoast SEO plugin v27.5 - https://yoast.com/product/yoast-seo-wordpress/ -->
+|     <title>Ortodontia Brasilia</title>
+|_    <meta name="description" content="Clinica de Ortodontia Brasilia Oto Face, Invisalig
+465/tcp   open   ssl/smtp   Exim smtpd 4.99.2
+| smtp-commands: host4069.hospedameusite.net Hello ortodontiabrasilia.hospedameusite.net [82.208.126.177], SIZE 52428800, LIMITS MAILMAX=1000 RCPTMAX=50000, 8BITMIME, PIPELINING, PIPECONNECT, AUTH PLAIN LOGIN, HELP
+|_ Commands supported: AUTH HELO EHLO MAIL RCPT DATA BDAT NOOP QUIT RSET HELP
+587/tcp   open   smtp       Exim smtpd 4.99.2
+| smtp-commands: host4069.hospedameusite.net Hello ortodontiabrasilia.hospedameusite.net [82.208.126.177], SIZE 52428800, LIMITS MAILMAX=1000 RCPTMAX=50000, 8BITMIME, PIPELINING, PIPECONNECT, AUTH PLAIN LOGIN, STARTTLS, HELP
+|_ Commands supported: AUTH STARTTLS HELO EHLO MAIL RCPT DATA BDAT NOOP QUIT RSET HELP
+993/tcp   open   imaps?
+| ssl-cert: Subject: commonName=host4069.hospedameusite.net
+| Subject Alternative Name: DNS:host4069.hospedameusite.net
+| Not valid before: 2026-04-09T12:04:51
+|_Not valid after:  2026-07-08T12:04:50
+995/tcp   open   pop3s?
+| ssl-cert: Subject: commonName=host4069.hospedameusite.net
+| Subject Alternative Name: DNS:host4069.hospedameusite.net
+| Not valid before: 2026-04-09T12:04:51
+|_Not valid after:  2026-07-08T12:04:50
+2121/tcp  open   ftp        Pure-FTPd
+| ssl-cert: Subject: commonName=host4069.hospedameusite.net
+| Subject Alternative Name: DNS:host4069.hospedameusite.net
+| Not valid before: 2026-04-09T12:04:51
+|_Not valid after:  2026-07-08T12:04:50
+3306/tcp  open   mysql      MySQL 5.7.44-cll-lve
+| ssl-cert: Subject: commonName=MySQL_Server_5.7.31_Auto_Generated_Server_Certificate
+| Not valid before: 2020-07-15T22:16:06
+|_Not valid after:  2030-07-13T22:16:06
+| mysql-info: 
+|   Protocol: 10
+|   Version: 5.7.44-cll-lve
+|   Thread ID: 3139539
+|   Capabilities flags: 65535
+|   Some Capabilities: ODBCClient, Speaks41ProtocolNew, Support41Auth, Speaks41ProtocolOld, SupportsCompression, LongColumnFlag, SupportsLoadDataLocal, FoundRows, SupportsTransactions, LongPassword, IgnoreSpaceBeforeParenthesis, ConnectWithDatabase, DontAllowDatabaseTableColumn, SwitchToSSLAfterHandshake, IgnoreSigpipes, InteractiveClient, SupportsMultipleResults, SupportsAuthPlugins, SupportsMultipleStatments
+|   Status: Autocommit
+|   Salt: \x13D/':\x19*\x01\x0Fx\x14</\x1E5lr=7w
+|_  Auth Plugin Name: mysql_native_password
+5666/tcp  open   tcpwrapped
+49152/tcp closed unknown
+49153/tcp closed unknown
+49154/tcp closed unknown
+49155/tcp closed unknown
+49156/tcp closed unknown
+49157/tcp closed unknown
+2 services unrecognized despite returning data. If you know the service/version, please submit the following fingerprints at https://nmap.org/cgi-bin/submit.cgi?new-service :
+==============NEXT SERVICE FINGERPRINT (SUBMIT INDIVIDUALLY)==============
+SF-Port80-TCP:V=7.95%I=7%D=5/11%Time=6A0199CB%P=x86_64-pc-linux-gnu%r(GetR
+SF:equest,3B7,"HTTP/1\.0\x20301\x20Moved\x20Permanently\r\nConnection:\x20
+SF:close\r\ncontent-type:\x20text/html\r\ncontent-length:\x20795\r\ndate:\
+SF:x20Mon,\x2011\x20May\x202026\x2008:56:43\x20GMT\r\nlocation:\x20https:/
+SF:/\r\n\r\n<!DOCTYPE\x20html>\n<html\x20style=\"height:100%\">\n<head>\n<
+SF:meta\x20name=\"viewport\"\x20content=\"width=device-width,\x20initial-s
+SF:cale=1,\x20shrink-to-fit=no\"\x20/>\n<title>\x20301\x20Moved\x20Permane
+SF:ntly\r\n</title><style>@media\x20\(prefers-color-scheme:dark\){body{bac
+SF:kground-color:#000!important}}</style></head>\n<body\x20style=\"color:\
+SF:x20#444;\x20margin:0;font:\x20normal\x2014px/20px\x20Arial,\x20Helvetic
+SF:a,\x20sans-serif;\x20height:100%;\x20background-color:\x20#fff;\">\n<di
+SF:v\x20style=\"height:auto;\x20min-height:100%;\x20\">\x20\x20\x20\x20\x2
+SF:0<div\x20style=\"text-align:\x20center;\x20width:800px;\x20margin-left:
+SF:\x20-400px;\x20position:absolute;\x20top:\x2030%;\x20left:50%;\">\n\x20
+SF:\x20\x20\x20\x20\x20\x20\x20<h1\x20style=\"margin:0;\x20font-size:150px
+SF:;\x20line-height:150px;\x20font-weight:bold;\">301</h1>\n<h2\x20style=\
+SF:"margin-top:20px;font-size:\x2030px;\">Moved\x20Permanently\r\n</h2>\n<
+SF:p>The\x20document\x20has\x20been")%r(HTTPOptions,3B7,"HTTP/1\.0\x20301\
+SF:x20Moved\x20Permanently\r\nConnection:\x20close\r\ncontent-type:\x20tex
+SF:t/html\r\ncontent-length:\x20795\r\ndate:\x20Mon,\x2011\x20May\x202026\
+SF:x2008:56:43\x20GMT\r\nlocation:\x20https://\r\n\r\n<!DOCTYPE\x20html>\n
+SF:<html\x20style=\"height:100%\">\n<head>\n<meta\x20name=\"viewport\"\x20
+SF:content=\"width=device-width,\x20initial-scale=1,\x20shrink-to-fit=no\"
+SF:\x20/>\n<title>\x20301\x20Moved\x20Permanently\r\n</title><style>@media
+SF:\x20\(prefers-color-scheme:dark\){body{background-color:#000!important}
+SF:}</style></head>\n<body\x20style=\"color:\x20#444;\x20margin:0;font:\x2
+SF:0normal\x2014px/20px\x20Arial,\x20Helvetica,\x20sans-serif;\x20height:1
+SF:00%;\x20background-color:\x20#fff;\">\n<div\x20style=\"height:auto;\x20
+SF:min-height:100%;\x20\">\x20\x20\x20\x20\x20<div\x20style=\"text-align:\
+SF:x20center;\x20width:800px;\x20margin-left:\x20-400px;\x20position:absol
+SF:ute;\x20top:\x2030%;\x20left:50%;\">\n\x20\x20\x20\x20\x20\x20\x20\x20<
+SF:h1\x20style=\"margin:0;\x20font-size:150px;\x20line-height:150px;\x20fo
+SF:nt-weight:bold;\">301</h1>\n<h2\x20style=\"margin-top:20px;font-size:\x
+SF:2030px;\">Moved\x20Permanently\r\n</h2>\n<p>The\x20document\x20has\x20b
+SF:een");
+==============NEXT SERVICE FINGERPRINT (SUBMIT INDIVIDUALLY)==============
+SF-Port443-TCP:V=7.95%T=SSL%I=7%D=5/11%Time=6A0199D7%P=x86_64-pc-linux-gnu
+SF:%r(GetRequest,C4,"HTTP/1\.0\x20301\x20Moved\x20Permanently\r\nConnectio
+SF:n:\x20close\r\ncontent-type:\x20text/html;\x20charset=UTF-8\r\nx-redire
+SF:ct-by:\x20WordPress\r\nlocation:\x20https:///\r\ncontent-length:\x200\r
+SF:\ndate:\x20Mon,\x2011\x20May\x202026\x2008:56:55\x20GMT\r\n\r\n")%r(HTT
+SF:POptions,3FEA,"HTTP/1\.0\x20200\x20OK\r\nConnection:\x20close\r\nconten
+SF:t-type:\x20text/html;\x20charset=UTF-8\r\nlink:\x20<https://ortodontiab
+SF:rasilia\.com/wp-json/>;\x20rel=\"https://api\.w\.org/\"\r\nlink:\x20<ht
+SF:tps://ortodontiabrasilia\.com/wp-json/wp/v2/pages/9>;\x20rel=\"alternat
+SF:e\";\x20title=\"JSON\";\x20type=\"application/json\"\r\nlink:\x20<https
+SF:://ortodontiabrasilia\.com/>;\x20rel=shortlink\r\ndate:\x20Mon,\x2011\x
+SF:20May\x202026\x2008:56:56\x20GMT\r\n\r\n<!DOCTYPE\x20html>\n<html\x20la
+SF:ng=\"pt-BR\">\n<head>\n<meta\x20charset=\"UTF-8\">\n<meta\x20name=\"vie
+SF:wport\"\x20content=\"width=device-width,\x20initial-scale=1\">\n\t<link
+SF:\x20rel=\"profile\"\x20href=\"https://gmpg\.org/xfn/11\">\x20\n\t<meta\
+SF:x20name='robots'\x20content='index,\x20follow,\x20max-image-preview:lar
+SF:ge,\x20max-snippet:-1,\x20max-video-preview:-1'\x20/>\n\n\t<!--\x20This
+SF:\x20site\x20is\x20optimized\x20with\x20the\x20Yoast\x20SEO\x20plugin\x2
+SF:0v27\.5\x20-\x20https://yoast\.com/product/yoast-seo-wordpress/\x20-->\
+SF:n\t<title>Ortodontia\x20Brasilia</title>\n\t<meta\x20name=\"description
+SF:\"\x20content=\"Clinica\x20de\x20Ortodontia\x20Brasilia\x20Oto\x20Face,
+SF:\x20Invisalig")%r(FourOhFourRequest,3FEA,"HTTP/1\.0\x20404\x20Not\x20Fo
+SF:und\r\nConnection:\x20close\r\nexpires:\x20Wed,\x2011\x20Jan\x201984\x2
+SF:005:00:00\x20GMT\r\ncache-control:\x20no-cache,\x20must-revalidate,\x20
+SF:max-age=0,\x20no-store,\x20private\r\ncontent-type:\x20text/html;\x20ch
+SF:arset=UTF-8\r\nlink:\x20<https://ortodontiabrasilia\.com/wp-json/>;\x20
+SF:rel=\"https://api\.w\.org/\"\r\ndate:\x20Mon,\x2011\x20May\x202026\x200
+SF:8:56:57\x20GMT\r\n\r\n<!DOCTYPE\x20html>\n<html\x20lang=\"pt-BR\">\n<he
+SF:ad>\n<meta\x20charset=\"UTF-8\">\n<meta\x20name=\"viewport\"\x20content
+SF:=\"width=device-width,\x20initial-scale=1\">\n\t<link\x20rel=\"profile\
+SF:"\x20href=\"https://gmpg\.org/xfn/11\">\x20\n\t<meta\x20name='robots'\x
+SF:20content='noindex,\x20follow'\x20/>\n\n\t<!--\x20This\x20site\x20is\x2
+SF:0optimized\x20with\x20the\x20Yoast\x20SEO\x20plugin\x20v27\.5\x20-\x20h
+SF:ttps://yoast\.com/product/yoast-seo-wordpress/\x20-->\n\t<title>Page\x2
+SF:0not\x20found\x20-\x20Ortodontia\x20Brasilia</title>\n\t<meta\x20proper
+SF:ty=\"og:locale\"\x20content=\"pt_BR\"\x20/>\n\t<meta\x20property=\"og:t
+SF:itle\"\x20content=\"Page\x20not\x20found\x20-\x20Ortodontia\x20Brasilia
+SF:\"\x20/>\n\t<meta\x20property=\"og:site_name\"\x20content=\"Ortodontia\
+SF:x20Brasilia\"");
+Service Info: Host: host4069.hospedameusite.net; OS: Linux; CPE: cpe:/o:redhat:enterprise_linux:7
+
+Nmap scan report for empregosnojapao.hospedameusite.com.br (167.114.21.107)
+Host is up (0.14s latency).
+Not shown: 79 filtered tcp ports (no-response)
+PORT      STATE  SERVICE    VERSION
+21/tcp    open   ftp        Pure-FTPd
+22/tcp    open   ssh        OpenSSH 7.4 (protocol 2.0)
+| ssh-hostkey: 
+|   2048 0e:68:00:8f:2e:1c:78:92:2e:77:ea:99:22:c5:96:86 (RSA)
+|   256 f7:e3:e2:fc:bc:81:70:f5:b8:01:ba:46:d8:2f:10:8f (ECDSA)
+|_  256 f5:e5:54:36:43:9b:b8:09:21:ce:3e:b2:94:11:ff:23 (ED25519)
+25/tcp    open   smtp       Exim smtpd 4.99.2
+|_smtp-commands: Couldn't establish connection on port 25
+53/tcp    open   domain     ISC BIND 9.11.4-P2 (RedHat Enterprise Linux 7)
+| dns-nsid: 
+|_  bind.version: 9.11.4-P2-RedHat-9.11.4-26.P2.el7_9.15
+80/tcp    open   http
+| fingerprint-strings: 
+|   FourOhFourRequest: 
+|     HTTP/1.0 404 Not Found
+|     Connection: close
+|     content-type: text/html
+|     date: Mon, 11 May 2026 08:57:08 GMT
+|     <!DOCTYPE html>
+|     <html>
+|     <head>
+|     <meta http-equiv="Content-type" content="text/html; charset=utf-8">
+|     <meta http-equiv="Cache-control" content="no-cache">
+|     <meta http-equiv="Pragma" content="no-cache">
+|     <meta http-equiv="Expires" content="0">
+|     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+|     <title>404 Not Found</title>
+|     <style type="text/css">
+|     body {
+|     font-family: Arial, Helvetica, sans-serif;
+|     font-size: 14px;
+|     line-height: 1.428571429;
+|     background-color: #ffffff;
+|     color: #2F3230;
+|     padding: 0;
+|     margin: 0;
+|     section, footer {
+|     display: block;
+|     padding: 0;
+|     margin: 0;
+|     .container {
+|   GetRequest: 
+|     HTTP/1.0 200 OK
+|     Connection: close
+|     content-type: text/html
+|     last-modified: Wed, 17 Jun 2020 20:01:33 GMT
+|     accept-ranges: bytes
+|     content-length: 163
+|     date: Mon, 11 May 2026 08:57:02 GMT
+|     <html><head><META HTTP-EQUIV="Cache-control" CONTENT="no-cache"><META HTTP-EQUIV="refresh" CONTENT="0;URL=/cgi-sys/defaultwebpage.cgi"></head><body></body></html>
+|   HTTPOptions: 
+|     HTTP/1.0 200 OK
+|     Connection: close
+|     allow: OPTIONS,HEAD,GET,POST
+|     content-length: 0
+|     date: Mon, 11 May 2026 08:57:02 GMT
+|   RTSPRequest: 
+|     HTTP/1.1 400 Bad Request
+|     Connection: close
+|     cache-control: private, no-cache, no-store, must-revalidate, max-age=0
+|     pragma: no-cache
+|     content-type: text/html
+|     content-length: 769
+|     date: Mon, 11 May 2026 08:57:02 GMT
+|     <!DOCTYPE html>
+|     <html style="height:100%">
+|     <head>
+|     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+|     <title> 400 Bad Request
+|     </title><style>@media (prefers-color-scheme:dark){body{background-color:#000!important}}</style></head>
+|     <body style="color: #444; margin:0;font: normal 14px/20px Arial, Helvetica, sans-serif; height:100%; background-color: #fff;">
+|     <div style="height:auto; min-height:100%; "> <div style="text-align: center; width:800px; margin-left: -400px; position:absolute; top: 30%; left:50%;">
+|     style="margin:0; font-size:150px; line-height:150px; font-weight:bold;">400</h1>
+|_    style="margin-top:20px;font-size
+110/tcp   open   pop3       Dovecot pop3d
+| ssl-cert: Subject: commonName=host4069.hospedameusite.net
+| Subject Alternative Name: DNS:host4069.hospedameusite.net
+| Not valid before: 2026-04-09T12:04:51
+|_Not valid after:  2026-07-08T12:04:50
+143/tcp   open   imap       Dovecot imapd
+| ssl-cert: Subject: commonName=host4069.hospedameusite.net
+| Subject Alternative Name: DNS:host4069.hospedameusite.net
+| Not valid before: 2026-04-09T12:04:51
+|_Not valid after:  2026-07-08T12:04:50
+443/tcp   open   ssl/https?
+| ssl-cert: Subject: commonName=host4069.hospedameusite.net
+| Subject Alternative Name: DNS:host4069.hospedameusite.net
+| Not valid before: 2026-04-09T12:04:51
+|_Not valid after:  2026-07-08T12:04:50
+465/tcp   open   ssl/smtp   Exim smtpd 4.99.2
+| smtp-commands: host4069.hospedameusite.net Hello empregosnojapao.hospedameusite.com.br [82.208.126.177], SIZE 52428800, LIMITS MAILMAX=1000 RCPTMAX=50000, 8BITMIME, PIPELINING, PIPECONNECT, AUTH PLAIN LOGIN, HELP
+|_ Commands supported: AUTH HELO EHLO MAIL RCPT DATA BDAT NOOP QUIT RSET HELP
+587/tcp   open   smtp       Exim smtpd 4.99.2
+| smtp-commands: host4069.hospedameusite.net Hello empregosnojapao.hospedameusite.com.br [82.208.126.177], SIZE 52428800, LIMITS MAILMAX=1000 RCPTMAX=50000, 8BITMIME, PIPELINING, PIPECONNECT, AUTH PLAIN LOGIN, STARTTLS, HELP
+|_ Commands supported: AUTH STARTTLS HELO EHLO MAIL RCPT DATA BDAT NOOP QUIT RSET HELP
+993/tcp   open   imaps?
+|_imap-capabilities: AUTH=PLAIN OK IMAP4rev1 LITERAL+ AUTH=LOGINA0001 listed have Pre-login IDLE more ID NAMESPACE LOGIN-REFERRALS SASL-IR ENABLE capabilities post-login
+995/tcp   open   pop3s?
+| ssl-cert: Subject: commonName=host4069.hospedameusite.net
+| Subject Alternative Name: DNS:host4069.hospedameusite.net
+| Not valid before: 2026-04-09T12:04:51
+|_Not valid after:  2026-07-08T12:04:50
+2121/tcp  open   ftp        Pure-FTPd
+3306/tcp  open   mysql      MySQL 5.7.44-cll-lve
+| mysql-info: 
+|   Protocol: 10
+|   Version: 5.7.44-cll-lve
+|   Thread ID: 3139695
+|   Capabilities flags: 65535
+|   Some Capabilities: ODBCClient, Speaks41ProtocolNew, Support41Auth, Speaks41ProtocolOld, SupportsCompression, LongColumnFlag, SupportsLoadDataLocal, FoundRows, SupportsTransactions, LongPassword, IgnoreSpaceBeforeParenthesis, ConnectWithDatabase, DontAllowDatabaseTableColumn, SwitchToSSLAfterHandshake, IgnoreSigpipes, InteractiveClient, SupportsMultipleResults, SupportsAuthPlugins, SupportsMultipleStatments
+|   Status: Autocommit
+|   Salt: \x1B32}iQMe5<@H
+| <sWVfyp
+|_  Auth Plugin Name: mysql_native_password
+| ssl-cert: Subject: commonName=MySQL_Server_5.7.31_Auto_Generated_Server_Certificate
+| Not valid before: 2020-07-15T22:16:06
+|_Not valid after:  2030-07-13T22:16:06
+5666/tcp  open   tcpwrapped
+49152/tcp closed unknown
+49153/tcp closed unknown
+49154/tcp closed unknown
+49155/tcp closed unknown
+49156/tcp closed unknown
+49157/tcp closed unknown
+1 service unrecognized despite returning data. If you know the service/version, please submit the following fingerprint at https://nmap.org/cgi-bin/submit.cgi?new-service :
+SF-Port80-TCP:V=7.95%I=7%D=5/11%Time=6A0199DE%P=x86_64-pc-linux-gnu%r(GetR
+SF:equest,160,"HTTP/1\.0\x20200\x20OK\r\nConnection:\x20close\r\ncontent-t
+SF:ype:\x20text/html\r\nlast-modified:\x20Wed,\x2017\x20Jun\x202020\x2020:
+SF:01:33\x20GMT\r\naccept-ranges:\x20bytes\r\ncontent-length:\x20163\r\nda
+SF:te:\x20Mon,\x2011\x20May\x202026\x2008:57:02\x20GMT\r\n\r\n<html><head>
+SF:<META\x20HTTP-EQUIV=\"Cache-control\"\x20CONTENT=\"no-cache\"><META\x20
+SF:HTTP-EQUIV=\"refresh\"\x20CONTENT=\"0;URL=/cgi-sys/defaultwebpage\.cgi\
+SF:"></head><body></body></html>\n")%r(HTTPOptions,7C,"HTTP/1\.0\x20200\x2
+SF:0OK\r\nConnection:\x20close\r\nallow:\x20OPTIONS,HEAD,GET,POST\r\nconte
+SF:nt-length:\x200\r\ndate:\x20Mon,\x2011\x20May\x202026\x2008:57:02\x20GM
+SF:T\r\n\r\n")%r(RTSPRequest,3DD,"HTTP/1\.1\x20400\x20Bad\x20Request\r\nCo
+SF:nnection:\x20close\r\ncache-control:\x20private,\x20no-cache,\x20no-sto
+SF:re,\x20must-revalidate,\x20max-age=0\r\npragma:\x20no-cache\r\ncontent-
+SF:type:\x20text/html\r\ncontent-length:\x20769\r\ndate:\x20Mon,\x2011\x20
+SF:May\x202026\x2008:57:02\x20GMT\r\n\r\n<!DOCTYPE\x20html>\n<html\x20styl
+SF:e=\"height:100%\">\n<head>\n<meta\x20name=\"viewport\"\x20content=\"wid
+SF:th=device-width,\x20initial-scale=1,\x20shrink-to-fit=no\"\x20/>\n<titl
+SF:e>\x20400\x20Bad\x20Request\r\n</title><style>@media\x20\(prefers-color
+SF:-scheme:dark\){body{background-color:#000!important}}</style></head>\n<
+SF:body\x20style=\"color:\x20#444;\x20margin:0;font:\x20normal\x2014px/20p
+SF:x\x20Arial,\x20Helvetica,\x20sans-serif;\x20height:100%;\x20background-
+SF:color:\x20#fff;\">\n<div\x20style=\"height:auto;\x20min-height:100%;\x2
+SF:0\">\x20\x20\x20\x20\x20<div\x20style=\"text-align:\x20center;\x20width
+SF::800px;\x20margin-left:\x20-400px;\x20position:absolute;\x20top:\x2030%
+SF:;\x20left:50%;\">\n\x20\x20\x20\x20\x20\x20\x20\x20<h1\x20style=\"margi
+SF:n:0;\x20font-size:150px;\x20line-height:150px;\x20font-weight:bold;\">4
+SF:00</h1>\n<h2\x20style=\"margin-top:20px;font-size")%r(FourOhFourRequest
+SF:,27B1,"HTTP/1\.0\x20404\x20Not\x20Found\r\nConnection:\x20close\r\ncont
+SF:ent-type:\x20text/html\r\ndate:\x20Mon,\x2011\x20May\x202026\x2008:57:0
+SF:8\x20GMT\r\n\r\n\n\n\n<!DOCTYPE\x20html>\n<html>\n\x20\x20\x20\x20<head
+SF:>\n\x20\x20\x20\x20<meta\x20http-equiv=\"Content-type\"\x20content=\"te
+SF:xt/html;\x20charset=utf-8\">\n\x20\x20\x20\x20<meta\x20http-equiv=\"Cac
+SF:he-control\"\x20content=\"no-cache\">\n\x20\x20\x20\x20<meta\x20http-eq
+SF:uiv=\"Pragma\"\x20content=\"no-cache\">\n\x20\x20\x20\x20<meta\x20http-
+SF:equiv=\"Expires\"\x20content=\"0\">\n\x20\x20\x20\x20<meta\x20name=\"vi
+SF:ewport\"\x20content=\"width=device-width,\x20initial-scale=1\.0\">\n\x2
+SF:0\x20\x20\x20<title>404\x20Not\x20Found</title>\n\x20\x20\x20\x20<style
+SF:\x20type=\"text/css\">\n\x20\x20\x20\x20\x20\x20\x20\x20body\x20{\n\x20
+SF:\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20font-family:\x20Arial,\x20H
+SF:elvetica,\x20sans-serif;\n\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\
+SF:x20font-size:\x2014px;\n\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x2
+SF:0line-height:\x201\.428571429;\n\x20\x20\x20\x20\x20\x20\x20\x20\x20\x2
+SF:0\x20\x20background-color:\x20#ffffff;\n\x20\x20\x20\x20\x20\x20\x20\x2
+SF:0\x20\x20\x20\x20color:\x20#2F3230;\n\x20\x20\x20\x20\x20\x20\x20\x20\x
+SF:20\x20\x20\x20padding:\x200;\n\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\
+SF:x20\x20margin:\x200;\n\x20\x20\x20\x20\x20\x20\x20\x20}\n\x20\x20\x20\x
+SF:20\x20\x20\x20\x20section,\x20footer\x20{\n\x20\x20\x20\x20\x20\x20\x20
+SF:\x20\x20\x20\x20\x20display:\x20block;\n\x20\x20\x20\x20\x20\x20\x20\x2
+SF:0\x20\x20\x20\x20padding:\x200;\n\x20\x20\x20\x20\x20\x20\x20\x20\x20\x
+SF:20\x20\x20margin:\x200;\n\x20\x20\x20\x20\x20\x20\x20\x20}\n\x20\x20\x2
+SF:0\x20\x20\x20\x20\x20\.container\x20{\n\x20\x20\x20\x20");
+Service Info: Host: host4069.hospedameusite.net; OS: Linux; CPE: cpe:/o:redhat:enterprise_linux:7
+
+Nmap scan report for rhubarb.noproblemnetworks.com (167.114.21.116)
+Host is up (0.14s latency).
+Not shown: 98 filtered tcp ports (no-response)
+PORT    STATE SERVICE   VERSION
+80/tcp  open  http      Microsoft IIS httpd 10.0
+|_http-server-header: Microsoft-IIS/10.0
+|_http-title: Site doesn't have a title.
+443/tcp open  ssl/https
+|_ssl-date: TLS randomness does not represent time
+| ssl-cert: Subject: commonName=exchange.npnx.co
+| Subject Alternative Name: DNS:exchange.npnx.co, DNS:autodiscover.npnx.co, DNS:jaguar.npnx.co, DNS:npnx.co, DNS:panther.npnx.co
+| Not valid before: 2025-06-18T00:00:00
+|_Not valid after:  2026-06-01T23:59:59
+|_http-server-header: Microsoft-IIS/10.0
+Service Info: OS: Windows; CPE: cpe:/o:microsoft:windows
+
+Nmap scan report for koala.noproblemnetworks.com (167.114.21.117)
+Host is up (0.14s latency).
+Not shown: 96 filtered tcp ports (no-response)
+PORT    STATE  SERVICE    VERSION
+25/tcp  open   smtp       Postfix smtpd
+| smtp-commands: wombat.noproblemnetworks.com, PIPELINING, SIZE 104857600, VRFY, ETRN, ENHANCEDSTATUSCODES, 8BITMIME, SMTPUTF8, CHUNKING
+|_ 2.0.0 Commands: AUTH BDAT DATA EHLO ETRN HELO HELP MAIL NOOP QUIT RCPT RSET STARTTLS VRFY XCLIENT XFORWARD
+80/tcp  closed http
+443/tcp closed https
+587/tcp closed submission
+
+Nmap scan report for uglifruit.noproblemnetworks.com (167.114.21.118)
+Host is up (0.14s latency).
+Not shown: 97 filtered tcp ports (no-response)
+PORT    STATE SERVICE  VERSION
+21/tcp  open  ftp      ProFTPD or KnFTPD
+80/tcp  open  http     Apache httpd 2.4.46 ((Fedora) OpenSSL/1.1.1g)
+|_http-server-header: Apache/2.4.46 (Fedora) OpenSSL/1.1.1g
+|_http-title: Did not follow redirect to https://portal.pacific-first.com/
+443/tcp open  ssl/http Apache httpd 2.4.46 ((Fedora) OpenSSL/1.1.1g)
+|_ssl-date: TLS randomness does not represent time
+| http-methods: 
+|_  Potentially risky methods: TRACE
+|_http-server-header: Apache/2.4.46 (Fedora) OpenSSL/1.1.1g
+| tls-alpn: 
+|_  http/1.1
+|_http-title: Test Page for the HTTP Server on Fedora
+| ssl-cert: Subject: commonName=uglifruit.noproblemnetworks.com/organizationName=Unspecified/countryName=US
+| Subject Alternative Name: DNS:uglifruit.noproblemnetworks.com
+| Not valid before: 2020-01-14T23:48:28
+|_Not valid after:  2021-01-19T01:28:28
+Service Info: OS: Unix
+
+Nmap scan report for ip123.ip-167-114-21.net (167.114.21.123)
+Host is up (0.14s latency).
+Not shown: 94 filtered tcp ports (no-response)
+PORT     STATE SERVICE       VERSION
+80/tcp   open  http          Microsoft IIS httpd 10.0
+|_http-title: IIS Windows Server
+| http-methods: 
+|_  Potentially risky methods: TRACE
+|_http-server-header: Microsoft-IIS/10.0
+135/tcp  open  msrpc         Microsoft Windows RPC
+139/tcp  open  netbios-ssn   Microsoft Windows netbios-ssn
+443/tcp  open  ssl/http      Microsoft IIS httpd 10.0
+| http-methods: 
+|_  Potentially risky methods: TRACE
+| ssl-cert: Subject: commonName=TerraServer2025
+| Not valid before: 2025-09-14T15:26:45
+|_Not valid after:  2026-03-16T15:26:45
+|_ssl-date: TLS randomness does not represent time
+| tls-alpn: 
+|_  http/1.1
+|_http-server-header: Microsoft-IIS/10.0
+|_http-title: IIS Windows Server
+445/tcp  open  microsoft-ds?
+5357/tcp open  http          Microsoft HTTPAPI httpd 2.0 (SSDP/UPnP)
+|_http-title: Service Unavailable
+|_http-server-header: Microsoft-HTTPAPI/2.0
+Service Info: OS: Windows; CPE: cpe:/o:microsoft:windows
+
+Host script results:
+| smb2-time: 
+|   date: 2026-05-11T09:04:14
+|_  start_date: N/A
+| smb2-security-mode: 
+|   3:1:1: 
+|_    Message signing enabled but not required
+|_clock-skew: -1s
+
+Nmap scan report for ip126.ip-167-114-21.net (167.114.21.126)
+Host is up (0.15s latency).
+All 100 scanned ports on ip126.ip-167-114-21.net (167.114.21.126) are in ignored states.
+Not shown: 100 filtered tcp ports (no-response)
+
+Nmap scan report for ip131.ip-167-114-21.net (167.114.21.131)
+Host is up (0.14s latency).
+Not shown: 99 filtered tcp ports (no-response)
+PORT     STATE SERVICE VERSION
+5000/tcp open  http    Microsoft HTTPAPI httpd 2.0 (SSDP/UPnP)
+|_http-server-header: Microsoft-HTTPAPI/2.0
+|_http-title: Site doesn't have a title.
+Service Info: OS: Windows; CPE: cpe:/o:microsoft:windows
+
+Nmap scan report for ip132.ip-167-114-21.net (167.114.21.132)
+Host is up (0.14s latency).
+Not shown: 96 filtered tcp ports (no-response)
+PORT     STATE SERVICE  VERSION
+21/tcp   open  ftp      Microsoft ftpd
+| ftp-syst: 
+|_  SYST: Windows_NT
+80/tcp   open  http     Microsoft HTTPAPI httpd 2.0 (SSDP/UPnP)
+|_http-server-header: Microsoft-HTTPAPI/2.0
+|_http-title: Not Found
+443/tcp  open  ssl/http Microsoft HTTPAPI httpd 2.0 (SSDP/UPnP)
+|_ssl-date: 2026-05-11T09:14:30+00:00; -1s from scanner time.
+| tls-alpn: 
+|_  http/1.1
+| ssl-cert: Subject: commonName=*.timeslice.ca
+| Subject Alternative Name: DNS:*.timeslice.ca, DNS:timeslice.ca
+| Not valid before: 2025-10-14T14:10:36
+|_Not valid after:  2026-11-15T14:10:35
+|_http-title: Not Found
+|_http-server-header: Microsoft-HTTPAPI/2.0
+5000/tcp open  http     Microsoft HTTPAPI httpd 2.0 (SSDP/UPnP)
+|_http-server-header: Microsoft-HTTPAPI/2.0
+|_http-title: Site doesn't have a title.
+Service Info: OS: Windows; CPE: cpe:/o:microsoft:windows
+
+Host script results:
+|_clock-skew: -1s
+
+Nmap scan report for ip133.ip-167-114-21.net (167.114.21.133)
+Host is up (0.14s latency).
+Not shown: 95 filtered tcp ports (no-response)
+PORT     STATE SERVICE  VERSION
+80/tcp   open  http     Microsoft IIS httpd 10.0
+|_http-server-header: Microsoft-IIS/10.0
+|_http-title: Did not follow redirect to https://webmail.timeslice.ca
+110/tcp  open  ssl/pop3
+| ssl-cert: Subject: commonName=*.timeslice.ca
+| Subject Alternative Name: DNS:*.timeslice.ca, DNS:timeslice.ca
+| Not valid before: 2025-10-14T14:10:36
+|_Not valid after:  2026-11-15T14:10:35
+|_pop3-capabilities: USER TOP UIDL APOP
+| fingerprint-strings: 
+|   GenericLines: 
+|     +OK Welcome to TimeSlice Securemail <3260.2139775000@securemail.timeslice.ca>
+|     -ERR Unknown command
+|     -ERR Unknown command
+|   HTTPOptions: 
+|     +OK Welcome to TimeSlice Securemail <3260.2139786437@securemail.timeslice.ca>
+|     -ERR Unknown command
+|     -ERR Unknown command
+|   NULL: 
+|_    +OK Welcome to TimeSlice Securemail <3260.2139775000@securemail.timeslice.ca>
+|_ssl-date: 2026-05-11T09:13:31+00:00; -1s from scanner time.
+443/tcp  open  ssl/http Microsoft IIS httpd 10.0
+|_ssl-date: 2026-05-11T09:15:08+00:00; -1s from scanner time.
+|_http-title: Did not follow redirect to https://webmail.timeslice.ca
+|_http-server-header: Microsoft-IIS/10.0
+| ssl-cert: Subject: commonName=*.timeslice.ca
+| Subject Alternative Name: DNS:*.timeslice.ca, DNS:timeslice.ca
+| Not valid before: 2025-10-14T14:10:36
+|_Not valid after:  2026-11-15T14:10:35
+| tls-alpn: 
+|_  http/1.1
+995/tcp  open  ssl/pop3
+|_pop3-capabilities: USER TOP UIDL APOP
+| fingerprint-strings: 
+|   HTTPOptions: 
+|     +OK Welcome to TimeSlice Securemail <3260.2139750015@securemail.timeslice.ca>
+|     -ERR Unknown command
+|     -ERR Unknown command
+|   NULL: 
+|_    +OK Welcome to TimeSlice Securemail <3260.2139743453@securemail.timeslice.ca>
+| ssl-cert: Subject: commonName=*.timeslice.ca
+| Subject Alternative Name: DNS:*.timeslice.ca, DNS:timeslice.ca
+| Not valid before: 2025-10-14T14:10:36
+|_Not valid after:  2026-11-15T14:10:35
+|_ssl-date: 2026-05-11T09:14:02+00:00; -1s from scanner time.
+5000/tcp open  http     Microsoft HTTPAPI httpd 2.0 (SSDP/UPnP)
+|_http-server-header: Microsoft-HTTPAPI/2.0
+|_http-title: Site doesn't have a title.
+2 services unrecognized despite returning data. If you know the service/version, please submit the following fingerprints at https://nmap.org/cgi-bin/submit.cgi?new-service :
+==============NEXT SERVICE FINGERPRINT (SUBMIT INDIVIDUALLY)==============
+SF-Port110-TCP:V=7.95%T=SSL%I=7%D=5/11%Time=6A019A1F%P=x86_64-pc-linux-gnu
+SF:%r(NULL,4F,"\+OK\x20Welcome\x20to\x20TimeSlice\x20Securemail\x20<3260\.
+SF:2139775000@securemail\.timeslice\.ca>\r\n")%r(GenericLines,7B,"\+OK\x20
+SF:Welcome\x20to\x20TimeSlice\x20Securemail\x20<3260\.2139775000@securemai
+SF:l\.timeslice\.ca>\r\n-ERR\x20Unknown\x20command\r\n-ERR\x20Unknown\x20c
+SF:ommand\r\n")%r(HTTPOptions,7B,"\+OK\x20Welcome\x20to\x20TimeSlice\x20Se
+SF:curemail\x20<3260\.2139786437@securemail\.timeslice\.ca>\r\n-ERR\x20Unk
+SF:nown\x20command\r\n-ERR\x20Unknown\x20command\r\n");
+==============NEXT SERVICE FINGERPRINT (SUBMIT INDIVIDUALLY)==============
+SF-Port995-TCP:V=7.95%T=SSL%I=7%D=5/11%Time=6A019A00%P=x86_64-pc-linux-gnu
+SF:%r(NULL,4F,"\+OK\x20Welcome\x20to\x20TimeSlice\x20Securemail\x20<3260\.
+SF:2139743453@securemail\.timeslice\.ca>\r\n")%r(HTTPOptions,7B,"\+OK\x20W
+SF:elcome\x20to\x20TimeSlice\x20Securemail\x20<3260\.2139750015@securemail
+SF:\.timeslice\.ca>\r\n-ERR\x20Unknown\x20command\r\n-ERR\x20Unknown\x20co
+SF:mmand\r\n");
+Service Info: Host: securemail.timeslice.ca; OS: Windows; CPE: cpe:/o:microsoft:windows
+
+Host script results:
+|_clock-skew: mean: -1s, deviation: 0s, median: -1s
+
+Nmap scan report for ip134.ip-167-114-21.net (167.114.21.134)
+Host is up (0.14s latency).
+Not shown: 96 filtered tcp ports (no-response)
+PORT     STATE SERVICE  VERSION
+21/tcp   open  ftp      Microsoft ftpd
+| ftp-syst: 
+|_  SYST: Windows_NT
+80/tcp   open  http     Microsoft HTTPAPI httpd 2.0 (SSDP/UPnP)
+|_http-server-header: Microsoft-HTTPAPI/2.0
+|_http-title: Not Found
+443/tcp  open  ssl/http Microsoft HTTPAPI httpd 2.0 (SSDP/UPnP)
+|_http-server-header: Microsoft-HTTPAPI/2.0
+| tls-alpn: 
+|_  http/1.1
+| ssl-cert: Subject: commonName=*.timeslice.ca
+| Subject Alternative Name: DNS:*.timeslice.ca, DNS:timeslice.ca
+| Not valid before: 2025-10-14T14:10:36
+|_Not valid after:  2026-11-15T14:10:35
+|_ssl-date: 2026-05-11T09:13:32+00:00; -1s from scanner time.
+|_http-title: Not Found
+5000/tcp open  http     Microsoft HTTPAPI httpd 2.0 (SSDP/UPnP)
+|_http-server-header: Microsoft-HTTPAPI/2.0
+|_http-title: Site doesn't have a title.
+Service Info: OS: Windows; CPE: cpe:/o:microsoft:windows
+
+Host script results:
+|_clock-skew: -1s
+
+Nmap scan report for ip135.ip-167-114-21.net (167.114.21.135)
+Host is up (0.16s latency).
+Not shown: 98 filtered tcp ports (no-response)
+PORT     STATE SERVICE VERSION
+80/tcp   open  http    Microsoft HTTPAPI httpd 2.0 (SSDP/UPnP)
+|_http-server-header: Microsoft-HTTPAPI/2.0
+|_http-title: Not Found
+5000/tcp open  http    Microsoft HTTPAPI httpd 2.0 (SSDP/UPnP)
+|_http-title: Site doesn't have a title.
+|_http-server-header: Microsoft-HTTPAPI/2.0
+Service Info: OS: Windows; CPE: cpe:/o:microsoft:windows
+
+Nmap scan report for cuddlybooks.com (167.114.21.165)
+Host is up (0.14s latency).
+Not shown: 41 filtered tcp ports (port-unreach), 40 filtered tcp ports (no-response)
+PORT      STATE  SERVICE  VERSION
+21/tcp    open   ftp      Pure-FTPd
+22/tcp    closed ssh
+25/tcp    open   smtp?
+|_smtp-commands: Couldn't establish connection on port 25
+53/tcp    open   domain   PowerDNS Authoritative Server 4.9.5
+80/tcp    open   http     LiteSpeed httpd
+|_http-title: 403 Forbidden
+110/tcp   open   pop3     Dovecot pop3d
+|_pop3-capabilities: STLS RESP-CODES USER CAPA TOP AUTH-RESP-CODE SASL(PLAIN LOGIN) UIDL PIPELINING
+| ssl-cert: Subject: commonName=cpanel.voda23.vodahost23.com
+| Subject Alternative Name: DNS:cpanel.voda23.vodahost23.com, DNS:cpcontacts.voda23.vodahost23.com, DNS:ipv6.voda23.vodahost23.com, DNS:mail.voda23.vodahost23.com, DNS:voda23.vodahost23.com, DNS:webmail.voda23.vodahost23.com, DNS:whm.voda23.vodahost23.com, DNS:www.voda23.vodahost23.com
+| Not valid before: 2026-04-21T19:01:02
+|_Not valid after:  2026-07-20T19:01:01
+143/tcp   open   imap     Dovecot imapd
+| ssl-cert: Subject: commonName=cpanel.voda23.vodahost23.com
+| Subject Alternative Name: DNS:cpanel.voda23.vodahost23.com, DNS:cpcontacts.voda23.vodahost23.com, DNS:ipv6.voda23.vodahost23.com, DNS:mail.voda23.vodahost23.com, DNS:voda23.vodahost23.com, DNS:webmail.voda23.vodahost23.com, DNS:whm.voda23.vodahost23.com, DNS:www.voda23.vodahost23.com
+| Not valid before: 2026-04-21T19:01:02
+|_Not valid after:  2026-07-20T19:01:01
+443/tcp   open   ssl/http LiteSpeed httpd
+| ssl-cert: Subject: commonName=cpanel.voda23.vodahost23.com
+| Subject Alternative Name: DNS:cpanel.voda23.vodahost23.com, DNS:cpcontacts.voda23.vodahost23.com, DNS:ipv6.voda23.vodahost23.com, DNS:mail.voda23.vodahost23.com, DNS:voda23.vodahost23.com, DNS:webmail.voda23.vodahost23.com, DNS:whm.voda23.vodahost23.com, DNS:www.voda23.vodahost23.com
+| Not valid before: 2026-04-21T19:01:02
+|_Not valid after:  2026-07-20T19:01:01
+|_http-title: One moment, please...
+465/tcp   open   ssl/smtp Exim smtpd 4.99.2
+|_smtp-commands: Couldn't establish connection on port 465
+587/tcp   open   smtp     Exim smtpd 4.99.2
+|_smtp-commands: Couldn't establish connection on port 587
+993/tcp   open   ssl/imap Dovecot imapd
+| ssl-cert: Subject: commonName=cpanel.voda23.vodahost23.com
+| Subject Alternative Name: DNS:cpanel.voda23.vodahost23.com, DNS:cpcontacts.voda23.vodahost23.com, DNS:ipv6.voda23.vodahost23.com, DNS:mail.voda23.vodahost23.com, DNS:voda23.vodahost23.com, DNS:webmail.voda23.vodahost23.com, DNS:whm.voda23.vodahost23.com, DNS:www.voda23.vodahost23.com
+| Not valid before: 2026-04-21T19:01:02
+|_Not valid after:  2026-07-20T19:01:01
+|_imap-capabilities: AUTH=PLAIN OK IMAP4rev1 more Pre-login LITERAL+ IDLE have AUTH=LOGINA0001 post-login capabilities listed SASL-IR ID LOGIN-REFERRALS ENABLE
+995/tcp   open   ssl/pop3 Dovecot pop3d
+| ssl-cert: Subject: commonName=cpanel.voda23.vodahost23.com
+| Subject Alternative Name: DNS:cpanel.voda23.vodahost23.com, DNS:cpcontacts.voda23.vodahost23.com, DNS:ipv6.voda23.vodahost23.com, DNS:mail.voda23.vodahost23.com, DNS:voda23.vodahost23.com, DNS:webmail.voda23.vodahost23.com, DNS:whm.voda23.vodahost23.com, DNS:www.voda23.vodahost23.com
+| Not valid before: 2026-04-21T19:01:02
+|_Not valid after:  2026-07-20T19:01:01
+3306/tcp  open   mysql    MySQL 8.0.46
+| ssl-cert: Subject: commonName=MySQL_Server_8.0.36_Auto_Generated_Server_Certificate
+| Not valid before: 2024-01-31T04:37:17
+|_Not valid after:  2034-01-28T04:37:17
+49152/tcp closed unknown
+49153/tcp closed unknown
+49154/tcp closed unknown
+49155/tcp closed unknown
+49156/tcp closed unknown
+49157/tcp closed unknown
+Service Info: Host: voda23.vodahost23.com
+
+Nmap scan report for bvpdigitalquest.com (167.114.21.164)
+Host is up (0.14s latency).
+Not shown: 52 filtered tcp ports (no-response), 29 filtered tcp ports (port-unreach)
+PORT      STATE  SERVICE  VERSION
+21/tcp    open   ftp      Pure-FTPd
+22/tcp    closed ssh
+25/tcp    open   smtp?
+|_smtp-commands: Couldn't establish connection on port 25
+53/tcp    open   domain   PowerDNS Authoritative Server 4.9.5
+80/tcp    open   http     LiteSpeed httpd
+|_http-title: One moment, please...
+|_http-trane-info: Problem with XML parsing of /evox/about
+110/tcp   open   pop3     Dovecot pop3d
+| ssl-cert: Subject: commonName=cpanel.voda23.vodahost23.com
+| Subject Alternative Name: DNS:cpanel.voda23.vodahost23.com, DNS:cpcontacts.voda23.vodahost23.com, DNS:ipv6.voda23.vodahost23.com, DNS:mail.voda23.vodahost23.com, DNS:voda23.vodahost23.com, DNS:webmail.voda23.vodahost23.com, DNS:whm.voda23.vodahost23.com, DNS:www.voda23.vodahost23.com
+| Not valid before: 2026-04-21T19:01:02
+|_Not valid after:  2026-07-20T19:01:01
+143/tcp   open   imap     Dovecot imapd
+| ssl-cert: Subject: commonName=cpanel.voda23.vodahost23.com
+| Subject Alternative Name: DNS:cpanel.voda23.vodahost23.com, DNS:cpcontacts.voda23.vodahost23.com, DNS:ipv6.voda23.vodahost23.com, DNS:mail.voda23.vodahost23.com, DNS:voda23.vodahost23.com, DNS:webmail.voda23.vodahost23.com, DNS:whm.voda23.vodahost23.com, DNS:www.voda23.vodahost23.com
+| Not valid before: 2026-04-21T19:01:02
+|_Not valid after:  2026-07-20T19:01:01
+443/tcp   open   ssl/http LiteSpeed httpd
+|_http-title: One moment, please...
+| ssl-cert: Subject: commonName=mail.bvpdigitalquest.com
+| Subject Alternative Name: DNS:mail.bvpdigitalquest.com
+| Not valid before: 2026-04-22T09:52:13
+|_Not valid after:  2026-07-21T09:52:12
+465/tcp   open   ssl/smtp Exim smtpd 4.99.2
+|_smtp-commands: Couldn't establish connection on port 465
+587/tcp   open   smtp     Exim smtpd 4.99.2
+|_smtp-commands: Couldn't establish connection on port 587
+993/tcp   open   ssl/imap Dovecot imapd
+| ssl-cert: Subject: commonName=cpanel.voda23.vodahost23.com
+| Subject Alternative Name: DNS:cpanel.voda23.vodahost23.com, DNS:cpcontacts.voda23.vodahost23.com, DNS:ipv6.voda23.vodahost23.com, DNS:mail.voda23.vodahost23.com, DNS:voda23.vodahost23.com, DNS:webmail.voda23.vodahost23.com, DNS:whm.voda23.vodahost23.com, DNS:www.voda23.vodahost23.com
+| Not valid before: 2026-04-21T19:01:02
+|_Not valid after:  2026-07-20T19:01:01
+995/tcp   open   ssl/pop3 Dovecot pop3d
+| ssl-cert: Subject: commonName=cpanel.voda23.vodahost23.com
+| Subject Alternative Name: DNS:cpanel.voda23.vodahost23.com, DNS:cpcontacts.voda23.vodahost23.com, DNS:ipv6.voda23.vodahost23.com, DNS:mail.voda23.vodahost23.com, DNS:voda23.vodahost23.com, DNS:webmail.voda23.vodahost23.com, DNS:whm.voda23.vodahost23.com, DNS:www.voda23.vodahost23.com
+| Not valid before: 2026-04-21T19:01:02
+|_Not valid after:  2026-07-20T19:01:01
+3306/tcp  open   mysql    MySQL 8.0.46
+| ssl-cert: Subject: commonName=MySQL_Server_8.0.36_Auto_Generated_Server_Certificate
+| Not valid before: 2024-01-31T04:37:17
+|_Not valid after:  2034-01-28T04:37:17
+49152/tcp closed unknown
+49153/tcp closed unknown
+49154/tcp closed unknown
+49155/tcp closed unknown
+49156/tcp closed unknown
+49157/tcp closed unknown
+Service Info: Host: voda23.vodahost23.com
+
+Nmap scan report for ip168.ip-167-114-21.net (167.114.21.168)
+Host is up (0.14s latency).
+Not shown: 78 filtered tcp ports (host-prohibited), 16 filtered tcp ports (no-response)
+PORT    STATE  SERVICE  VERSION
+22/tcp  closed ssh
+25/tcp  open   smtp     Exim smtpd 4.96
+|_ssl-date: TLS randomness does not represent time
+| smtp-commands: vm-01 Hello ip168.ip-167-114-21.net [82.208.126.177], SIZE 52428800, 8BITMIME, PIPELINING, PIPECONNECT, CHUNKING, STARTTLS, PRDR, HELP
+|_ Commands supported: AUTH STARTTLS HELO EHLO MAIL RCPT DATA BDAT NOOP QUIT RSET HELP
+80/tcp  open   http     nginx
+|_http-title: Welcome to nginx!
+443/tcp open   ssl/http nginx
+|_http-title: Did not follow redirect to https://myunitycodes.com/
+| ssl-cert: Subject: commonName=CloudFlare Origin Certificate/organizationName=CloudFlare, Inc.
+| Subject Alternative Name: DNS:*.myunitycodes.com, DNS:myunitycodes.com
+| Not valid before: 2023-08-08T07:01:00
+|_Not valid after:  2038-08-04T07:01:00
+|_ssl-date: TLS randomness does not represent time
+| tls-alpn: 
+|   http/1.1
+|   http/1.0
+|_  http/0.9
+465/tcp open   ssl/smtp Exim smtpd 4.96
+|_ssl-date: TLS randomness does not represent time
+|_smtp-commands: SMTP EHLO ip168.ip-167-114-21.net: failed to receive data: failed to receive data
+587/tcp open   smtp     Exim smtpd 4.96
+| smtp-commands: vm-01 Hello ip168.ip-167-114-21.net [82.208.126.177], SIZE 52428800, 8BITMIME, PIPELINING, PIPECONNECT, CHUNKING, STARTTLS, PRDR, HELP
+|_ Commands supported: AUTH STARTTLS HELO EHLO MAIL RCPT DATA BDAT NOOP QUIT RSET HELP
+|_ssl-date: TLS randomness does not represent time
+Service Info: Host: vm-01
+
+Nmap scan report for dipromedicos.com (167.114.21.167)
+Host is up (0.14s latency).
+Not shown: 63 filtered tcp ports (no-response), 18 filtered tcp ports (port-unreach)
+PORT      STATE  SERVICE  VERSION
+21/tcp    open   ftp      Pure-FTPd
+22/tcp    closed ssh
+25/tcp    open   smtp?
+|_smtp-commands: Couldn't establish connection on port 25
+53/tcp    open   domain   PowerDNS Authoritative Server 4.9.5
+80/tcp    open   http     LiteSpeed httpd
+|_http-title: One moment, please...
+|_http-trane-info: Problem with XML parsing of /evox/about
+110/tcp   open   pop3     Dovecot pop3d
+| ssl-cert: Subject: commonName=cpanel.voda23.vodahost23.com
+| Subject Alternative Name: DNS:cpanel.voda23.vodahost23.com, DNS:cpcontacts.voda23.vodahost23.com, DNS:ipv6.voda23.vodahost23.com, DNS:mail.voda23.vodahost23.com, DNS:voda23.vodahost23.com, DNS:webmail.voda23.vodahost23.com, DNS:whm.voda23.vodahost23.com, DNS:www.voda23.vodahost23.com
+| Not valid before: 2026-04-21T19:01:02
+|_Not valid after:  2026-07-20T19:01:01
+143/tcp   open   imap     Dovecot imapd
+| ssl-cert: Subject: commonName=cpanel.voda23.vodahost23.com
+| Subject Alternative Name: DNS:cpanel.voda23.vodahost23.com, DNS:cpcontacts.voda23.vodahost23.com, DNS:ipv6.voda23.vodahost23.com, DNS:mail.voda23.vodahost23.com, DNS:voda23.vodahost23.com, DNS:webmail.voda23.vodahost23.com, DNS:whm.voda23.vodahost23.com, DNS:www.voda23.vodahost23.com
+| Not valid before: 2026-04-21T19:01:02
+|_Not valid after:  2026-07-20T19:01:01
+443/tcp   open   ssl/http LiteSpeed httpd
+|_http-title: One moment, please...
+| ssl-cert: Subject: commonName=dipromedicos.com
+| Subject Alternative Name: DNS:*.dipromedicos.com, DNS:dipromedicos.com
+| Not valid before: 2026-04-13T06:52:25
+|_Not valid after:  2026-07-12T06:52:24
+465/tcp   open   ssl/smtp Exim smtpd 4.99.2
+|_smtp-commands: Couldn't establish connection on port 465
+587/tcp   open   smtp     Exim smtpd 4.99.2
+|_smtp-commands: Couldn't establish connection on port 587
+993/tcp   open   ssl/imap Dovecot imapd
+| ssl-cert: Subject: commonName=cpanel.voda23.vodahost23.com
+| Subject Alternative Name: DNS:cpanel.voda23.vodahost23.com, DNS:cpcontacts.voda23.vodahost23.com, DNS:ipv6.voda23.vodahost23.com, DNS:mail.voda23.vodahost23.com, DNS:voda23.vodahost23.com, DNS:webmail.voda23.vodahost23.com, DNS:whm.voda23.vodahost23.com, DNS:www.voda23.vodahost23.com
+| Not valid before: 2026-04-21T19:01:02
+|_Not valid after:  2026-07-20T19:01:01
+995/tcp   open   ssl/pop3 Dovecot pop3d
+| ssl-cert: Subject: commonName=cpanel.voda23.vodahost23.com
+| Subject Alternative Name: DNS:cpanel.voda23.vodahost23.com, DNS:cpcontacts.voda23.vodahost23.com, DNS:ipv6.voda23.vodahost23.com, DNS:mail.voda23.vodahost23.com, DNS:voda23.vodahost23.com, DNS:webmail.voda23.vodahost23.com, DNS:whm.voda23.vodahost23.com, DNS:www.voda23.vodahost23.com
+| Not valid before: 2026-04-21T19:01:02
+|_Not valid after:  2026-07-20T19:01:01
+3306/tcp  open   mysql    MySQL 8.0.46
+| ssl-cert: Subject: commonName=MySQL_Server_8.0.36_Auto_Generated_Server_Certificate
+| Not valid before: 2024-01-31T04:37:17
+|_Not valid after:  2034-01-28T04:37:17
+49152/tcp closed unknown
+49153/tcp closed unknown
+49154/tcp closed unknown
+49155/tcp closed unknown
+49156/tcp closed unknown
+49157/tcp closed unknown
+Service Info: Host: voda23.vodahost23.com
+
+Nmap scan report for croatiagulet-hera.info (167.114.21.166)
+Host is up (0.14s latency).
+Not shown: 59 filtered tcp ports (no-response), 22 filtered tcp ports (port-unreach)
+PORT      STATE  SERVICE  VERSION
+21/tcp    open   ftp      Pure-FTPd
+22/tcp    closed ssh
+25/tcp    open   smtp?
+|_smtp-commands: Couldn't establish connection on port 25
+53/tcp    open   domain   PowerDNS Authoritative Server 4.9.5
+80/tcp    open   http     LiteSpeed httpd
+|_http-trane-info: Problem with XML parsing of /evox/about
+110/tcp   open   pop3     Dovecot pop3d
+| ssl-cert: Subject: commonName=cpanel.voda23.vodahost23.com
+| Subject Alternative Name: DNS:cpanel.voda23.vodahost23.com, DNS:cpcontacts.voda23.vodahost23.com, DNS:ipv6.voda23.vodahost23.com, DNS:mail.voda23.vodahost23.com, DNS:voda23.vodahost23.com, DNS:webmail.voda23.vodahost23.com, DNS:whm.voda23.vodahost23.com, DNS:www.voda23.vodahost23.com
+| Not valid before: 2026-04-21T19:01:02
+|_Not valid after:  2026-07-20T19:01:01
+143/tcp   open   imap     Dovecot imapd
+| ssl-cert: Subject: commonName=cpanel.voda23.vodahost23.com
+| Subject Alternative Name: DNS:cpanel.voda23.vodahost23.com, DNS:cpcontacts.voda23.vodahost23.com, DNS:ipv6.voda23.vodahost23.com, DNS:mail.voda23.vodahost23.com, DNS:voda23.vodahost23.com, DNS:webmail.voda23.vodahost23.com, DNS:whm.voda23.vodahost23.com, DNS:www.voda23.vodahost23.com
+| Not valid before: 2026-04-21T19:01:02
+|_Not valid after:  2026-07-20T19:01:01
+443/tcp   open   ssl/http LiteSpeed httpd
+| ssl-cert: Subject: commonName=cpanel.voda23.vodahost23.com
+| Subject Alternative Name: DNS:cpanel.voda23.vodahost23.com, DNS:cpcontacts.voda23.vodahost23.com, DNS:ipv6.voda23.vodahost23.com, DNS:mail.voda23.vodahost23.com, DNS:voda23.vodahost23.com, DNS:webmail.voda23.vodahost23.com, DNS:whm.voda23.vodahost23.com, DNS:www.voda23.vodahost23.com
+| Not valid before: 2026-04-21T19:01:02
+|_Not valid after:  2026-07-20T19:01:01
+465/tcp   open   ssl/smtp Exim smtpd 4.99.2
+|_smtp-commands: Couldn't establish connection on port 465
+587/tcp   open   smtp     Exim smtpd 4.99.2
+|_smtp-commands: Couldn't establish connection on port 587
+993/tcp   open   ssl/imap Dovecot imapd
+| ssl-cert: Subject: commonName=cpanel.voda23.vodahost23.com
+| Subject Alternative Name: DNS:cpanel.voda23.vodahost23.com, DNS:cpcontacts.voda23.vodahost23.com, DNS:ipv6.voda23.vodahost23.com, DNS:mail.voda23.vodahost23.com, DNS:voda23.vodahost23.com, DNS:webmail.voda23.vodahost23.com, DNS:whm.voda23.vodahost23.com, DNS:www.voda23.vodahost23.com
+| Not valid before: 2026-04-21T19:01:02
+|_Not valid after:  2026-07-20T19:01:01
+995/tcp   open   ssl/pop3 Dovecot pop3d
+| ssl-cert: Subject: commonName=cpanel.voda23.vodahost23.com
+| Subject Alternative Name: DNS:cpanel.voda23.vodahost23.com, DNS:cpcontacts.voda23.vodahost23.com, DNS:ipv6.voda23.vodahost23.com, DNS:mail.voda23.vodahost23.com, DNS:voda23.vodahost23.com, DNS:webmail.voda23.vodahost23.com, DNS:whm.voda23.vodahost23.com, DNS:www.voda23.vodahost23.com
+| Not valid before: 2026-04-21T19:01:02
+|_Not valid after:  2026-07-20T19:01:01
+3306/tcp  open   mysql    MySQL 8.0.46
+| ssl-cert: Subject: commonName=MySQL_Server_8.0.36_Auto_Generated_Server_Certificate
+| Not valid before: 2024-01-31T04:37:17
+|_Not valid after:  2034-01-28T04:37:17
+49152/tcp closed unknown
+49153/tcp closed unknown
+49154/tcp closed unknown
+49155/tcp closed unknown
+49156/tcp closed unknown
+49157/tcp closed unknown
+Service Info: Host: voda23.vodahost23.com
+
+Nmap scan report for ip171.ip-167-114-21.net (167.114.21.171)
+Host is up (0.14s latency).
+Not shown: 86 filtered tcp ports (no-response)
+PORT      STATE  SERVICE     VERSION
+21/tcp    closed ftp
+25/tcp    open   smtp        Exim smtpd 4.96
+|_ssl-date: TLS randomness does not represent time
+| smtp-commands: vm-bk Hello ip171.ip-167-114-21.net [82.208.126.177], SIZE 52428800, 8BITMIME, PIPELINING, PIPECONNECT, CHUNKING, STARTTLS, PRDR, HELP
+|_ Commands supported: AUTH STARTTLS HELO EHLO MAIL RCPT DATA BDAT NOOP QUIT RSET HELP
+53/tcp    closed domain
+80/tcp    open   http        nginx
+|_http-title: Welcome to nginx!
+110/tcp   closed pop3
+143/tcp   closed imap
+443/tcp   open   ssl/http    nginx
+|_http-title: Did not follow redirect to https://acadownload.com/
+|_ssl-date: TLS randomness does not represent time
+| tls-alpn: 
+|   http/1.1
+|   http/1.0
+|_  http/0.9
+| ssl-cert: Subject: commonName=CloudFlare Origin Certificate/organizationName=CloudFlare, Inc.
+| Subject Alternative Name: DNS:*.acadownload.com, DNS:acadownload.com
+| Not valid before: 2022-07-08T05:14:00
+|_Not valid after:  2037-07-04T05:14:00
+465/tcp   open   ssl/smtp    Exim smtpd 4.96
+|_smtp-commands: vm-bk Hello ip171.ip-167-114-21.net [82.208.126.177], SIZE 52428800, 8BITMIME, PIPELINING, PIPECONNECT, CHUNKING, PRDR, HELP
+|_ssl-date: TLS randomness does not represent time
+587/tcp   open   smtp        Exim smtpd 4.96
+|_ssl-date: TLS randomness does not represent time
+| smtp-commands: vm-bk Hello ip171.ip-167-114-21.net [82.208.126.177], SIZE 52428800, 8BITMIME, PIPELINING, PIPECONNECT, CHUNKING, STARTTLS, PRDR, HELP
+|_ Commands supported: AUTH STARTTLS HELO EHLO MAIL RCPT DATA BDAT NOOP QUIT RSET HELP
+993/tcp   closed imaps
+995/tcp   closed pop3s
+32768/tcp closed filenet-tms
+49153/tcp closed unknown
+49156/tcp closed unknown
+Service Info: Host: vm-bk
+
+Nmap scan report for ip175.ip-167-114-21.net (167.114.21.175)
+Host is up (0.14s latency).
+Not shown: 92 filtered tcp ports (no-response)
+PORT      STATE  SERVICE VERSION
+25/tcp    open   smtp    Exim smtpd 4.97.1
+| smtp-commands: libgen-mongo Hello ip175.ip-167-114-21.net [82.208.126.177], SIZE 52428800, 8BITMIME, PIPELINING, PIPECONNECT, CHUNKING, STARTTLS, PRDR, HELP
+|_ Commands supported: AUTH STARTTLS HELO EHLO MAIL RCPT DATA BDAT NOOP QUIT RSET HELP
+|_ssl-date: TLS randomness does not represent time
+80/tcp    open   http    nginx
+|_http-title: Welcome to nginx!
+110/tcp   closed pop3
+993/tcp   closed imaps
+49152/tcp closed unknown
+49154/tcp closed unknown
+49155/tcp closed unknown
+49157/tcp closed unknown
+Service Info: Host: libgen-mongo
+
+Nmap scan report for temple.thetemplehost.com (167.114.21.177)
+Host is up (0.14s latency).
+Not shown: 86 closed tcp ports (reset)
+PORT     STATE SERVICE  VERSION
+21/tcp   open  ftp      ProFTPD
+|_ssl-date: TLS randomness does not represent time
+22/tcp   open  ssh      OpenSSH 7.6p1 Ubuntu 4ubuntu0.7 (Ubuntu Linux; protocol 2.0)
+| ssh-hostkey: 
+|   2048 d7:f2:df:e3:cd:00:16:be:fc:62:9f:71:1b:6d:b9:aa (RSA)
+|   256 a5:69:97:fe:48:b4:51:64:e8:54:fe:88:e3:97:8a:a8 (ECDSA)
+|_  256 68:21:28:31:4d:16:16:84:aa:48:3f:57:b0:96:94:fc (ED25519)
+25/tcp   open  smtp     Postfix smtpd
+|_ssl-date: TLS randomness does not represent time
+|_smtp-commands: temple.thetemplehost.com, PIPELINING, SIZE, VRFY, ETRN, STARTTLS, AUTH PLAIN LOGIN, AUTH=PLAIN LOGIN, ENHANCEDSTATUSCODES, 8BITMIME, DSN, SMTPUTF8
+53/tcp   open  domain   (unknown banner: i-MSCP DNS Server)
+| dns-nsid: 
+|_  bind.version: i-MSCP DNS Server
+| fingerprint-strings: 
+|   DNSVersionBindReqTCP: 
+|     version
+|     bind
+|_    i-MSCP DNS Server
+80/tcp   open  http     Apache httpd
+|_http-server-header: Apache
+|_http-title: i-MSCP internet - Multi Server Control Panel - Server Default ...
+110/tcp  open  pop3     Dovecot pop3d
+| ssl-cert: Subject: commonName=temple.thetemplehost.com
+| Subject Alternative Name: DNS:temple.thetemplehost.com
+| Not valid before: 2026-04-01T21:52:47
+|_Not valid after:  2026-06-30T21:52:46
+|_pop3-capabilities: STLS RESP-CODES USER CAPA TOP AUTH-RESP-CODE SASL(PLAIN LOGIN) UIDL PIPELINING
+|_ssl-date: TLS randomness does not represent time
+111/tcp  open  rpcbind  2-4 (RPC #100000)
+| rpcinfo: 
+|   program version    port/proto  service
+|   100000  2,3,4        111/tcp   rpcbind
+|   100000  2,3,4        111/udp   rpcbind
+|   100000  3,4          111/tcp6  rpcbind
+|   100000  3,4          111/udp6  rpcbind
+|   100024  1          38207/tcp6  status
+|   100024  1          45084/udp6  status
+|   100024  1          58495/tcp   status
+|_  100024  1          60535/udp   status
+143/tcp  open  imap     Dovecot imapd (Ubuntu)
+|_ssl-date: TLS randomness does not represent time
+|_imap-capabilities: AUTH=PLAIN OK IMAP4rev1 LOGIN-REFERRALS AUTH=LOGINA0001 listed have Pre-login IDLE more post-login ENABLE LITERAL+ SASL-IR capabilities ID STARTTLS
+| ssl-cert: Subject: commonName=temple.thetemplehost.com
+| Subject Alternative Name: DNS:temple.thetemplehost.com
+| Not valid before: 2026-04-01T21:52:47
+|_Not valid after:  2026-06-30T21:52:46
+443/tcp  open  ssl/http Apache httpd
+| tls-alpn: 
+|_  http/1.1
+|_ssl-date: TLS randomness does not represent time
+|_http-title: 403 Forbidden
+|_http-server-header: Apache
+| ssl-cert: Subject: commonName=temple.thetemplehost.com
+| Subject Alternative Name: DNS:temple.thetemplehost.com, DNS:www.temple.thetemplehost.com
+| Not valid before: 2022-04-21T00:00:00
+|_Not valid after:  2023-04-21T23:59:59
+465/tcp  open  ssl/smtp Postfix smtpd
+|_smtp-commands: temple.thetemplehost.com, PIPELINING, SIZE, VRFY, ETRN, AUTH PLAIN LOGIN, AUTH=PLAIN LOGIN, ENHANCEDSTATUSCODES, 8BITMIME, DSN, SMTPUTF8
+|_ssl-date: TLS randomness does not represent time
+587/tcp  open  smtp     Postfix smtpd
+|_ssl-date: TLS randomness does not represent time
+|_smtp-commands: temple.thetemplehost.com, PIPELINING, SIZE, VRFY, ETRN, STARTTLS, AUTH PLAIN LOGIN, AUTH=PLAIN LOGIN, ENHANCEDSTATUSCODES, 8BITMIME, DSN, SMTPUTF8
+993/tcp  open  ssl/imap Dovecot imapd (Ubuntu)
+|_ssl-date: TLS randomness does not represent time
+| ssl-cert: Subject: commonName=temple.thetemplehost.com
+| Subject Alternative Name: DNS:temple.thetemplehost.com
+| Not valid before: 2026-04-01T21:52:47
+|_Not valid after:  2026-06-30T21:52:46
+|_imap-capabilities: AUTH=PLAIN OK IMAP4rev1 more Pre-login ID IDLE have AUTH=LOGINA0001 post-login capabilities listed ENABLE LOGIN-REFERRALS LITERAL+ SASL-IR
+995/tcp  open  ssl/pop3 Dovecot pop3d
+|_pop3-capabilities: SASL(PLAIN LOGIN) TOP RESP-CODES USER AUTH-RESP-CODE UIDL CAPA PIPELINING
+| ssl-cert: Subject: commonName=temple.thetemplehost.com
+| Subject Alternative Name: DNS:temple.thetemplehost.com
+| Not valid before: 2026-04-01T21:52:47
+|_Not valid after:  2026-06-30T21:52:46
+|_ssl-date: TLS randomness does not represent time
+8443/tcp open  ssl/http nginx
+| ssl-cert: Subject: commonName=admin.thetemplehost.com
+| Subject Alternative Name: DNS:admin.thetemplehost.com
+| Not valid before: 2026-03-10T00:06:22
+|_Not valid after:  2026-06-08T00:06:21
+| http-title: i-MSCP - Multi Server Control Panel / Login
+|_Requested resource was https://admin.thetemplehost.com:8443/
+| http-robots.txt: 1 disallowed entry 
+|_/
+1 service unrecognized despite returning data. If you know the service/version, please submit the following fingerprint at https://nmap.org/cgi-bin/submit.cgi?new-service :
+SF-Port53-TCP:V=7.95%I=7%D=5/11%Time=6A019A1F%P=x86_64-pc-linux-gnu%r(DNSV
+SF:ersionBindReqTCP,3E,"\0<\0\x06\x85\0\0\x01\0\x01\0\0\0\0\x07version\x04
+SF:bind\0\0\x10\0\x03\xc0\x0c\0\x10\0\x03\0\0\0\0\0\x12\x11i-MSCP\x20DNS\x
+SF:20Server");
+Service Info: OS: Linux; CPE: cpe:/o:linux:linux_kernel
+
+Nmap scan report for ip178.ip-167-114-21.net (167.114.21.178)
+Host is up (0.14s latency).
+Not shown: 98 closed tcp ports (reset)
+PORT     STATE SERVICE VERSION
+22/tcp   open  ssh     OpenSSH 8.2p1 Ubuntu 4ubuntu0.11 (Ubuntu Linux; protocol 2.0)
+| ssh-hostkey: 
+|   2048 e1:7c:7e:f0:1f:43:f7:f5:1a:1b:6d:5f:bf:ec:a7:27 (RSA)
+|   256 04:4d:fb:82:a2:7a:70:ed:75:f5:cf:de:1c:1f:5b:96 (ECDSA)
+|_  256 dc:f7:5e:3c:45:9e:0c:b8:16:ea:3a:08:9c:58:21:dc (ED25519)
+3306/tcp open  mysql   MySQL (unauthorized)
+Service Info: OS: Linux; CPE: cpe:/o:linux:linux_kernel
+
+Nmap scan report for ponyx.thetemplehost.com (167.114.21.182)
+Host is up (0.15s latency).
+Not shown: 86 closed tcp ports (reset)
+PORT     STATE SERVICE       VERSION
+25/tcp   open  smtp
+| smtp-commands: ponyx.thetemplehost.com Hello [82.208.126.177], SIZE 268435456, PIPELINING, DSN, ENHANCEDSTATUSCODES, STARTTLS, X-ANONYMOUSTLS, AUTH NTLM, X-EXPS GSSAPI NTLM, 8BITMIME, BINARYMIME, CHUNKING, SMTPUTF8, XRDST
+|_ This server supports the following commands: HELO EHLO STARTTLS RCPT DATA RSET MAIL QUIT HELP AUTH BDAT
+| smtp-ntlm-info: 
+|   Target_Name: THETEMPLEHOST
+|   NetBIOS_Domain_Name: THETEMPLEHOST
+|   NetBIOS_Computer_Name: PONYX
+|   DNS_Domain_Name: thetemplehost.com
+|   DNS_Computer_Name: ponyx.thetemplehost.com
+|   DNS_Tree_Name: thetemplehost.com
+|_  Product_Version: 10.0.17763
+| fingerprint-strings: 
+|   GenericLines, NULL: 
+|     220 ponyx.thetemplehost.com ESMTP TheTempleHost 142.4.199.97 OK 200
+|   Hello: 
+|     220 ponyx.thetemplehost.com ESMTP TheTempleHost 142.4.199.97 OK 200
+|     250-ponyx.thetemplehost.com Hello [82.208.126.177]
+|     250-SIZE 268435456
+|     250-PIPELINING
+|     250-DSN
+|     250-ENHANCEDSTATUSCODES
+|     250-STARTTLS
+|     250-X-ANONYMOUSTLS
+|     250-AUTH NTLM
+|     250-X-EXPS GSSAPI NTLM
+|     250-8BITMIME
+|     250-BINARYMIME
+|     250-CHUNKING
+|     250-SMTPUTF8
+|     XRDST
+|   Help: 
+|     220 ponyx.thetemplehost.com ESMTP TheTempleHost 142.4.199.97 OK 200
+|     214-This server supports the following commands:
+|_    HELO EHLO STARTTLS RCPT DATA RSET MAIL QUIT HELP AUTH BDAT
+80/tcp   open  http          Microsoft IIS httpd 10.0
+|_http-title: Site doesn't have a title.
+|_http-server-header: Microsoft-IIS/10.0
+81/tcp   open  http          Microsoft IIS httpd 10.0
+|_http-title: 403 - Forbidden: Access is denied.
+|_http-server-header: Microsoft-IIS/10.0
+135/tcp  open  msrpc         Microsoft Windows RPC
+139/tcp  open  netbios-ssn   Microsoft Windows netbios-ssn
+143/tcp  open  imap          Microsoft Exchange 2007-2010 imapd
+| imap-ntlm-info: 
+|   Target_Name: THETEMPLEHOST
+|   NetBIOS_Domain_Name: THETEMPLEHOST
+|   NetBIOS_Computer_Name: PONYX
+|   DNS_Domain_Name: thetemplehost.com
+|   DNS_Computer_Name: ponyx.thetemplehost.com
+|   DNS_Tree_Name: thetemplehost.com
+|_  Product_Version: 10.0.17763
+|_imap-capabilities: LOGINDISABLED OK IMAP4rev1 completed CAPABILITY ID IDLE LITERAL+A0001 NAMESPACE CHILDREN UIDPLUS UNSELECT MOVE IMAP4 SASL-IR STARTTLS
+| ssl-cert: Subject: commonName=x.thetemplehost.com
+| Subject Alternative Name: DNS:autodiscover.thetemplehost.com, DNS:ponyx.thetemplehost.com, DNS:x.thetemplehost.com
+| Not valid before: 2026-04-07T13:32:45
+|_Not valid after:  2026-07-06T13:32:44
+443/tcp  open  ssl/https
+|_http-server-header: Microsoft-IIS/10.0
+| ssl-cert: Subject: commonName=x.thetemplehost.com
+| Subject Alternative Name: DNS:autodiscover.thetemplehost.com, DNS:ponyx.thetemplehost.com, DNS:x.thetemplehost.com
+| Not valid before: 2026-04-07T13:32:45
+|_Not valid after:  2026-07-06T13:32:44
+444/tcp  open  snpp?
+445/tcp  open  microsoft-ds?
+465/tcp  open  smtp          Microsoft Exchange smtpd
+| smtp-ntlm-info: 
+|   Target_Name: THETEMPLEHOST
+|   NetBIOS_Domain_Name: THETEMPLEHOST
+|   NetBIOS_Computer_Name: PONYX
+|   DNS_Domain_Name: thetemplehost.com
+|   DNS_Computer_Name: ponyx.thetemplehost.com
+|   DNS_Tree_Name: thetemplehost.com
+|_  Product_Version: 10.0.17763
+| smtp-commands: ponyx.thetemplehost.com Hello [82.208.126.177], SIZE 268435456, PIPELINING, DSN, ENHANCEDSTATUSCODES, STARTTLS, X-ANONYMOUSTLS, AUTH NTLM, X-EXPS GSSAPI NTLM, 8BITMIME, BINARYMIME, CHUNKING, XEXCH50, SMTPUTF8, XRDST, XSHADOWREQUEST
+|_ This server supports the following commands: HELO EHLO STARTTLS RCPT DATA RSET MAIL QUIT HELP AUTH BDAT
+587/tcp  open  smtp
+| smtp-ntlm-info: 
+|   Target_Name: THETEMPLEHOST
+|   NetBIOS_Domain_Name: THETEMPLEHOST
+|   NetBIOS_Computer_Name: PONYX
+|   DNS_Domain_Name: thetemplehost.com
+|   DNS_Computer_Name: ponyx.thetemplehost.com
+|   DNS_Tree_Name: thetemplehost.com
+|_  Product_Version: 10.0.17763
+| fingerprint-strings: 
+|   GenericLines, GetRequest, NULL: 
+|     220 ponyx.thetemplehost.com ESMTP TheTempleHost 142.4.199.97 OK 200
+|   Hello: 
+|     220 ponyx.thetemplehost.com ESMTP TheTempleHost 142.4.199.97 OK 200
+|     250-ponyx.thetemplehost.com Hello [82.208.126.177]
+|     250-SIZE 268435456
+|     250-PIPELINING
+|     250-DSN
+|     250-ENHANCEDSTATUSCODES
+|     250-STARTTLS
+|     250-AUTH GSSAPI NTLM
+|     250-8BITMIME
+|     250-BINARYMIME
+|     250-CHUNKING
+|     SMTPUTF8
+|   Help: 
+|     220 ponyx.thetemplehost.com ESMTP TheTempleHost 142.4.199.97 OK 200
+|     214-This server supports the following commands:
+|_    HELO EHLO STARTTLS RCPT DATA RSET MAIL QUIT HELP AUTH BDAT
+| smtp-commands: ponyx.thetemplehost.com Hello [82.208.126.177], SIZE 268435456, PIPELINING, DSN, ENHANCEDSTATUSCODES, STARTTLS, AUTH GSSAPI NTLM, 8BITMIME, BINARYMIME, CHUNKING, SMTPUTF8
+|_ This server supports the following commands: HELO EHLO STARTTLS RCPT DATA RSET MAIL QUIT HELP AUTH BDAT
+993/tcp  open  imaps?
+|_imap-capabilities: CAPABILITY
+| ssl-cert: Subject: commonName=x.thetemplehost.com
+| Subject Alternative Name: DNS:autodiscover.thetemplehost.com, DNS:ponyx.thetemplehost.com, DNS:x.thetemplehost.com
+| Not valid before: 2026-04-07T13:32:45
+|_Not valid after:  2026-07-06T13:32:44
+| imap-ntlm-info: 
+|   Target_Name: THETEMPLEHOST
+|   NetBIOS_Domain_Name: THETEMPLEHOST
+|   NetBIOS_Computer_Name: PONYX
+|   DNS_Domain_Name: thetemplehost.com
+|   DNS_Computer_Name: ponyx.thetemplehost.com
+|   DNS_Tree_Name: thetemplehost.com
+|_  Product_Version: 10.0.17763
+3389/tcp open  ms-wbt-server Microsoft Terminal Services
+| ssl-cert: Subject: commonName=ponyx.thetemplehost.com
+| Not valid before: 2026-02-16T14:03:18
+|_Not valid after:  2026-08-18T14:03:18
+| rdp-ntlm-info: 
+|   Target_Name: THETEMPLEHOST
+|   NetBIOS_Domain_Name: THETEMPLEHOST
+|   NetBIOS_Computer_Name: PONYX
+|   DNS_Domain_Name: thetemplehost.com
+|   DNS_Computer_Name: ponyx.thetemplehost.com
+|   DNS_Tree_Name: thetemplehost.com
+|   Product_Version: 10.0.17763
+|_  System_Time: 2026-05-11T09:02:53+00:00
+6001/tcp open  ncacn_http    Microsoft Windows RPC over HTTP 1.0
+2 services unrecognized despite returning data. If you know the service/version, please submit the following fingerprints at https://nmap.org/cgi-bin/submit.cgi?new-service :
+==============NEXT SERVICE FINGERPRINT (SUBMIT INDIVIDUALLY)==============
+SF-Port25-TCP:V=7.95%I=7%D=5/11%Time=6A019A22%P=x86_64-pc-linux-gnu%r(NULL
+SF:,45,"220\x20ponyx\.thetemplehost\.com\x20ESMTP\x20TheTempleHost\x20142\
+SF:.4\.199\.97\x20OK\x20200\r\n")%r(Hello,14D,"220\x20ponyx\.thetemplehost
+SF:\.com\x20ESMTP\x20TheTempleHost\x20142\.4\.199\.97\x20OK\x20200\r\n250-
+SF:ponyx\.thetemplehost\.com\x20Hello\x20\[82\.208\.126\.177\]\r\n250-SIZE
+SF:\x20268435456\r\n250-PIPELINING\r\n250-DSN\r\n250-ENHANCEDSTATUSCODES\r
+SF:\n250-STARTTLS\r\n250-X-ANONYMOUSTLS\r\n250-AUTH\x20NTLM\r\n250-X-EXPS\
+SF:x20GSSAPI\x20NTLM\r\n250-8BITMIME\r\n250-BINARYMIME\r\n250-CHUNKING\r\n
+SF:250-SMTPUTF8\r\n250\x20XRDST\r\n")%r(Help,B7,"220\x20ponyx\.thetempleho
+SF:st\.com\x20ESMTP\x20TheTempleHost\x20142\.4\.199\.97\x20OK\x20200\r\n21
+SF:4-This\x20server\x20supports\x20the\x20following\x20commands:\r\n214\x2
+SF:0HELO\x20EHLO\x20STARTTLS\x20RCPT\x20DATA\x20RSET\x20MAIL\x20QUIT\x20HE
+SF:LP\x20AUTH\x20BDAT\r\n")%r(GenericLines,45,"220\x20ponyx\.thetemplehost
+SF:\.com\x20ESMTP\x20TheTempleHost\x20142\.4\.199\.97\x20OK\x20200\r\n");
+==============NEXT SERVICE FINGERPRINT (SUBMIT INDIVIDUALLY)==============
+SF-Port587-TCP:V=7.95%I=7%D=5/11%Time=6A019A2A%P=x86_64-pc-linux-gnu%r(NUL
+SF:L,45,"220\x20ponyx\.thetemplehost\.com\x20ESMTP\x20TheTempleHost\x20142
+SF:\.4\.199\.97\x20OK\x20200\r\n")%r(GenericLines,45,"220\x20ponyx\.thetem
+SF:plehost\.com\x20ESMTP\x20TheTempleHost\x20142\.4\.199\.97\x20OK\x20200\
+SF:r\n")%r(Hello,11D,"220\x20ponyx\.thetemplehost\.com\x20ESMTP\x20TheTemp
+SF:leHost\x20142\.4\.199\.97\x20OK\x20200\r\n250-ponyx\.thetemplehost\.com
+SF:\x20Hello\x20\[82\.208\.126\.177\]\r\n250-SIZE\x20268435456\r\n250-PIPE
+SF:LINING\r\n250-DSN\r\n250-ENHANCEDSTATUSCODES\r\n250-STARTTLS\r\n250-AUT
+SF:H\x20GSSAPI\x20NTLM\r\n250-8BITMIME\r\n250-BINARYMIME\r\n250-CHUNKING\r
+SF:\n250\x20SMTPUTF8\r\n")%r(Help,B7,"220\x20ponyx\.thetemplehost\.com\x20
+SF:ESMTP\x20TheTempleHost\x20142\.4\.199\.97\x20OK\x20200\r\n214-This\x20s
+SF:erver\x20supports\x20the\x20following\x20commands:\r\n214\x20HELO\x20EH
+SF:LO\x20STARTTLS\x20RCPT\x20DATA\x20RSET\x20MAIL\x20QUIT\x20HELP\x20AUTH\
+SF:x20BDAT\r\n")%r(GetRequest,45,"220\x20ponyx\.thetemplehost\.com\x20ESMT
+SF:P\x20TheTempleHost\x20142\.4\.199\.97\x20OK\x20200\r\n");
+Service Info: OS: Windows; CPE: cpe:/o:microsoft:windows
+
+Host script results:
+| smb2-time: 
+|   date: 2026-05-11T09:04:44
+|_  start_date: N/A
+| smb2-security-mode: 
+|   3:1:1: 
+|_    Message signing enabled and required
+
+Nmap scan report for ip189.ip-167-114-21.net (167.114.21.189)
+Host is up (0.14s latency).
+Not shown: 97 filtered tcp ports (no-response)
+PORT    STATE SERVICE   VERSION
+22/tcp  open  ssh       OpenSSH 8.2p1 Ubuntu 4ubuntu0.13 (Ubuntu Linux; protocol 2.0)
+| ssh-hostkey: 
+|   3072 79:22:94:82:8a:62:35:d1:ba:f4:29:1c:d8:e9:43:3a (RSA)
+|   256 63:e1:c1:2c:58:c2:6c:19:27:54:11:23:98:42:f2:b7 (ECDSA)
+|_  256 d0:2b:19:ed:65:4c:60:c5:e1:dc:70:c2:f8:7d:f7:8a (ED25519)
+80/tcp  open  http
+|_http-title: Did not follow redirect to https://inspections.thermetco.com/
+| fingerprint-strings: 
+|   DNSStatusRequestTCP, DNSVersionBindReqTCP, Help, Kerberos, LDAPSearchReq, LPDString, RPCCheck, SMBProgNeg, SSLSessionReq, TLSSessionReq, TerminalServerCookie, X11Probe: 
+|     HTTP/1.1 400 Bad Request
+|     Connection: close
+|   FourOhFourRequest, RTSPRequest: 
+|     HTTP/1.1 500 Internal Server Error
+|     Content-Type: text/plain; charset=utf-8
+|     Content-Length: 21
+|     Date: Mon, 11 May 2026 08:58:23 GMT
+|     Connection: close
+|     Internal Server Error
+|   GetRequest, HTTPOptions: 
+|     HTTP/1.1 500 Internal Server Error
+|     Content-Type: text/plain; charset=utf-8
+|     Content-Length: 21
+|     Date: Mon, 11 May 2026 08:58:22 GMT
+|     Connection: close
+|_    Internal Server Error
+443/tcp open  ssl/https
+|_ssl-date: TLS randomness does not represent time
+|_http-title: Inspections Thermetco
+|_http-trane-info: Problem with XML parsing of /evox/about
+| tls-alpn: 
+|_  http/1.1
+| fingerprint-strings: 
+|   GetRequest: 
+|     HTTP/1.1 200 OK
+|     X-DNS-Prefetch-Control: off
+|     X-Frame-Options: SAMEORIGIN
+|     Strict-Transport-Security: max-age=15552000; includeSubDomains
+|     X-Download-Options: noopen
+|     X-Content-Type-Options: nosniff
+|     X-XSS-Protection: 1; mode=block
+|     Content-Length: 21024
+|     Last-Modified: Tue, 10 Mar 2026 18:28:33 GMT
+|     Cache-Control: max-age=604800
+|     Content-Type: text/html; charset=utf-8
+|     X-Response-Time: 1
+|     Date: Mon, 11 May 2026 08:58:29 GMT
+|     Connection: close
+|     <!DOCTYPE html><html lang="en"><head><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="">
+|     <meta charset="utf-8">
+|     <title>Inspections Thermetco</title>
+|     <meta http-equiv="Cache-Control" content="no-store">
+|     <base href="/">
+|     <meta name="viewport" content="width=device-width, initial-scale=1">
+|     <link rel="icon" type="image/x-icon" href="favicon.png">
+|     <style type="text/css">@font-
+|   HTTPOptions: 
+|     HTTP/1.1 200 OK
+|     X-DNS-Prefetch-Control: off
+|     X-Frame-Options: SAMEORIGIN
+|     Strict-Transport-Security: max-age=15552000; includeSubDomains
+|     X-Download-Options: noopen
+|     X-Content-Type-Options: nosniff
+|     X-XSS-Protection: 1; mode=block
+|     Content-Length: 21024
+|     Last-Modified: Tue, 10 Mar 2026 18:28:33 GMT
+|     Cache-Control: max-age=604800
+|     Content-Type: text/html; charset=utf-8
+|     X-Response-Time: 0
+|     Date: Mon, 11 May 2026 08:58:29 GMT
+|     Connection: close
+|     <!DOCTYPE html><html lang="en"><head><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="">
+|     <meta charset="utf-8">
+|     <title>Inspections Thermetco</title>
+|     <meta http-equiv="Cache-Control" content="no-store">
+|     <base href="/">
+|     <meta name="viewport" content="width=device-width, initial-scale=1">
+|     <link rel="icon" type="image/x-icon" href="favicon.png">
+|_    <style type="text/css">@font-
+| ssl-cert: Subject: commonName=*.thermetco.com
+| Subject Alternative Name: DNS:*.thermetco.com, DNS:thermetco.com
+| Not valid before: 2025-10-06T00:00:00
+|_Not valid after:  2026-11-03T23:59:59
+2 services unrecognized despite returning data. If you know the service/version, please submit the following fingerprints at https://nmap.org/cgi-bin/submit.cgi?new-service :
+==============NEXT SERVICE FINGERPRINT (SUBMIT INDIVIDUALLY)==============
+SF-Port80-TCP:V=7.95%I=7%D=5/11%Time=6A019A2E%P=x86_64-pc-linux-gnu%r(GetR
+SF:equest,B0,"HTTP/1\.1\x20500\x20Internal\x20Server\x20Error\r\nContent-T
+SF:ype:\x20text/plain;\x20charset=utf-8\r\nContent-Length:\x2021\r\nDate:\
+SF:x20Mon,\x2011\x20May\x202026\x2008:58:22\x20GMT\r\nConnection:\x20close
+SF:\r\n\r\nInternal\x20Server\x20Error")%r(HTTPOptions,B0,"HTTP/1\.1\x2050
+SF:0\x20Internal\x20Server\x20Error\r\nContent-Type:\x20text/plain;\x20cha
+SF:rset=utf-8\r\nContent-Length:\x2021\r\nDate:\x20Mon,\x2011\x20May\x2020
+SF:26\x2008:58:22\x20GMT\r\nConnection:\x20close\r\n\r\nInternal\x20Server
+SF:\x20Error")%r(RTSPRequest,B0,"HTTP/1\.1\x20500\x20Internal\x20Server\x2
+SF:0Error\r\nContent-Type:\x20text/plain;\x20charset=utf-8\r\nContent-Leng
+SF:th:\x2021\r\nDate:\x20Mon,\x2011\x20May\x202026\x2008:58:23\x20GMT\r\nC
+SF:onnection:\x20close\r\n\r\nInternal\x20Server\x20Error")%r(X11Probe,2F,
+SF:"HTTP/1\.1\x20400\x20Bad\x20Request\r\nConnection:\x20close\r\n\r\n")%r
+SF:(FourOhFourRequest,B0,"HTTP/1\.1\x20500\x20Internal\x20Server\x20Error\
+SF:r\nContent-Type:\x20text/plain;\x20charset=utf-8\r\nContent-Length:\x20
+SF:21\r\nDate:\x20Mon,\x2011\x20May\x202026\x2008:58:23\x20GMT\r\nConnecti
+SF:on:\x20close\r\n\r\nInternal\x20Server\x20Error")%r(RPCCheck,2F,"HTTP/1
+SF:\.1\x20400\x20Bad\x20Request\r\nConnection:\x20close\r\n\r\n")%r(DNSVer
+SF:sionBindReqTCP,2F,"HTTP/1\.1\x20400\x20Bad\x20Request\r\nConnection:\x2
+SF:0close\r\n\r\n")%r(DNSStatusRequestTCP,2F,"HTTP/1\.1\x20400\x20Bad\x20R
+SF:equest\r\nConnection:\x20close\r\n\r\n")%r(Help,2F,"HTTP/1\.1\x20400\x2
+SF:0Bad\x20Request\r\nConnection:\x20close\r\n\r\n")%r(SSLSessionReq,2F,"H
+SF:TTP/1\.1\x20400\x20Bad\x20Request\r\nConnection:\x20close\r\n\r\n")%r(T
+SF:erminalServerCookie,2F,"HTTP/1\.1\x20400\x20Bad\x20Request\r\nConnectio
+SF:n:\x20close\r\n\r\n")%r(TLSSessionReq,2F,"HTTP/1\.1\x20400\x20Bad\x20Re
+SF:quest\r\nConnection:\x20close\r\n\r\n")%r(Kerberos,2F,"HTTP/1\.1\x20400
+SF:\x20Bad\x20Request\r\nConnection:\x20close\r\n\r\n")%r(SMBProgNeg,2F,"H
+SF:TTP/1\.1\x20400\x20Bad\x20Request\r\nConnection:\x20close\r\n\r\n")%r(L
+SF:PDString,2F,"HTTP/1\.1\x20400\x20Bad\x20Request\r\nConnection:\x20close
+SF:\r\n\r\n")%r(LDAPSearchReq,2F,"HTTP/1\.1\x20400\x20Bad\x20Request\r\nCo
+SF:nnection:\x20close\r\n\r\n");
+==============NEXT SERVICE FINGERPRINT (SUBMIT INDIVIDUALLY)==============
+SF-Port443-TCP:V=7.95%T=SSL%I=7%D=5/11%Time=6A019A35%P=x86_64-pc-linux-gnu
+SF:%r(GetRequest,4000,"HTTP/1\.1\x20200\x20OK\r\nX-DNS-Prefetch-Control:\x
+SF:20off\r\nX-Frame-Options:\x20SAMEORIGIN\r\nStrict-Transport-Security:\x
+SF:20max-age=15552000;\x20includeSubDomains\r\nX-Download-Options:\x20noop
+SF:en\r\nX-Content-Type-Options:\x20nosniff\r\nX-XSS-Protection:\x201;\x20
+SF:mode=block\r\nContent-Length:\x2021024\r\nLast-Modified:\x20Tue,\x2010\
+SF:x20Mar\x202026\x2018:28:33\x20GMT\r\nCache-Control:\x20max-age=604800\r
+SF:\nContent-Type:\x20text/html;\x20charset=utf-8\r\nX-Response-Time:\x201
+SF:\r\nDate:\x20Mon,\x2011\x20May\x202026\x2008:58:29\x20GMT\r\nConnection
+SF::\x20close\r\n\r\n<!DOCTYPE\x20html><html\x20lang=\"en\"><head><link\x2
+SF:0rel=\"preconnect\"\x20href=\"https://fonts\.gstatic\.com\"\x20crossori
+SF:gin=\"\">\n\x20\x20\x20\x20\x20\x20\x20\x20<meta\x20charset=\"utf-8\">\
+SF:n\x20\x20\x20\x20\x20\x20\x20\x20<title>Inspections\x20Thermetco</title
+SF:>\n\x20\x20\x20\x20\x20\x20\x20\x20<meta\x20http-equiv=\"Cache-Control\
+SF:"\x20content=\"no-store\">\n\x20\x20\x20\x20\x20\x20\x20\x20<base\x20hr
+SF:ef=\"/\">\n\x20\x20\x20\x20\x20\x20\x20\x20<meta\x20name=\"viewport\"\x
+SF:20content=\"width=device-width,\x20initial-scale=1\">\n\x20\x20\x20\x20
+SF:\x20\x20\x20\x20<link\x20rel=\"icon\"\x20type=\"image/x-icon\"\x20href=
+SF:\"favicon\.png\">\n\x20\x20\x20\x20\x20\x20\x20\x20<style\x20type=\"tex
+SF:t/css\">@font-")%r(HTTPOptions,53E3,"HTTP/1\.1\x20200\x20OK\r\nX-DNS-Pr
+SF:efetch-Control:\x20off\r\nX-Frame-Options:\x20SAMEORIGIN\r\nStrict-Tran
+SF:sport-Security:\x20max-age=15552000;\x20includeSubDomains\r\nX-Download
+SF:-Options:\x20noopen\r\nX-Content-Type-Options:\x20nosniff\r\nX-XSS-Prot
+SF:ection:\x201;\x20mode=block\r\nContent-Length:\x2021024\r\nLast-Modifie
+SF:d:\x20Tue,\x2010\x20Mar\x202026\x2018:28:33\x20GMT\r\nCache-Control:\x2
+SF:0max-age=604800\r\nContent-Type:\x20text/html;\x20charset=utf-8\r\nX-Re
+SF:sponse-Time:\x200\r\nDate:\x20Mon,\x2011\x20May\x202026\x2008:58:29\x20
+SF:GMT\r\nConnection:\x20close\r\n\r\n<!DOCTYPE\x20html><html\x20lang=\"en
+SF:\"><head><link\x20rel=\"preconnect\"\x20href=\"https://fonts\.gstatic\.
+SF:com\"\x20crossorigin=\"\">\n\x20\x20\x20\x20\x20\x20\x20\x20<meta\x20ch
+SF:arset=\"utf-8\">\n\x20\x20\x20\x20\x20\x20\x20\x20<title>Inspections\x2
+SF:0Thermetco</title>\n\x20\x20\x20\x20\x20\x20\x20\x20<meta\x20http-equiv
+SF:=\"Cache-Control\"\x20content=\"no-store\">\n\x20\x20\x20\x20\x20\x20\x
+SF:20\x20<base\x20href=\"/\">\n\x20\x20\x20\x20\x20\x20\x20\x20<meta\x20na
+SF:me=\"viewport\"\x20content=\"width=device-width,\x20initial-scale=1\">\
+SF:n\x20\x20\x20\x20\x20\x20\x20\x20<link\x20rel=\"icon\"\x20type=\"image/
+SF:x-icon\"\x20href=\"favicon\.png\">\n\x20\x20\x20\x20\x20\x20\x20\x20<st
+SF:yle\x20type=\"text/css\">@font-");
+Service Info: OS: Linux; CPE: cpe:/o:linux:linux_kernel
+
+Nmap scan report for ip193.ip-167-114-21.net (167.114.21.193)
+Host is up (0.14s latency).
+Not shown: 87 filtered tcp ports (admin-prohibited), 6 filtered tcp ports (no-response)
+PORT     STATE  SERVICE         VERSION
+80/tcp   open   http            nginx 1.14.1
+|_http-title: This server is powered by PebbleHost!
+|_http-server-header: nginx/1.14.1
+443/tcp  open   ssl/http        nginx 1.14.1
+|_ssl-date: TLS randomness does not represent time
+|_http-title: This server is powered by PebbleHost!
+|_http-server-header: nginx/1.14.1
+| ssl-cert: Subject: commonName=na1986.pebblehost.net
+| Subject Alternative Name: DNS:na1986.pebblehost.net
+| Not valid before: 2026-05-10T00:00:00
+|_Not valid after:  2026-08-08T23:59:59
+| tls-alpn: 
+|_  http/1.1
+| tls-nextprotoneg: 
+|_  http/1.1
+8000/tcp closed http-alt
+8008/tcp closed http
+8009/tcp closed ajp13
+8080/tcp closed http-proxy
+8081/tcp closed blackice-icecap
+
+Nmap scan report for ip194.ip-167-114-21.net (167.114.21.194)
+Host is up (0.14s latency).
+Not shown: 77 filtered tcp ports (admin-prohibited), 16 filtered tcp ports (no-response)
+PORT     STATE  SERVICE         VERSION
+80/tcp   open   http            nginx 1.14.1
+|_http-server-header: nginx/1.14.1
+|_http-title: This server is powered by PebbleHost!
+443/tcp  open   ssl/http        nginx 1.14.1
+|_http-title: This server is powered by PebbleHost!
+| tls-alpn: 
+|_  http/1.1
+| tls-nextprotoneg: 
+|_  http/1.1
+| ssl-cert: Subject: commonName=na2125.pebblehost.net
+| Subject Alternative Name: DNS:na2125.pebblehost.net
+| Not valid before: 2026-04-04T00:00:00
+|_Not valid after:  2026-07-03T23:59:59
+|_ssl-date: TLS randomness does not represent time
+|_http-server-header: nginx/1.14.1
+8000/tcp closed http-alt
+8008/tcp closed http
+8009/tcp closed ajp13
+8080/tcp closed http-proxy
+8081/tcp closed blackice-icecap
+
+Nmap scan report for ip195.ip-167-114-21.net (167.114.21.195)
+Host is up (0.14s latency).
+Not shown: 86 filtered tcp ports (admin-prohibited), 7 filtered tcp ports (no-response)
+PORT     STATE  SERVICE         VERSION
+80/tcp   open   http            nginx 1.14.1
+|_http-title: This server is powered by PebbleHost!
+|_http-server-header: nginx/1.14.1
+443/tcp  open   ssl/http        nginx 1.14.1
+| tls-nextprotoneg: 
+|_  http/1.1
+|_http-server-header: nginx/1.14.1
+|_ssl-date: TLS randomness does not represent time
+|_http-title: This server is powered by PebbleHost!
+| tls-alpn: 
+|_  http/1.1
+| ssl-cert: Subject: commonName=na1718.pebblehost.net
+| Subject Alternative Name: DNS:na1718.pebblehost.net
+| Not valid before: 2026-03-15T00:00:00
+|_Not valid after:  2026-06-13T23:59:59
+8000/tcp closed http-alt
+8008/tcp closed http
+8009/tcp closed ajp13
+8080/tcp closed http-proxy
+8081/tcp closed blackice-icecap
+
+Nmap scan report for ip196.ip-167-114-21.net (167.114.21.196)
+Host is up (0.14s latency).
+Not shown: 84 filtered tcp ports (admin-prohibited), 9 filtered tcp ports (no-response)
+PORT     STATE  SERVICE         VERSION
+80/tcp   open   http            nginx 1.14.1
+|_http-title: This server is powered by PebbleHost!
+|_http-server-header: nginx/1.14.1
+443/tcp  open   ssl/http        nginx 1.14.1
+|_http-title: This server is powered by PebbleHost!
+| ssl-cert: Subject: commonName=na1703.pebblehost.net
+| Subject Alternative Name: DNS:na1703.pebblehost.net
+| Not valid before: 2026-04-22T00:00:00
+|_Not valid after:  2026-07-21T23:59:59
+| tls-nextprotoneg: 
+|_  http/1.1
+|_ssl-date: TLS randomness does not represent time
+|_http-server-header: nginx/1.14.1
+| tls-alpn: 
+|_  http/1.1
+8000/tcp closed http-alt
+8008/tcp closed http
+8009/tcp closed ajp13
+8080/tcp closed http-proxy
+8081/tcp closed blackice-icecap
+
+Nmap scan report for ip197.ip-167-114-21.net (167.114.21.197)
+Host is up (0.14s latency).
+Not shown: 78 filtered tcp ports (admin-prohibited), 15 filtered tcp ports (no-response)
+PORT     STATE  SERVICE         VERSION
+80/tcp   open   http            nginx 1.14.1
+|_http-server-header: nginx/1.14.1
+|_http-title: This server is powered by PebbleHost!
+443/tcp  open   ssl/http        nginx 1.14.1
+|_ssl-date: TLS randomness does not represent time
+|_http-title: BlueMap
+| ssl-cert: Subject: commonName=map.grizzlysbarbecue.com
+| Subject Alternative Name: DNS:map.grizzlysbarbecue.com
+| Not valid before: 2026-04-16T11:03:39
+|_Not valid after:  2026-07-15T11:03:38
+| tls-nextprotoneg: 
+|_  http/1.1
+|_http-server-header: nginx/1.14.1
+| tls-alpn: 
+|_  http/1.1
+8000/tcp closed http-alt
+8008/tcp closed http
+8009/tcp closed ajp13
+8080/tcp closed http-proxy
+8081/tcp closed blackice-icecap
+
+Nmap scan report for ip199.ip-167-114-21.net (167.114.21.199)
+Host is up (0.14s latency).
+Not shown: 88 filtered tcp ports (admin-prohibited), 5 filtered tcp ports (no-response)
+PORT     STATE  SERVICE         VERSION
+80/tcp   open   http            nginx 1.14.1
+|_http-server-header: nginx/1.14.1
+|_http-title: This server is powered by PebbleHost!
+443/tcp  open   ssl/http        nginx 1.14.1
+|_http-server-header: nginx/1.14.1
+|_http-title: This server is powered by PebbleHost!
+| ssl-cert: Subject: commonName=*.pebblehost.com
+| Subject Alternative Name: DNS:*.pebblehost.com, DNS:pebblehost.com
+| Not valid before: 2024-09-01T00:00:00
+|_Not valid after:  2025-10-01T23:59:59
+|_ssl-date: TLS randomness does not represent time
+| tls-alpn: 
+|_  http/1.1
+| tls-nextprotoneg: 
+|_  http/1.1
+8000/tcp closed http-alt
+8008/tcp closed http
+8009/tcp closed ajp13
+8080/tcp closed http-proxy
+8081/tcp closed blackice-icecap
+
+Nmap scan report for lsh.converja.cloud (167.114.21.205)
+Host is up (0.14s latency).
+Not shown: 93 filtered tcp ports (admin-prohibited), 3 filtered tcp ports (no-response)
+PORT     STATE  SERVICE  VERSION
+22/tcp   closed ssh
+80/tcp   open   http     Golang net/http server (Go-IPFS json-rpc or InfluxDB API)
+|_http-title: Did not follow redirect to https://lsh.converja.cloud/
+443/tcp  open   ssl/http Golang net/http server (Go-IPFS json-rpc or InfluxDB API)
+| ssl-cert: Subject: commonName=TRAEFIK DEFAULT CERT
+| Subject Alternative Name: DNS:4dd1a52e9caeab27f404c2d13147a3ed.bab39ca907c547d0aab714e19024af24.traefik.default
+| Not valid before: 2026-03-27T11:40:06
+|_Not valid after:  2027-03-27T11:40:06
+| http-title: Site doesn't have a title (text/html).
+|_Requested resource was https://lsh.converja.cloud/launcher/
+|_ssl-date: TLS randomness does not represent time
+8080/tcp open   ssl/http Golang net/http server (Go-IPFS json-rpc or InfluxDB API)
+|_ssl-date: TLS randomness does not represent time
+|_http-title: Site doesn't have a title (text/plain; charset=utf-8).
+| ssl-cert: Subject: commonName=TRAEFIK DEFAULT CERT
+| Subject Alternative Name: DNS:4dd1a52e9caeab27f404c2d13147a3ed.bab39ca907c547d0aab714e19024af24.traefik.default
+| Not valid before: 2026-03-27T11:40:06
+|_Not valid after:  2027-03-27T11:40:06
+
+Nmap scan report for ip206.ip-167-114-21.net (167.114.21.206)
+Host is up (0.14s latency).
+Not shown: 84 filtered tcp ports (admin-prohibited), 9 filtered tcp ports (no-response)
+PORT     STATE  SERVICE         VERSION
+80/tcp   open   http            nginx 1.14.1
+|_http-server-header: nginx/1.14.1
+|_http-title: This server is powered by PebbleHost!
+443/tcp  open   ssl/http        nginx 1.14.1
+|_ssl-date: TLS randomness does not represent time
+| tls-alpn: 
+|_  http/1.1
+| ssl-cert: Subject: commonName=*.pebblehost.com
+| Subject Alternative Name: DNS:*.pebblehost.com, DNS:pebblehost.com
+| Not valid before: 2024-09-01T00:00:00
+|_Not valid after:  2025-10-01T23:59:59
+|_http-title: This server is powered by PebbleHost!
+| tls-nextprotoneg: 
+|_  http/1.1
+|_http-server-header: nginx/1.14.1
+8000/tcp closed http-alt
+8008/tcp closed http
+8009/tcp closed ajp13
+8080/tcp closed http-proxy
+8081/tcp closed blackice-icecap
+
+Nmap scan report for server5.clickjuicer.com (167.114.21.208)
+Host is up (0.14s latency).
+Not shown: 88 filtered tcp ports (no-response)
+PORT    STATE SERVICE    VERSION
+21/tcp  open  ftp        vsftpd 2.0.8 or later
+|_ssl-date: TLS randomness does not represent time
+22/tcp  open  ssh        OpenSSH 8.2p1 (protocol 2.0)
+| ssh-hostkey: 
+|   3072 73:ca:b3:ba:4d:7d:98:21:ac:eb:01:da:26:52:34:69 (RSA)
+|   256 a4:66:39:d2:93:cd:e0:92:39:58:9f:2f:41:60:7e:3b (ECDSA)
+|_  256 fa:75:70:16:a5:fe:7c:81:0f:07:2f:70:23:b6:21:cd (ED25519)
+25/tcp  open  smtp       Exim smtpd
+| smtp-commands: server5.clickjuicer.com Hello server5.clickjuicer.com [82.208.126.177], SIZE 52428800, 8BITMIME, PIPELINING, AUTH PLAIN LOGIN, CHUNKING, STARTTLS, HELP
+|_ Commands supported: AUTH STARTTLS HELO EHLO MAIL RCPT DATA BDAT NOOP QUIT RSET HELP
+|_ssl-date: TLS randomness does not represent time
+53/tcp  open  domain     ISC BIND
+80/tcp  open  http       nginx
+|_http-title: Success!
+| http-methods: 
+|_  Potentially risky methods: TRACE
+110/tcp open  pop3       Dovecot pop3d
+|_pop3-capabilities: STLS RESP-CODES USER CAPA TOP AUTH-RESP-CODE SASL(PLAIN LOGIN) UIDL PIPELINING
+|_ssl-date: TLS randomness does not represent time
+| ssl-cert: Subject: commonName=clickjuicer.com
+| Subject Alternative Name: DNS:clickjuicer.com
+| Not valid before: 2026-05-06T00:26:46
+|_Not valid after:  2026-08-04T00:26:45
+143/tcp open  imap       Dovecot imapd
+|_imap-capabilities: AUTH=PLAIN OK IMAP4rev1 ID AUTH=LOGINA0001 listed have Pre-login IDLE more post-login ENABLE LOGIN-REFERRALS SASL-IR capabilities LITERAL+ STARTTLS
+| ssl-cert: Subject: commonName=clickjuicer.com
+| Subject Alternative Name: DNS:clickjuicer.com
+| Not valid before: 2026-05-06T00:26:46
+|_Not valid after:  2026-08-04T00:26:45
+|_ssl-date: TLS randomness does not represent time
+443/tcp open  ssl/http   nginx
+| ssl-cert: Subject: commonName=clickjuicer.com
+| Subject Alternative Name: DNS:clickjuicer.com
+| Not valid before: 2026-05-06T00:26:46
+|_Not valid after:  2026-08-04T00:26:45
+|_http-title: Did not follow redirect to http://server5.clickjuicer.com/
+|_ssl-date: TLS randomness does not represent time
+| tls-alpn: 
+|   h2
+|   http/1.1
+|   http/1.0
+|_  http/0.9
+465/tcp open  ssl/smtps?
+| fingerprint-strings: 
+|   DNSStatusRequestTCP, DNSVersionBindReqTCP, NULL, RPCCheck, SMBProgNeg, X11Probe: 
+|     220 server5.clickjuicer.com
+|   FourOhFourRequest, GenericLines, GetRequest, HTTPOptions, RTSPRequest: 
+|     220 server5.clickjuicer.com
+|     unrecognized command
+|     unrecognized command
+|   Hello: 
+|     220 server5.clickjuicer.com
+|     Syntactically invalid EHLO argument(s)
+|   Help: 
+|     220 server5.clickjuicer.com
+|     214-Commands supported:
+|     AUTH HELO EHLO MAIL RCPT DATA BDAT NOOP QUIT RSET HELP
+|   Kerberos, SSLSessionReq, TLSSessionReq, TerminalServerCookie: 
+|     220 server5.clickjuicer.com
+|     characters are not allowed in SMTP commands
+|   LDAPSearchReq: 
+|     220 server5.clickjuicer.com
+|     characters are not allowed in SMTP commands
+|     characters are not allowed in SMTP commands
+|   LPDString: 
+|     220 server5.clickjuicer.com
+|_    unrecognized command
+|_ssl-date: TLS randomness does not represent time
+| smtp-commands: server5.clickjuicer.com Hello server5.clickjuicer.com [82.208.126.177], SIZE 52428800, 8BITMIME, PIPELINING, AUTH PLAIN LOGIN, CHUNKING, HELP
+|_ Commands supported: AUTH HELO EHLO MAIL RCPT DATA BDAT NOOP QUIT RSET HELP
+587/tcp open  smtp       Exim smtpd
+|_ssl-date: TLS randomness does not represent time
+| smtp-commands: server5.clickjuicer.com Hello server5.clickjuicer.com [82.208.126.177], SIZE 52428800, 8BITMIME, PIPELINING, AUTH PLAIN LOGIN, CHUNKING, STARTTLS, HELP
+|_ Commands supported: AUTH STARTTLS HELO EHLO MAIL RCPT DATA BDAT NOOP QUIT RSET HELP
+993/tcp open  imaps?
+|_ssl-date: TLS randomness does not represent time
+| ssl-cert: Subject: commonName=clickjuicer.com
+| Subject Alternative Name: DNS:clickjuicer.com
+| Not valid before: 2026-05-06T00:26:46
+|_Not valid after:  2026-08-04T00:26:45
+|_imap-capabilities: AUTH=PLAIN OK IMAP4rev1 more Pre-login LITERAL+ IDLE have AUTH=LOGINA0001 post-login capabilities listed ENABLE ID LOGIN-REFERRALS SASL-IR
+995/tcp open  pop3s?
+|_ssl-date: TLS randomness does not represent time
+|_pop3-capabilities: SASL(PLAIN LOGIN) TOP RESP-CODES USER AUTH-RESP-CODE UIDL CAPA PIPELINING
+| ssl-cert: Subject: commonName=clickjuicer.com
+| Subject Alternative Name: DNS:clickjuicer.com
+| Not valid before: 2026-05-06T00:26:46
+|_Not valid after:  2026-08-04T00:26:45
+1 service unrecognized despite returning data. If you know the service/version, please submit the following fingerprint at https://nmap.org/cgi-bin/submit.cgi?new-service :
+SF-Port465-TCP:V=7.95%T=SSL%I=7%D=5/11%Time=6A019A56%P=x86_64-pc-linux-gnu
+SF:%r(NULL,1D,"220\x20server5\.clickjuicer\.com\r\n")%r(Hello,49,"220\x20s
+SF:erver5\.clickjuicer\.com\r\n501\x20Syntactically\x20invalid\x20EHLO\x20
+SF:argument\(s\)\r\n")%r(Help,72,"220\x20server5\.clickjuicer\.com\r\n214-
+SF:Commands\x20supported:\r\n214\x20AUTH\x20HELO\x20EHLO\x20MAIL\x20RCPT\x
+SF:20DATA\x20BDAT\x20NOOP\x20QUIT\x20RSET\x20HELP\r\n")%r(GenericLines,51,
+SF:"220\x20server5\.clickjuicer\.com\r\n500\x20unrecognized\x20command\r\n
+SF:500\x20unrecognized\x20command\r\n")%r(GetRequest,51,"220\x20server5\.c
+SF:lickjuicer\.com\r\n500\x20unrecognized\x20command\r\n500\x20unrecognize
+SF:d\x20command\r\n")%r(HTTPOptions,51,"220\x20server5\.clickjuicer\.com\r
+SF:\n500\x20unrecognized\x20command\r\n500\x20unrecognized\x20command\r\n"
+SF:)%r(RTSPRequest,51,"220\x20server5\.clickjuicer\.com\r\n500\x20unrecogn
+SF:ized\x20command\r\n500\x20unrecognized\x20command\r\n")%r(RPCCheck,1D,"
+SF:220\x20server5\.clickjuicer\.com\r\n")%r(DNSVersionBindReqTCP,1D,"220\x
+SF:20server5\.clickjuicer\.com\r\n")%r(DNSStatusRequestTCP,1D,"220\x20serv
+SF:er5\.clickjuicer\.com\r\n")%r(SSLSessionReq,52,"220\x20server5\.clickju
+SF:icer\.com\r\n501\x20NUL\x20characters\x20are\x20not\x20allowed\x20in\x2
+SF:0SMTP\x20commands\r\n")%r(TerminalServerCookie,52,"220\x20server5\.clic
+SF:kjuicer\.com\r\n501\x20NUL\x20characters\x20are\x20not\x20allowed\x20in
+SF:\x20SMTP\x20commands\r\n")%r(TLSSessionReq,52,"220\x20server5\.clickjui
+SF:cer\.com\r\n501\x20NUL\x20characters\x20are\x20not\x20allowed\x20in\x20
+SF:SMTP\x20commands\r\n")%r(Kerberos,52,"220\x20server5\.clickjuicer\.com\
+SF:r\n501\x20NUL\x20characters\x20are\x20not\x20allowed\x20in\x20SMTP\x20c
+SF:ommands\r\n")%r(SMBProgNeg,1D,"220\x20server5\.clickjuicer\.com\r\n")%r
+SF:(X11Probe,1D,"220\x20server5\.clickjuicer\.com\r\n")%r(FourOhFourReques
+SF:t,51,"220\x20server5\.clickjuicer\.com\r\n500\x20unrecognized\x20comman
+SF:d\r\n500\x20unrecognized\x20command\r\n")%r(LPDString,37,"220\x20server
+SF:5\.clickjuicer\.com\r\n500\x20unrecognized\x20command\r\n")%r(LDAPSearc
+SF:hReq,87,"220\x20server5\.clickjuicer\.com\r\n501\x20NUL\x20characters\x
+SF:20are\x20not\x20allowed\x20in\x20SMTP\x20commands\r\n501\x20NUL\x20char
+SF:acters\x20are\x20not\x20allowed\x20in\x20SMTP\x20commands\r\n");
+
+Nmap scan report for ip212.ip-167-114-21.net (167.114.21.212)
+Host is up (0.14s latency).
+Not shown: 88 filtered tcp ports (no-response)
+PORT    STATE  SERVICE   VERSION
+21/tcp  open   ftp       Pure-FTPd
+22/tcp  closed ssh
+25/tcp  open   smtp      Exim smtpd 4.94
+| smtp-commands: rigel.supercdnzone.com Hello ip212.ip-167-114-21.net [82.208.126.177], SIZE 52428800, 8BITMIME, PIPELINING, X_PIPE_CONNECT, AUTH PLAIN LOGIN, STARTTLS, HELP
+|_ Commands supported: AUTH STARTTLS HELO EHLO MAIL RCPT DATA BDAT NOOP QUIT RSET HELP
+53/tcp  open   domain    ISC BIND 9.11.4-P2 (RedHat Enterprise Linux 7)
+| dns-nsid: 
+|_  bind.version: 9.11.4-P2-RedHat-9.11.4-26.P2.el7_9.9
+80/tcp  open   http      Apache/2
+|_http-server-header: Apache/2
+| fingerprint-strings: 
+|   FourOhFourRequest: 
+|     HTTP/1.1 404 Not Found
+|     Date: Mon, 11 May 2026 08:59:03 GMT
+|     Server: Apache/2
+|     Content-Length: 315
+|     Connection: close
+|     Content-Type: text/html; charset=iso-8859-1
+|     <!DOCTYPE HTML PUBLIC "-//IETF//DTD HTML 2.0//EN">
+|     <html><head>
+|     <title>404 Not Found</title>
+|     </head><body>
+|     <h1>Not Found</h1>
+|     <p>The requested URL was not found on this server.</p>
+|     <p>Additionally, a 404 Not Found
+|     error was encountered while trying to use an ErrorDocument to handle the request.</p>
+|     </body></html>
+|   GetRequest: 
+|     HTTP/1.1 200 OK
+|     Date: Mon, 11 May 2026 08:58:57 GMT
+|     Server: Apache/2
+|     Upgrade: h2,h2c
+|     Connection: Upgrade, close
+|     Last-Modified: Mon, 22 Mar 2021 22:21:19 GMT
+|     ETag: "2c-5be277c22e1c5"
+|     Accept-Ranges: bytes
+|     Content-Length: 44
+|     Vary: User-Agent
+|     Content-Type: text/html
+|     <html>Apache is functioning normally</html>
+|   HTTPOptions: 
+|     HTTP/1.1 200 OK
+|     Date: Mon, 11 May 2026 08:58:57 GMT
+|     Server: Apache/2
+|     Upgrade: h2,h2c
+|     Connection: Upgrade, close
+|     Allow: GET,POST,OPTIONS,HEAD
+|     Vary: User-Agent
+|     Content-Length: 0
+|     Content-Type: text/html
+|   Help: 
+|     HTTP/1.1 400 Bad Request
+|     Date: Mon, 11 May 2026 08:59:23 GMT
+|     Server: Apache/2
+|     Content-Length: 226
+|     Connection: close
+|     Content-Type: text/html; charset=iso-8859-1
+|     <!DOCTYPE HTML PUBLIC "-//IETF//DTD HTML 2.0//EN">
+|     <html><head>
+|     <title>400 Bad Request</title>
+|     </head><body>
+|     <h1>Bad Request</h1>
+|     <p>Your browser sent a request that this server could not understand.<br />
+|     </p>
+|     </body></html>
+|   RTSPRequest: 
+|     HTTP/1.1 400 Bad Request
+|     Date: Mon, 11 May 2026 08:58:57 GMT
+|     Server: Apache/2
+|     Content-Length: 226
+|     Connection: close
+|     Content-Type: text/html; charset=iso-8859-1
+|     <!DOCTYPE HTML PUBLIC "-//IETF//DTD HTML 2.0//EN">
+|     <html><head>
+|     <title>400 Bad Request</title>
+|     </head><body>
+|     <h1>Bad Request</h1>
+|     <p>Your browser sent a request that this server could not understand.<br />
+|     </p>
+|_    </body></html>
+|_http-title: Site doesn't have a title (text/html).
+110/tcp open   pop3      Dovecot DirectAdmin pop3d
+| ssl-cert: Subject: commonName=rigel.supercdnzone.com
+| Subject Alternative Name: DNS:rigel.supercdnzone.com
+| Not valid before: 2026-03-21T21:57:32
+|_Not valid after:  2026-06-19T21:57:31
+|_pop3-capabilities: STLS RESP-CODES USER CAPA TOP AUTH-RESP-CODE SASL(PLAIN) UIDL PIPELINING
+143/tcp open   imap      Dovecot imapd
+| ssl-cert: Subject: commonName=rigel.supercdnzone.com
+| Subject Alternative Name: DNS:rigel.supercdnzone.com
+| Not valid before: 2026-03-21T21:57:32
+|_Not valid after:  2026-06-19T21:57:31
+|_imap-capabilities: AUTH=PLAINA0001 OK IMAP4rev1 more Pre-login ID IDLE have post-login LITERAL+ capabilities listed ENABLE LOGIN-REFERRALS SASL-IR STARTTLS
+443/tcp open   ssl/https Apache/2
+|_http-server-header: Apache/2
+| fingerprint-strings: 
+|   FourOhFourRequest: 
+|     HTTP/1.1 404 Not Found
+|     Date: Mon, 11 May 2026 08:59:05 GMT
+|     Server: Apache/2
+|     Content-Length: 315
+|     Connection: close
+|     Content-Type: text/html; charset=iso-8859-1
+|     <!DOCTYPE HTML PUBLIC "-//IETF//DTD HTML 2.0//EN">
+|     <html><head>
+|     <title>404 Not Found</title>
+|     </head><body>
+|     <h1>Not Found</h1>
+|     <p>The requested URL was not found on this server.</p>
+|     <p>Additionally, a 404 Not Found
+|     error was encountered while trying to use an ErrorDocument to handle the request.</p>
+|     </body></html>
+|   GetRequest: 
+|     HTTP/1.1 200 OK
+|     Date: Mon, 11 May 2026 08:59:04 GMT
+|     Server: Apache/2
+|     Upgrade: h2,h2c
+|     Connection: Upgrade, close
+|     Last-Modified: Mon, 22 Mar 2021 22:21:19 GMT
+|     ETag: "2c-5be277c22e1c5"
+|     Accept-Ranges: bytes
+|     Content-Length: 44
+|     Vary: User-Agent
+|     Content-Type: text/html
+|     <html>Apache is functioning normally</html>
+|   HTTPOptions: 
+|     HTTP/1.1 200 OK
+|     Date: Mon, 11 May 2026 08:59:05 GMT
+|     Server: Apache/2
+|     Upgrade: h2,h2c
+|     Connection: Upgrade, close
+|     Allow: GET,POST,OPTIONS,HEAD
+|     Vary: User-Agent
+|     Content-Length: 0
+|     Content-Type: text/html
+|   Help: 
+|     HTTP/1.1 400 Bad Request
+|     Date: Mon, 11 May 2026 08:59:33 GMT
+|     Server: Apache/2
+|     Content-Length: 226
+|     Connection: close
+|     Content-Type: text/html; charset=iso-8859-1
+|     <!DOCTYPE HTML PUBLIC "-//IETF//DTD HTML 2.0//EN">
+|     <html><head>
+|     <title>400 Bad Request</title>
+|     </head><body>
+|     <h1>Bad Request</h1>
+|     <p>Your browser sent a request that this server could not understand.<br />
+|     </p>
+|     </body></html>
+|   RTSPRequest: 
+|     HTTP/1.1 400 Bad Request
+|     Date: Mon, 11 May 2026 08:59:16 GMT
+|     Server: Apache/2
+|     Content-Length: 226
+|     Connection: close
+|     Content-Type: text/html; charset=iso-8859-1
+|     <!DOCTYPE HTML PUBLIC "-//IETF//DTD HTML 2.0//EN">
+|     <html><head>
+|     <title>400 Bad Request</title>
+|     </head><body>
+|     <h1>Bad Request</h1>
+|     <p>Your browser sent a request that this server could not understand.<br />
+|     </p>
+|_    </body></html>
+|_http-title: Site doesn't have a title (text/html).
+| ssl-cert: Subject: commonName=rigel.supercdnzone.com
+| Subject Alternative Name: DNS:rigel.supercdnzone.com
+| Not valid before: 2026-03-21T21:57:32
+|_Not valid after:  2026-06-19T21:57:31
+465/tcp open   ssl/smtp  Exim smtpd 4.94
+| smtp-commands: rigel.supercdnzone.com Hello ip212.ip-167-114-21.net [82.208.126.177], SIZE 52428800, 8BITMIME, PIPELINING, X_PIPE_CONNECT, AUTH PLAIN LOGIN, HELP
+|_ Commands supported: AUTH HELO EHLO MAIL RCPT DATA BDAT NOOP QUIT RSET HELP
+587/tcp open   smtp      Exim smtpd 4.94
+| smtp-commands: rigel.supercdnzone.com Hello ip212.ip-167-114-21.net [82.208.126.177], SIZE 52428800, 8BITMIME, PIPELINING, X_PIPE_CONNECT, AUTH PLAIN LOGIN, STARTTLS, HELP
+|_ Commands supported: AUTH STARTTLS HELO EHLO MAIL RCPT DATA BDAT NOOP QUIT RSET HELP
+993/tcp open   imaps?
+|_imap-capabilities: AUTH=PLAINA0001 OK IMAP4rev1 Pre-login LITERAL+ IDLE more have post-login capabilities listed ENABLE ID LOGIN-REFERRALS SASL-IR
+| ssl-cert: Subject: commonName=rigel.supercdnzone.com
+| Subject Alternative Name: DNS:rigel.supercdnzone.com
+| Not valid before: 2026-03-21T21:57:32
+|_Not valid after:  2026-06-19T21:57:31
+995/tcp open   pop3s?
+|_pop3-capabilities: SASL(PLAIN) TOP RESP-CODES USER AUTH-RESP-CODE UIDL CAPA PIPELINING
+| ssl-cert: Subject: commonName=rigel.supercdnzone.com
+| Subject Alternative Name: DNS:rigel.supercdnzone.com
+| Not valid before: 2026-03-21T21:57:32
+|_Not valid after:  2026-06-19T21:57:31
+2 services unrecognized despite returning data. If you know the service/version, please submit the following fingerprints at https://nmap.org/cgi-bin/submit.cgi?new-service :
+==============NEXT SERVICE FINGERPRINT (SUBMIT INDIVIDUALLY)==============
+SF-Port80-TCP:V=7.95%I=7%D=5/11%Time=6A019A51%P=x86_64-pc-linux-gnu%r(GetR
+SF:equest,140,"HTTP/1\.1\x20200\x20OK\r\nDate:\x20Mon,\x2011\x20May\x20202
+SF:6\x2008:58:57\x20GMT\r\nServer:\x20Apache/2\r\nUpgrade:\x20h2,h2c\r\nCo
+SF:nnection:\x20Upgrade,\x20close\r\nLast-Modified:\x20Mon,\x2022\x20Mar\x
+SF:202021\x2022:21:19\x20GMT\r\nETag:\x20\"2c-5be277c22e1c5\"\r\nAccept-Ra
+SF:nges:\x20bytes\r\nContent-Length:\x2044\r\nVary:\x20User-Agent\r\nConte
+SF:nt-Type:\x20text/html\r\n\r\n<html>Apache\x20is\x20functioning\x20norma
+SF:lly</html>\n")%r(HTTPOptions,D3,"HTTP/1\.1\x20200\x20OK\r\nDate:\x20Mon
+SF:,\x2011\x20May\x202026\x2008:58:57\x20GMT\r\nServer:\x20Apache/2\r\nUpg
+SF:rade:\x20h2,h2c\r\nConnection:\x20Upgrade,\x20close\r\nAllow:\x20GET,PO
+SF:ST,OPTIONS,HEAD\r\nVary:\x20User-Agent\r\nContent-Length:\x200\r\nConte
+SF:nt-Type:\x20text/html\r\n\r\n")%r(RTSPRequest,18A,"HTTP/1\.1\x20400\x20
+SF:Bad\x20Request\r\nDate:\x20Mon,\x2011\x20May\x202026\x2008:58:57\x20GMT
+SF:\r\nServer:\x20Apache/2\r\nContent-Length:\x20226\r\nConnection:\x20clo
+SF:se\r\nContent-Type:\x20text/html;\x20charset=iso-8859-1\r\n\r\n<!DOCTYP
+SF:E\x20HTML\x20PUBLIC\x20\"-//IETF//DTD\x20HTML\x202\.0//EN\">\n<html><he
+SF:ad>\n<title>400\x20Bad\x20Request</title>\n</head><body>\n<h1>Bad\x20Re
+SF:quest</h1>\n<p>Your\x20browser\x20sent\x20a\x20request\x20that\x20this\
+SF:x20server\x20could\x20not\x20understand\.<br\x20/>\n</p>\n</body></html
+SF:>\n")%r(FourOhFourRequest,1E1,"HTTP/1\.1\x20404\x20Not\x20Found\r\nDate
+SF::\x20Mon,\x2011\x20May\x202026\x2008:59:03\x20GMT\r\nServer:\x20Apache/
+SF:2\r\nContent-Length:\x20315\r\nConnection:\x20close\r\nContent-Type:\x2
+SF:0text/html;\x20charset=iso-8859-1\r\n\r\n<!DOCTYPE\x20HTML\x20PUBLIC\x2
+SF:0\"-//IETF//DTD\x20HTML\x202\.0//EN\">\n<html><head>\n<title>404\x20Not
+SF:\x20Found</title>\n</head><body>\n<h1>Not\x20Found</h1>\n<p>The\x20requ
+SF:ested\x20URL\x20was\x20not\x20found\x20on\x20this\x20server\.</p>\n<p>A
+SF:dditionally,\x20a\x20404\x20Not\x20Found\nerror\x20was\x20encountered\x
+SF:20while\x20trying\x20to\x20use\x20an\x20ErrorDocument\x20to\x20handle\x
+SF:20the\x20request\.</p>\n</body></html>\n")%r(Help,18A,"HTTP/1\.1\x20400
+SF:\x20Bad\x20Request\r\nDate:\x20Mon,\x2011\x20May\x202026\x2008:59:23\x2
+SF:0GMT\r\nServer:\x20Apache/2\r\nContent-Length:\x20226\r\nConnection:\x2
+SF:0close\r\nContent-Type:\x20text/html;\x20charset=iso-8859-1\r\n\r\n<!DO
+SF:CTYPE\x20HTML\x20PUBLIC\x20\"-//IETF//DTD\x20HTML\x202\.0//EN\">\n<html
+SF:><head>\n<title>400\x20Bad\x20Request</title>\n</head><body>\n<h1>Bad\x
+SF:20Request</h1>\n<p>Your\x20browser\x20sent\x20a\x20request\x20that\x20t
+SF:his\x20server\x20could\x20not\x20understand\.<br\x20/>\n</p>\n</body></
+SF:html>\n");
+==============NEXT SERVICE FINGERPRINT (SUBMIT INDIVIDUALLY)==============
+SF-Port443-TCP:V=7.95%T=SSL%I=7%D=5/11%Time=6A019A58%P=x86_64-pc-linux-gnu
+SF:%r(GetRequest,140,"HTTP/1\.1\x20200\x20OK\r\nDate:\x20Mon,\x2011\x20May
+SF:\x202026\x2008:59:04\x20GMT\r\nServer:\x20Apache/2\r\nUpgrade:\x20h2,h2
+SF:c\r\nConnection:\x20Upgrade,\x20close\r\nLast-Modified:\x20Mon,\x2022\x
+SF:20Mar\x202021\x2022:21:19\x20GMT\r\nETag:\x20\"2c-5be277c22e1c5\"\r\nAc
+SF:cept-Ranges:\x20bytes\r\nContent-Length:\x2044\r\nVary:\x20User-Agent\r
+SF:\nContent-Type:\x20text/html\r\n\r\n<html>Apache\x20is\x20functioning\x
+SF:20normally</html>\n")%r(HTTPOptions,D3,"HTTP/1\.1\x20200\x20OK\r\nDate:
+SF:\x20Mon,\x2011\x20May\x202026\x2008:59:05\x20GMT\r\nServer:\x20Apache/2
+SF:\r\nUpgrade:\x20h2,h2c\r\nConnection:\x20Upgrade,\x20close\r\nAllow:\x2
+SF:0GET,POST,OPTIONS,HEAD\r\nVary:\x20User-Agent\r\nContent-Length:\x200\r
+SF:\nContent-Type:\x20text/html\r\n\r\n")%r(FourOhFourRequest,1E1,"HTTP/1\
+SF:.1\x20404\x20Not\x20Found\r\nDate:\x20Mon,\x2011\x20May\x202026\x2008:5
+SF:9:05\x20GMT\r\nServer:\x20Apache/2\r\nContent-Length:\x20315\r\nConnect
+SF:ion:\x20close\r\nContent-Type:\x20text/html;\x20charset=iso-8859-1\r\n\
+SF:r\n<!DOCTYPE\x20HTML\x20PUBLIC\x20\"-//IETF//DTD\x20HTML\x202\.0//EN\">
+SF:\n<html><head>\n<title>404\x20Not\x20Found</title>\n</head><body>\n<h1>
+SF:Not\x20Found</h1>\n<p>The\x20requested\x20URL\x20was\x20not\x20found\x2
+SF:0on\x20this\x20server\.</p>\n<p>Additionally,\x20a\x20404\x20Not\x20Fou
+SF:nd\nerror\x20was\x20encountered\x20while\x20trying\x20to\x20use\x20an\x
+SF:20ErrorDocument\x20to\x20handle\x20the\x20request\.</p>\n</body></html>
+SF:\n")%r(RTSPRequest,18A,"HTTP/1\.1\x20400\x20Bad\x20Request\r\nDate:\x20
+SF:Mon,\x2011\x20May\x202026\x2008:59:16\x20GMT\r\nServer:\x20Apache/2\r\n
+SF:Content-Length:\x20226\r\nConnection:\x20close\r\nContent-Type:\x20text
+SF:/html;\x20charset=iso-8859-1\r\n\r\n<!DOCTYPE\x20HTML\x20PUBLIC\x20\"-/
+SF:/IETF//DTD\x20HTML\x202\.0//EN\">\n<html><head>\n<title>400\x20Bad\x20R
+SF:equest</title>\n</head><body>\n<h1>Bad\x20Request</h1>\n<p>Your\x20brow
+SF:ser\x20sent\x20a\x20request\x20that\x20this\x20server\x20could\x20not\x
+SF:20understand\.<br\x20/>\n</p>\n</body></html>\n")%r(Help,18A,"HTTP/1\.1
+SF:\x20400\x20Bad\x20Request\r\nDate:\x20Mon,\x2011\x20May\x202026\x2008:5
+SF:9:33\x20GMT\r\nServer:\x20Apache/2\r\nContent-Length:\x20226\r\nConnect
+SF:ion:\x20close\r\nContent-Type:\x20text/html;\x20charset=iso-8859-1\r\n\
+SF:r\n<!DOCTYPE\x20HTML\x20PUBLIC\x20\"-//IETF//DTD\x20HTML\x202\.0//EN\">
+SF:\n<html><head>\n<title>400\x20Bad\x20Request</title>\n</head><body>\n<h
+SF:1>Bad\x20Request</h1>\n<p>Your\x20browser\x20sent\x20a\x20request\x20th
+SF:at\x20this\x20server\x20could\x20not\x20understand\.<br\x20/>\n</p>\n</
+SF:body></html>\n");
+Service Info: Host: rigel.supercdnzone.com; OS: Linux; CPE: cpe:/o:redhat:enterprise_linux:7
+
+Nmap scan report for ip217.ip-167-114-21.net (167.114.21.217)
+Host is up (0.14s latency).
+Not shown: 79 filtered tcp ports (admin-prohibited), 14 filtered tcp ports (no-response)
+PORT     STATE  SERVICE         VERSION
+80/tcp   open   http            nginx 1.14.1
+|_http-title: This server is powered by PebbleHost!
+|_http-server-header: nginx/1.14.1
+443/tcp  open   ssl/http        nginx 1.14.1
+| tls-alpn: 
+|_  http/1.1
+| tls-nextprotoneg: 
+|_  http/1.1
+|_ssl-date: TLS randomness does not represent time
+|_http-title: This server is powered by PebbleHost!
+| ssl-cert: Subject: commonName=*.pebblehost.com
+| Subject Alternative Name: DNS:*.pebblehost.com, DNS:pebblehost.com
+| Not valid before: 2024-09-01T00:00:00
+|_Not valid after:  2025-10-01T23:59:59
+|_http-server-header: nginx/1.14.1
+8000/tcp closed http-alt
+8008/tcp closed http
+8009/tcp closed ajp13
+8080/tcp closed http-proxy
+8081/tcp closed blackice-icecap
+
+Nmap scan report for ip218.ip-167-114-21.net (167.114.21.218)
+Host is up (0.14s latency).
+All 100 scanned ports on ip218.ip-167-114-21.net (167.114.21.218) are in ignored states.
+Not shown: 100 filtered tcp ports (no-response)
+
+Nmap scan report for ip219.ip-167-114-21.net (167.114.21.219)
+Host is up (0.14s latency).
+Not shown: 85 filtered tcp ports (admin-prohibited), 8 filtered tcp ports (no-response)
+PORT     STATE  SERVICE         VERSION
+80/tcp   open   http            nginx 1.14.1
+|_http-server-header: nginx/1.14.1
+|_http-title: This server is powered by PebbleHost!
+443/tcp  open   ssl/http        nginx 1.14.1
+|_http-server-header: nginx/1.14.1
+| ssl-cert: Subject: commonName=*.pebblehost.com
+| Subject Alternative Name: DNS:*.pebblehost.com, DNS:pebblehost.com
+| Not valid before: 2024-09-01T00:00:00
+|_Not valid after:  2025-10-01T23:59:59
+|_ssl-date: TLS randomness does not represent time
+| tls-alpn: 
+|_  http/1.1
+| tls-nextprotoneg: 
+|_  http/1.1
+|_http-title: This server is powered by PebbleHost!
+8000/tcp closed http-alt
+8008/tcp closed http
+8009/tcp closed ajp13
+8080/tcp closed http-proxy
+8081/tcp closed blackice-icecap
+
+Nmap scan report for nagios.centos-webpanel.com (167.114.21.233)
+Host is up (0.14s latency).
+Not shown: 97 closed tcp ports (reset)
+PORT     STATE SERVICE    VERSION
+81/tcp   open  http       Apache httpd 2.2.15 ((CentOS))
+| http-methods: 
+|_  Potentially risky methods: TRACE
+|_http-title: Apache HTTP Server Test Page powered by CentOS
+|_http-server-header: Apache/2.2.15 (CentOS)
+3306/tcp open  mysql      MySQL (unauthorized)
+5666/tcp open  tcpwrapped
+
+Nmap scan report for faith.gotelsolutions.com (167.114.21.252)
+Host is up (0.14s latency).
+Not shown: 96 filtered tcp ports (no-response), 3 filtered tcp ports (port-unreach)
+PORT     STATE SERVICE   VERSION
+5060/tcp open  sip-proxy FreePBX 16.0.45 (Asterisk 18.20.2)
+Service Info: Device: PBX
+
+Nmap scan report for samint.gotelsolutions.com (167.114.21.253)
+Host is up (0.14s latency).
+All 100 scanned ports on samint.gotelsolutions.com (167.114.21.253) are in ignored states.
+Not shown: 97 filtered tcp ports (no-response), 3 filtered tcp ports (port-unreach)
+
+Post-scan script results:
+| clock-skew: 
+|   -1s: 
+|     167.114.21.123 (ip123.ip-167-114-21.net)
+|     167.114.21.133 (ip133.ip-167-114-21.net)
+|     167.114.21.35 (ip35.ip-167-114-21.net)
+|     167.114.21.134 (ip134.ip-167-114-21.net)
+|     167.114.21.132 (ip132.ip-167-114-21.net)
+|   0s: 
+|     167.114.21.53 (ip53.ip-167-114-21.net)
+|_    167.114.21.182 (ponyx.thetemplehost.com)
+Service detection performed. Please report any incorrect results at https://nmap.org/submit/ .
+# Nmap done at Mon May 11 13:41:44 2026 -- 121 IP addresses (54 hosts up) scanned in 6442.74 seconds

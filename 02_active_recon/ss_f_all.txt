@@ -1,0 +1,673 @@
+# Nmap 7.95 scan initiated Mon May 11 11:50:37 2026 as: nmap -sS -F -iL ips_only.txt -oN fast_all.txt
+Nmap scan report for satrev2114.baraghost.com (167.114.21.14)
+Host is up (0.0055s latency).
+Not shown: 99 filtered tcp ports (no-response)
+PORT   STATE SERVICE
+53/tcp open  domain
+
+Nmap scan report for ip11.ip-167-114-21.net (167.114.21.11)
+Host is up (0.0045s latency).
+All 100 scanned ports on ip11.ip-167-114-21.net (167.114.21.11) are in ignored states.
+Not shown: 100 filtered tcp ports (no-response)
+
+Nmap scan report for ip9.ip-167-114-21.net (167.114.21.9)
+Host is up (0.0035s latency).
+All 100 scanned ports on ip9.ip-167-114-21.net (167.114.21.9) are in ignored states.
+Not shown: 100 filtered tcp ports (no-response)
+
+Nmap scan report for ip10.ip-167-114-21.net (167.114.21.10)
+Host is up (0.0037s latency).
+All 100 scanned ports on ip10.ip-167-114-21.net (167.114.21.10) are in ignored states.
+Not shown: 100 filtered tcp ports (no-response)
+
+Nmap scan report for satrev2113.baraghost.com (167.114.21.13)
+Host is up (0.0061s latency).
+Not shown: 99 filtered tcp ports (no-response)
+PORT   STATE SERVICE
+53/tcp open  domain
+
+Nmap scan report for satrev2112.baraghost.com (167.114.21.12)
+Host is up (0.0049s latency).
+Not shown: 99 filtered tcp ports (no-response)
+PORT   STATE SERVICE
+53/tcp open  domain
+
+Nmap scan report for ip34.ip-167-114-21.net (167.114.21.34)
+Host is up (0.14s latency).
+Not shown: 92 closed tcp ports (reset)
+PORT     STATE SERVICE
+80/tcp   open  http
+443/tcp  open  https
+1025/tcp open  NFS-or-IIS
+3306/tcp open  mysql
+5432/tcp open  postgresql
+8080/tcp open  http-proxy
+8443/tcp open  https-alt
+8888/tcp open  sun-answerbook
+
+Nmap scan report for ip33.ip-167-114-21.net (167.114.21.33)
+Host is up (0.14s latency).
+Not shown: 76 filtered tcp ports (no-response)
+PORT      STATE  SERVICE
+21/tcp    closed ftp
+22/tcp    closed ssh
+25/tcp    open   smtp
+26/tcp    open   rsftp
+53/tcp    open   domain
+80/tcp    open   http
+110/tcp   open   pop3
+111/tcp   open   rpcbind
+143/tcp   open   imap
+443/tcp   open   https
+465/tcp   open   smtps
+587/tcp   open   submission
+993/tcp   open   imaps
+995/tcp   open   pop3s
+2049/tcp  closed nfs
+3306/tcp  open   mysql
+5666/tcp  closed nrpe
+8080/tcp  closed http-proxy
+49152/tcp closed unknown
+49153/tcp closed unknown
+49154/tcp closed unknown
+49155/tcp closed unknown
+49156/tcp closed unknown
+49157/tcp closed unknown
+
+Nmap scan report for ip35.ip-167-114-21.net (167.114.21.35)
+Host is up (0.14s latency).
+Not shown: 99 filtered tcp ports (no-response)
+PORT     STATE SERVICE
+3389/tcp open  ms-wbt-server
+
+Nmap scan report for ip39.ip-167-114-21.net (167.114.21.39)
+Host is up (0.16s latency).
+Not shown: 98 closed tcp ports (reset)
+PORT     STATE SERVICE
+22/tcp   open  ssh
+9100/tcp open  jetdirect
+
+Nmap scan report for ip38.ip-167-114-21.net (167.114.21.38)
+Host is up (0.14s latency).
+Not shown: 95 filtered tcp ports (no-response)
+PORT    STATE SERVICE
+22/tcp  open  ssh
+25/tcp  open  smtp
+80/tcp  open  http
+443/tcp open  https
+587/tcp open  submission
+
+Nmap scan report for ip53.ip-167-114-21.net (167.114.21.53)
+Host is up (0.14s latency).
+Not shown: 96 filtered tcp ports (no-response)
+PORT    STATE SERVICE
+80/tcp  open  http
+135/tcp open  msrpc
+443/tcp open  https
+445/tcp open  microsoft-ds
+
+Nmap scan report for mail4069.hospedameusite.net (167.114.21.105)
+Host is up (0.14s latency).
+Not shown: 79 filtered tcp ports (no-response)
+PORT      STATE  SERVICE
+21/tcp    open   ftp
+22/tcp    open   ssh
+25/tcp    open   smtp
+53/tcp    open   domain
+80/tcp    open   http
+110/tcp   open   pop3
+143/tcp   open   imap
+443/tcp   open   https
+465/tcp   open   smtps
+587/tcp   open   submission
+993/tcp   open   imaps
+995/tcp   open   pop3s
+2121/tcp  open   ccproxy-ftp
+3306/tcp  open   mysql
+5666/tcp  open   nrpe
+49152/tcp closed unknown
+49153/tcp closed unknown
+49154/tcp closed unknown
+49155/tcp closed unknown
+49156/tcp closed unknown
+49157/tcp closed unknown
+
+Nmap scan report for odesafiofinal.hospedameusite.com.br (167.114.21.104)
+Host is up (0.14s latency).
+Not shown: 79 filtered tcp ports (no-response)
+PORT      STATE  SERVICE
+21/tcp    open   ftp
+22/tcp    open   ssh
+25/tcp    open   smtp
+53/tcp    open   domain
+80/tcp    open   http
+110/tcp   open   pop3
+143/tcp   open   imap
+443/tcp   open   https
+465/tcp   open   smtps
+587/tcp   open   submission
+993/tcp   open   imaps
+995/tcp   open   pop3s
+2121/tcp  open   ccproxy-ftp
+3306/tcp  open   mysql
+5666/tcp  open   nrpe
+49152/tcp closed unknown
+49153/tcp closed unknown
+49154/tcp closed unknown
+49155/tcp closed unknown
+49156/tcp closed unknown
+49157/tcp closed unknown
+
+Nmap scan report for ortodontiabrasilia.hospedameusite.net (167.114.21.106)
+Host is up (0.14s latency).
+Not shown: 79 filtered tcp ports (no-response)
+PORT      STATE  SERVICE
+21/tcp    open   ftp
+22/tcp    open   ssh
+25/tcp    open   smtp
+53/tcp    open   domain
+80/tcp    open   http
+110/tcp   open   pop3
+143/tcp   open   imap
+443/tcp   open   https
+465/tcp   open   smtps
+587/tcp   open   submission
+993/tcp   open   imaps
+995/tcp   open   pop3s
+2121/tcp  open   ccproxy-ftp
+3306/tcp  open   mysql
+5666/tcp  open   nrpe
+49152/tcp closed unknown
+49153/tcp closed unknown
+49154/tcp closed unknown
+49155/tcp closed unknown
+49156/tcp closed unknown
+49157/tcp closed unknown
+
+Nmap scan report for empregosnojapao.hospedameusite.com.br (167.114.21.107)
+Host is up (0.14s latency).
+Not shown: 79 filtered tcp ports (no-response)
+PORT      STATE  SERVICE
+21/tcp    open   ftp
+22/tcp    open   ssh
+25/tcp    open   smtp
+53/tcp    open   domain
+80/tcp    open   http
+110/tcp   open   pop3
+143/tcp   open   imap
+443/tcp   open   https
+465/tcp   open   smtps
+587/tcp   open   submission
+993/tcp   open   imaps
+995/tcp   open   pop3s
+2121/tcp  open   ccproxy-ftp
+3306/tcp  open   mysql
+5666/tcp  open   nrpe
+49152/tcp closed unknown
+49153/tcp closed unknown
+49154/tcp closed unknown
+49155/tcp closed unknown
+49156/tcp closed unknown
+49157/tcp closed unknown
+
+Nmap scan report for rhubarb.noproblemnetworks.com (167.114.21.116)
+Host is up (0.14s latency).
+Not shown: 98 filtered tcp ports (no-response)
+PORT    STATE SERVICE
+80/tcp  open  http
+443/tcp open  https
+
+Nmap scan report for koala.noproblemnetworks.com (167.114.21.117)
+Host is up (0.14s latency).
+Not shown: 96 filtered tcp ports (no-response)
+PORT    STATE  SERVICE
+25/tcp  open   smtp
+80/tcp  closed http
+443/tcp closed https
+587/tcp closed submission
+
+Nmap scan report for uglifruit.noproblemnetworks.com (167.114.21.118)
+Host is up (0.14s latency).
+Not shown: 97 filtered tcp ports (no-response)
+PORT    STATE SERVICE
+21/tcp  open  ftp
+80/tcp  open  http
+443/tcp open  https
+
+Nmap scan report for ip123.ip-167-114-21.net (167.114.21.123)
+Host is up (0.14s latency).
+Not shown: 94 filtered tcp ports (no-response)
+PORT     STATE SERVICE
+80/tcp   open  http
+135/tcp  open  msrpc
+139/tcp  open  netbios-ssn
+443/tcp  open  https
+445/tcp  open  microsoft-ds
+5357/tcp open  wsdapi
+
+Nmap scan report for ip126.ip-167-114-21.net (167.114.21.126)
+Host is up (0.15s latency).
+All 100 scanned ports on ip126.ip-167-114-21.net (167.114.21.126) are in ignored states.
+Not shown: 100 filtered tcp ports (no-response)
+
+Nmap scan report for ip131.ip-167-114-21.net (167.114.21.131)
+Host is up (0.14s latency).
+Not shown: 99 filtered tcp ports (no-response)
+PORT     STATE SERVICE
+5000/tcp open  upnp
+
+Nmap scan report for ip132.ip-167-114-21.net (167.114.21.132)
+Host is up (0.14s latency).
+Not shown: 96 filtered tcp ports (no-response)
+PORT     STATE SERVICE
+21/tcp   open  ftp
+80/tcp   open  http
+443/tcp  open  https
+5000/tcp open  upnp
+
+Nmap scan report for ip133.ip-167-114-21.net (167.114.21.133)
+Host is up (0.14s latency).
+Not shown: 95 filtered tcp ports (no-response)
+PORT     STATE SERVICE
+80/tcp   open  http
+110/tcp  open  pop3
+443/tcp  open  https
+995/tcp  open  pop3s
+5000/tcp open  upnp
+
+Nmap scan report for ip134.ip-167-114-21.net (167.114.21.134)
+Host is up (0.14s latency).
+Not shown: 96 filtered tcp ports (no-response)
+PORT     STATE SERVICE
+21/tcp   open  ftp
+80/tcp   open  http
+443/tcp  open  https
+5000/tcp open  upnp
+
+Nmap scan report for ip135.ip-167-114-21.net (167.114.21.135)
+Host is up (0.15s latency).
+Not shown: 98 filtered tcp ports (no-response)
+PORT     STATE SERVICE
+80/tcp   open  http
+5000/tcp open  upnp
+
+Nmap scan report for cuddlybooks.com (167.114.21.165)
+Host is up (0.14s latency).
+Not shown: 65 filtered tcp ports (no-response), 16 filtered tcp ports (port-unreach)
+PORT      STATE  SERVICE
+21/tcp    open   ftp
+22/tcp    closed ssh
+25/tcp    open   smtp
+53/tcp    open   domain
+80/tcp    open   http
+110/tcp   open   pop3
+143/tcp   open   imap
+443/tcp   open   https
+465/tcp   open   smtps
+587/tcp   open   submission
+993/tcp   open   imaps
+995/tcp   open   pop3s
+3306/tcp  open   mysql
+49152/tcp closed unknown
+49153/tcp closed unknown
+49154/tcp closed unknown
+49155/tcp closed unknown
+49156/tcp closed unknown
+49157/tcp closed unknown
+
+Nmap scan report for bvpdigitalquest.com (167.114.21.164)
+Host is up (0.14s latency).
+Not shown: 54 filtered tcp ports (no-response), 27 filtered tcp ports (port-unreach)
+PORT      STATE  SERVICE
+21/tcp    open   ftp
+22/tcp    closed ssh
+25/tcp    open   smtp
+53/tcp    open   domain
+80/tcp    open   http
+110/tcp   open   pop3
+143/tcp   open   imap
+443/tcp   open   https
+465/tcp   open   smtps
+587/tcp   open   submission
+993/tcp   open   imaps
+995/tcp   open   pop3s
+3306/tcp  open   mysql
+49152/tcp closed unknown
+49153/tcp closed unknown
+49154/tcp closed unknown
+49155/tcp closed unknown
+49156/tcp closed unknown
+49157/tcp closed unknown
+
+Nmap scan report for ip168.ip-167-114-21.net (167.114.21.168)
+Host is up (0.14s latency).
+Not shown: 70 filtered tcp ports (host-prohibited), 24 filtered tcp ports (no-response)
+PORT    STATE  SERVICE
+22/tcp  closed ssh
+25/tcp  open   smtp
+80/tcp  open   http
+443/tcp open   https
+465/tcp open   smtps
+587/tcp open   submission
+
+Nmap scan report for dipromedicos.com (167.114.21.167)
+Host is up (0.14s latency).
+Not shown: 61 filtered tcp ports (no-response), 20 filtered tcp ports (port-unreach)
+PORT      STATE  SERVICE
+21/tcp    open   ftp
+22/tcp    closed ssh
+25/tcp    open   smtp
+53/tcp    open   domain
+80/tcp    open   http
+110/tcp   open   pop3
+143/tcp   open   imap
+443/tcp   open   https
+465/tcp   open   smtps
+587/tcp   open   submission
+993/tcp   open   imaps
+995/tcp   open   pop3s
+3306/tcp  open   mysql
+49152/tcp closed unknown
+49153/tcp closed unknown
+49154/tcp closed unknown
+49155/tcp closed unknown
+49156/tcp closed unknown
+49157/tcp closed unknown
+
+Nmap scan report for croatiagulet-hera.info (167.114.21.166)
+Host is up (0.14s latency).
+Not shown: 63 filtered tcp ports (no-response), 18 filtered tcp ports (port-unreach)
+PORT      STATE  SERVICE
+21/tcp    open   ftp
+22/tcp    closed ssh
+25/tcp    open   smtp
+53/tcp    open   domain
+80/tcp    open   http
+110/tcp   open   pop3
+143/tcp   open   imap
+443/tcp   open   https
+465/tcp   open   smtps
+587/tcp   open   submission
+993/tcp   open   imaps
+995/tcp   open   pop3s
+3306/tcp  open   mysql
+49152/tcp closed unknown
+49153/tcp closed unknown
+49154/tcp closed unknown
+49155/tcp closed unknown
+49156/tcp closed unknown
+49157/tcp closed unknown
+
+Nmap scan report for ip171.ip-167-114-21.net (167.114.21.171)
+Host is up (0.14s latency).
+Not shown: 84 filtered tcp ports (no-response)
+PORT      STATE  SERVICE
+21/tcp    closed ftp
+25/tcp    open   smtp
+53/tcp    closed domain
+80/tcp    open   http
+110/tcp   closed pop3
+143/tcp   closed imap
+443/tcp   open   https
+465/tcp   open   smtps
+587/tcp   open   submission
+993/tcp   closed imaps
+995/tcp   closed pop3s
+49153/tcp closed unknown
+49154/tcp closed unknown
+49155/tcp closed unknown
+49156/tcp closed unknown
+49157/tcp closed unknown
+
+Nmap scan report for ip175.ip-167-114-21.net (167.114.21.175)
+Host is up (0.17s latency).
+Not shown: 82 filtered tcp ports (no-response)
+PORT      STATE  SERVICE
+21/tcp    closed ftp
+25/tcp    open   smtp
+53/tcp    closed domain
+80/tcp    open   http
+110/tcp   closed pop3
+143/tcp   closed imap
+443/tcp   closed https
+465/tcp   open   smtps
+587/tcp   open   submission
+993/tcp   closed imaps
+995/tcp   closed pop3s
+32768/tcp closed filenet-tms
+49152/tcp closed unknown
+49153/tcp closed unknown
+49154/tcp closed unknown
+49155/tcp closed unknown
+49156/tcp closed unknown
+49157/tcp closed unknown
+
+Nmap scan report for temple.thetemplehost.com (167.114.21.177)
+Host is up (0.14s latency).
+Not shown: 86 closed tcp ports (reset)
+PORT     STATE SERVICE
+21/tcp   open  ftp
+22/tcp   open  ssh
+25/tcp   open  smtp
+53/tcp   open  domain
+80/tcp   open  http
+110/tcp  open  pop3
+111/tcp  open  rpcbind
+143/tcp  open  imap
+443/tcp  open  https
+465/tcp  open  smtps
+587/tcp  open  submission
+993/tcp  open  imaps
+995/tcp  open  pop3s
+8443/tcp open  https-alt
+
+Nmap scan report for ip178.ip-167-114-21.net (167.114.21.178)
+Host is up (0.14s latency).
+Not shown: 98 closed tcp ports (reset)
+PORT     STATE SERVICE
+22/tcp   open  ssh
+3306/tcp open  mysql
+
+Nmap scan report for ponyx.thetemplehost.com (167.114.21.182)
+Host is up (0.14s latency).
+Not shown: 86 closed tcp ports (reset)
+PORT     STATE SERVICE
+25/tcp   open  smtp
+80/tcp   open  http
+81/tcp   open  hosts2-ns
+135/tcp  open  msrpc
+139/tcp  open  netbios-ssn
+143/tcp  open  imap
+443/tcp  open  https
+444/tcp  open  snpp
+445/tcp  open  microsoft-ds
+465/tcp  open  smtps
+587/tcp  open  submission
+993/tcp  open  imaps
+3389/tcp open  ms-wbt-server
+6001/tcp open  X11:1
+
+Nmap scan report for ip189.ip-167-114-21.net (167.114.21.189)
+Host is up (0.14s latency).
+Not shown: 97 filtered tcp ports (no-response)
+PORT    STATE SERVICE
+22/tcp  open  ssh
+80/tcp  open  http
+443/tcp open  https
+
+Nmap scan report for ip193.ip-167-114-21.net (167.114.21.193)
+Host is up (0.14s latency).
+Not shown: 73 filtered tcp ports (admin-prohibited), 20 filtered tcp ports (no-response)
+PORT     STATE  SERVICE
+80/tcp   open   http
+443/tcp  open   https
+8000/tcp closed http-alt
+8008/tcp closed http
+8009/tcp closed ajp13
+8080/tcp closed http-proxy
+8081/tcp closed blackice-icecap
+
+Nmap scan report for ip194.ip-167-114-21.net (167.114.21.194)
+Host is up (0.14s latency).
+Not shown: 73 filtered tcp ports (admin-prohibited), 20 filtered tcp ports (no-response)
+PORT     STATE  SERVICE
+80/tcp   open   http
+443/tcp  open   https
+8000/tcp closed http-alt
+8008/tcp closed http
+8009/tcp closed ajp13
+8080/tcp closed http-proxy
+8081/tcp closed blackice-icecap
+
+Nmap scan report for ip195.ip-167-114-21.net (167.114.21.195)
+Host is up (0.14s latency).
+Not shown: 69 filtered tcp ports (admin-prohibited), 24 filtered tcp ports (no-response)
+PORT     STATE  SERVICE
+80/tcp   open   http
+443/tcp  open   https
+8000/tcp closed http-alt
+8008/tcp closed http
+8009/tcp closed ajp13
+8080/tcp closed http-proxy
+8081/tcp closed blackice-icecap
+
+Nmap scan report for ip196.ip-167-114-21.net (167.114.21.196)
+Host is up (0.14s latency).
+Not shown: 68 filtered tcp ports (admin-prohibited), 25 filtered tcp ports (no-response)
+PORT     STATE  SERVICE
+80/tcp   open   http
+443/tcp  open   https
+8000/tcp closed http-alt
+8008/tcp closed http
+8009/tcp closed ajp13
+8080/tcp closed http-proxy
+8081/tcp closed blackice-icecap
+
+Nmap scan report for ip197.ip-167-114-21.net (167.114.21.197)
+Host is up (0.14s latency).
+Not shown: 74 filtered tcp ports (admin-prohibited), 19 filtered tcp ports (no-response)
+PORT     STATE  SERVICE
+80/tcp   open   http
+443/tcp  open   https
+8000/tcp closed http-alt
+8008/tcp closed http
+8009/tcp closed ajp13
+8080/tcp closed http-proxy
+8081/tcp closed blackice-icecap
+
+Nmap scan report for ip199.ip-167-114-21.net (167.114.21.199)
+Host is up (0.14s latency).
+Not shown: 73 filtered tcp ports (admin-prohibited), 20 filtered tcp ports (no-response)
+PORT     STATE  SERVICE
+80/tcp   open   http
+443/tcp  open   https
+8000/tcp closed http-alt
+8008/tcp closed http
+8009/tcp closed ajp13
+8080/tcp closed http-proxy
+8081/tcp closed blackice-icecap
+
+Nmap scan report for lsh.converja.cloud (167.114.21.205)
+Host is up (0.14s latency).
+Not shown: 73 filtered tcp ports (admin-prohibited), 23 filtered tcp ports (no-response)
+PORT     STATE  SERVICE
+22/tcp   closed ssh
+80/tcp   open   http
+443/tcp  open   https
+8080/tcp open   http-proxy
+
+Nmap scan report for ip206.ip-167-114-21.net (167.114.21.206)
+Host is up (0.14s latency).
+Not shown: 69 filtered tcp ports (admin-prohibited), 24 filtered tcp ports (no-response)
+PORT     STATE  SERVICE
+80/tcp   open   http
+443/tcp  open   https
+8000/tcp closed http-alt
+8008/tcp closed http
+8009/tcp closed ajp13
+8080/tcp closed http-proxy
+8081/tcp closed blackice-icecap
+
+Nmap scan report for server5.clickjuicer.com (167.114.21.208)
+Host is up (0.14s latency).
+Not shown: 88 filtered tcp ports (no-response)
+PORT    STATE SERVICE
+21/tcp  open  ftp
+22/tcp  open  ssh
+25/tcp  open  smtp
+53/tcp  open  domain
+80/tcp  open  http
+110/tcp open  pop3
+143/tcp open  imap
+443/tcp open  https
+465/tcp open  smtps
+587/tcp open  submission
+993/tcp open  imaps
+995/tcp open  pop3s
+
+Nmap scan report for ip212.ip-167-114-21.net (167.114.21.212)
+Host is up (0.14s latency).
+Not shown: 88 filtered tcp ports (no-response)
+PORT    STATE  SERVICE
+21/tcp  open   ftp
+22/tcp  closed ssh
+25/tcp  open   smtp
+53/tcp  open   domain
+80/tcp  open   http
+110/tcp open   pop3
+143/tcp open   imap
+443/tcp open   https
+465/tcp open   smtps
+587/tcp open   submission
+993/tcp open   imaps
+995/tcp open   pop3s
+
+Nmap scan report for ip217.ip-167-114-21.net (167.114.21.217)
+Host is up (0.14s latency).
+Not shown: 70 filtered tcp ports (admin-prohibited), 23 filtered tcp ports (no-response)
+PORT     STATE  SERVICE
+80/tcp   open   http
+443/tcp  open   https
+8000/tcp closed http-alt
+8008/tcp closed http
+8009/tcp closed ajp13
+8080/tcp closed http-proxy
+8081/tcp closed blackice-icecap
+
+Nmap scan report for ip218.ip-167-114-21.net (167.114.21.218)
+Host is up (0.14s latency).
+All 100 scanned ports on ip218.ip-167-114-21.net (167.114.21.218) are in ignored states.
+Not shown: 100 filtered tcp ports (no-response)
+
+Nmap scan report for ip219.ip-167-114-21.net (167.114.21.219)
+Host is up (0.14s latency).
+Not shown: 79 filtered tcp ports (admin-prohibited), 14 filtered tcp ports (no-response)
+PORT     STATE  SERVICE
+80/tcp   open   http
+443/tcp  open   https
+8000/tcp closed http-alt
+8008/tcp closed http
+8009/tcp closed ajp13
+8080/tcp closed http-proxy
+8081/tcp closed blackice-icecap
+
+Nmap scan report for nagios.centos-webpanel.com (167.114.21.233)
+Host is up (0.14s latency).
+Not shown: 97 closed tcp ports (reset)
+PORT     STATE SERVICE
+81/tcp   open  hosts2-ns
+3306/tcp open  mysql
+5666/tcp open  nrpe
+
+Nmap scan report for faith.gotelsolutions.com (167.114.21.252)
+Host is up (0.14s latency).
+Not shown: 96 filtered tcp ports (no-response), 3 filtered tcp ports (port-unreach)
+PORT     STATE SERVICE
+5060/tcp open  sip
+
+Nmap scan report for samint.gotelsolutions.com (167.114.21.253)
+Host is up (0.14s latency).
+All 100 scanned ports on samint.gotelsolutions.com (167.114.21.253) are in ignored states.
+Not shown: 97 filtered tcp ports (no-response), 3 filtered tcp ports (port-unreach)
+
+# Nmap done at Mon May 11 11:52:16 2026 -- 121 IP addresses (53 hosts up) scanned in 98.73 seconds
